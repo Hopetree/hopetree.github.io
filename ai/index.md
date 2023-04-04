@@ -130,4 +130,24 @@ ChatGPT是一个基于GPT-x架构的大型语言模型，由OpenAI训练。它�
 
 > 我希望你充当词源学家。我给你一个词，你要研究那个词的来源，追根溯源。如果适用，您还应该提供有关该词的含义如何随时间变化的信息。我的第一个请求是“我想追溯‘披萨’这个词的起源。”
 
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/30201215?v=4',
+    name: 'Evan You',
+    title: 'Creator',
+    links: [
+      { icon: 'github', link: 'https://github.com/Hopetree' }
+    ]
+  }
+]
+</script>
+
+## Our Team
+
+Say hello to our awesome team.
+
+<VPTeamMembers size="small" :members="members" />
 
