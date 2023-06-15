@@ -1,5 +1,40 @@
 经常在内部环境需要将网站配置成 https，于是就有了一个需求：创建一个不会过期的 ngxix 自签名证书。于是就向 ChatGPT 提出了这个需求，得到了想要的解决方案。
 
+```python
+@decorator(param=1)
+def f(x):
+    """
+    Syntax Highlighting Demo
+    @param x Parameter
+
+    语义高亮显示:
+    生成的光谱为局部变量和参数选择颜色:
+     Color#1 SC1.1 SC1.2 SC1.3 SC1.4 Color#2 SC2.1 SC2.2 SC2.3 SC2.4 Color#3
+     Color#3 SC3.1 SC3.2 SC3.3 SC3.4 Color#4 SC4.1 SC4.2 SC4.3 SC4.4 Color#5
+    """
+
+    def nested_func(y):
+        print(y + 1)
+
+    s = ("Test", 2+3, {'a': 'b'}, f'{x!s:{"^10"}}')   # Comment
+    f(s[0].lower())
+    nested_func(42)
+
+class Foo:
+    tags: List[str]
+
+    def __init__(self: Foo):
+        byte_string: bytes = b'newline:\n also newline:\x0a'
+        text_string = u"Cyrillic Я is \u042f. Oops: \u042g"
+        self.make_sense(whatever=1)
+    
+    def make_sense(self, whatever):
+        self.sense = whatever
+
+x = len('abc')
+print(f.__doc__)
+```
+
 ## 提问：写一个shell脚本，读取配置文件中的参数，生成自签名证书，证书可以给nginx使用
 
 您好，下面是一个示例 shell 脚本，它可以读取配置文件中的参数并生成自签名证书。配置文件的格式为 key=value，其中 key 为参数名，value 为参数值。证书文件将保存在当前目录的 certs 目录中。
@@ -42,7 +77,7 @@ common_name=acme.com
 
 如果一切正常，您应该会看到类似于下面的输出：
 
-```markdown
+```bash
 Generating a 2048 bit RSA private key
 ......+++++
 ..................................................+++++
@@ -52,7 +87,7 @@ writing new private key to 'certs/server.key'
 
 如果配置文件不存在，您应该会看到类似于下面的错误消息：
 
-```markdown
+```bash
 配置文件 config 不存在！
 ```
 
@@ -60,7 +95,7 @@ writing new private key to 'certs/server.key'
 
 您可以通过下面的配置来实现使用IP地址访问的HTTPS服务：
 
-```config
+```bash
 server {
     listen 443 ssl;
     listen [::]:443 ssl;
