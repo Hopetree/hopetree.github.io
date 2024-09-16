@@ -80,7 +80,7 @@ docker-compose up -d
 
 安装之后按理这里会有一个默认的数据源，指向的是本机 Prometheus 的地址，如果没有，或者 Prometheus 信息不对可以自行修改或者创建数据源。
 
-![](https://tendcode.com/cdn/2024/04/202406171059422.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406171059422.png)
 
 ## 配置主机监控
 
@@ -166,7 +166,7 @@ docker-compose restart
 
 重启之后，就可以到 Prometheus 上看到新增的主机信息：
 
-![](https://tendcode.com/cdn/2024/04/202406171147401.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406171147401.png)
 
 
 ### 3. Grafana 安装主机监控面板
@@ -175,11 +175,11 @@ docker-compose restart
 
 然后导入到 Grafana 中：
 
-![](https://tendcode.com/cdn/2024/04/202406171157897.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406171157897.png)
 
 导入之后，在仪表盘就可以看到主机信息：
 
-![](https://tendcode.com/cdn/2024/04/202406171159962.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406171159962.png)
 
 ## 一键安装启动 node_exporter 脚本
 
