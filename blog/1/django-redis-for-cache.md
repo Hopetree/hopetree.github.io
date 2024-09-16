@@ -13,7 +13,7 @@ redis 是一个 key-value 存储系统，常用于缓存的存储。先来简单
 ### 安装 redis
 将下载的 redis 压缩文件加压到本地的任意一个文件夹中（推荐放到重用软件安装的目录中）。可以看到解压后的文件如图所示：
 
-![redis 解压目录文件](https://tendcode.com/cdn/article/180419/redis-dir.png)
+![redis 解压目录文件](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180419/redis-dir.png)
 
 使用 cmd 命令进入解压后的 redis 目录中，使用如下命令启动 redis 服务：
 
@@ -22,7 +22,7 @@ redis-server.exe
 ```
 可以看到如下的结果，则表示 redis 服务已经开启了：
 
-![redis server 开启](https://tendcode.com/cdn/article/180419/redis-server.png)
+![redis server 开启](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180419/redis-server.png)
 
 然后当前 cmd 窗口不要关闭，再在当前目录开一个 cmd 窗口，输入如下命令启动 redis 客户端：
 
@@ -31,7 +31,7 @@ redis-cli.exe
 ```
 可以看到如下输出，即表示进入了 redis 客户端：
 
-![redis-cli](https://tendcode.com/cdn/article/180419/redis-cli.png)
+![redis-cli](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180419/redis-cli.png)
 
 ### 配置 redis 为系统服务
 上面的操作虽然可以进入 redis，但是一旦服务窗口关闭，就会断掉与 redis 的链接，所以需要把 redis 服务设置成系统服务才行。
@@ -43,11 +43,11 @@ redis-server.exe --service-install redis.windows.conf
 ```
 可以看到如下输出表示安装服务成功：
 
-![redis-server安装](https://tendcode.com/cdn/article/180419/redis-server-ok.png)
+![redis-server安装](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180419/redis-server-ok.png)
 
 然后进入 Windows 的系统服务中，开启 Redis 服务即可，如图所示：
 
-![redis 系统服务开启](https://tendcode.com/cdn/article/180419/Windowsserver.png)
+![redis 系统服务开启](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180419/Windowsserver.png)
 
 现在 redis 已经是系统服务了，可以在任何位置打开 cmd 窗口调用 redis 了。
 
