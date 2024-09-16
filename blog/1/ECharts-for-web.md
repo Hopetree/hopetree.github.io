@@ -401,15 +401,15 @@ def get_hours_views_from_redis():
 
 本文更新于 2024-06-25，可视化效果经过了一些改进，下面是改进后的效果：
 
-![两周访问&24小时访问](https://tendcode.com/cdn/2024/04/202406250832835.png)
+![两周访问&24小时访问](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406250832835.png)
 
 上面第一个图可以纵向看到一周的阅读量趋势，并且可以横向对比上周的情况，第二个图可以看到一天24小时中每个时段的访问情况，并且访问量按照文章访问和单页面访问分别显示。
 
-![30天访问](https://tendcode.com/cdn/2024/04/202406250833043.png)
+![30天访问](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406250833043.png)
 
 上面这个图看到的是最近30天的每日访问量情况。
 
-![](https://tendcode.com/cdn/2024/04/202406250833269.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406250833269.png)
 
 这个图是显示用户数增长趋势。
 
