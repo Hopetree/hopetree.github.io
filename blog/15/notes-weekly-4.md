@@ -21,7 +21,7 @@ Linux 中国开源社区宣布停运，从这篇文章我才知道原来这个�
 
 > 只不过他们有强大的服务器和技术，也比普通人更会利用规则，这不违法但不厚道。
 
-![看看新闻](https://tendcode.com/cdn/2024/02/dasfafa%20%281%29.png "看看新闻")
+![看看新闻](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/dasfafa%20%281%29.png "看看新闻")
 
 每年的春运都是一场内卷严重的抢票大战，各种抢票软件和服务层出不穷，经常会出现官方无票但是第三方确能抢到票的情况，这就很难不让人怀疑这其中是不是有什么猫腻，官方是如何回应这个问题的呢！
 
@@ -37,18 +37,18 @@ Linux 中国开源社区宣布停运，从这篇文章我才知道原来这个�
 
 ### [1. programming-idioms.org](https://programming-idioms.org/cheatsheet/Python/Go "programming-idioms.org")
 
-![programming-idioms.org](https://tendcode.com/cdn/2024/02/pio%20%281%29.png "programming-idioms.org")
+![programming-idioms.org](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/pio%20%281%29.png "programming-idioms.org")
 
 这是一个可以将不同的编程语言的语法对比显示的网站，对于有一门语言基础去学习其他语言的人来说可以作为一个参考工具使用。
 
 ### [2. 地鼠文档](https://www.topgoer.cn/ "地鼠文档")
 
-![地鼠文档](https://tendcode.com/cdn/2024/02/topgoer%20%281%29.png "地鼠文档")
+![地鼠文档](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/topgoer%20%281%29.png "地鼠文档")
 
 这个网站收集了各种 Go 语言的文档，包括 Go 的指引文档还有一些开源的框架文档，可以说是应有尽有，对于学习 Go 的人非常方便。
 
 ### [3. 在线压缩图片](https://www.ticompressor.com/online/ "在线压缩图片")
 
-![在线压缩图片](https://tendcode.com/cdn/2024/02/ticompressoer%20%281%29.png "在线压缩图片")
+![在线压缩图片](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/ticompressoer%20%281%29.png "在线压缩图片")
 
 这个网站提供在线图片压缩功能，而且还有离线安装版，压缩的质量和效果非常好，我上传到图床的图片都会经过这个网站压缩一次再上传。
