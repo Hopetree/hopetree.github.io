@@ -103,7 +103,9 @@ jobs:
     twine upload --skip-existing dist/*
 ```
 
+```markdown
 我这里的做法是，首先通过上下文拿到 `${{ github.ref }}` 这个信息就是当前的 tag，然后提取版本号，进而修改打包文件中版本号进行推送。
+```
 
 ## 条件判断及函数用法
 
