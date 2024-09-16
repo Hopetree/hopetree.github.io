@@ -16,7 +16,7 @@ Git Parameter`，这个插件可以实现在拉取 GitHub 的代码的时候选�
 ### 添加凭据
 进入 Jenkins 的凭据管理中，添加一个全局凭据，添加的信息如下：
 
-![GitHub 凭证](https://tendcode.com/cdn/article/190706/tendcode_2019-07-06_22-52-26.png)
+![GitHub 凭证](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190706/tendcode_2019-07-06_22-52-26.png)
 
 其中的私钥可以到当前用户的用户目录下的 .ssh 目录下面找到。
 
@@ -26,11 +26,11 @@ Git Parameter`，这个插件可以实现在拉取 GitHub 的代码的时候选�
 ### 基本配置
 添加一个 github 项目：
 
-![GitHub](https://tendcode.com/cdn/tendcode_2019-07-06_23-14-01.png)
+![GitHub](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-06_23-14-01.png)
 
 设置分支配置：
 
-![分支](https://tendcode.com/cdn/tendcode_2019-07-06_23-21-56.png)
+![分支](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-06_23-21-56.png)
 
 这个分支信息设置最终会在构建任务的时候形成一个可选参数，选项就是当前项目的所有分支和 Tag。
 
@@ -38,7 +38,7 @@ Git Parameter`，这个插件可以实现在拉取 GitHub 的代码的时候选�
 
 项目配置中主要需要添加项目地址，添加用户凭证，然后配置分支参数：
 
-![branch config](https://tendcode.com/cdn/tendcode_2019-07-06_23-27-38.png)
+![branch config](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-06_23-27-38.png)
 
 ### 其他配置
 
@@ -51,7 +51,7 @@ ls -l
 ```
 构建完成可以查看一下构建的过程日志：
 
-![github log](https://tendcode.com/cdn/tendcode_2019-07-07_00-22-40.png)
+![github log](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-07_00-22-40.png)
 
 ## 阿里云自动构建
 
@@ -62,27 +62,27 @@ ls -l
 ### 绑定 GitHub 账号
 类比上面配置 Jenkins 的步骤，这里第一个步骤也先配置一下 GitHub 账号的绑定，选择添加账号的时候会跳转到 GitHub 的授权页面，授权一下就行了。
 
-![aliyun](https://tendcode.com/cdn/article/190706/tendcode_2019-07-06_23-48-22.png)
+![aliyun](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190706/tendcode_2019-07-06_23-48-22.png)
 
 ### 创建镜像仓库
 
 首先需要创建一个命名空间：
 
-![空间](https://tendcode.com/cdn/tendcode_2019-07-06_23-53-50.png)
+![空间](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-06_23-53-50.png)
 
 有了命名空间之后才可以创建一个仓库，可以选择仓库是否公开，如果选择公开，则任何人都可以拉取，如果不公开，那么要拉取需要登陆才行：
 
-![image](https://tendcode.com/cdn/tendcode_2019-07-06_23-54-19.png)
+![image](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-06_23-54-19.png)
 
 ### 配置构建规则
 
 创建了镜像仓库之后可以进入仓库的管理中，然后选择构建，构建自动触发构建：
 
-![构建](https://tendcode.com/cdn/tendcode_2019-07-07_00-00-17.png)
+![构建](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-07_00-00-17.png)
 
 可以添加多个构建规则，比如我添加了一个从 develop 的分支构建的镜像，Tag 设置为 latest，表示需要测试的镜像，然后设置从 master 构建的 Tag 设置为正式版本。
 
-![image](https://tendcode.com/cdn/tendcode_2019-07-07_00-02-33.png)
+![image](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/tendcode_2019-07-07_00-02-33.png)
 
 构建的过程中可以查看构建日志，查看构建的镜像层级，构建完成之后可以去镜像版本中查看存在的镜像版本。
 
