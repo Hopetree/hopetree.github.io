@@ -19,7 +19,7 @@ sudo yum install libcurl openssl
 
 根据自己的需要选择要下载的版本、平台，然后选择下载为tgz格式并复制下载链接
 
-![](https://tendcode.com/cdn/2023/10/mongo-pkg%20%281%29.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/mongo-pkg%20%281%29.png)
 
 然后登录到服务器下载安装包
 
