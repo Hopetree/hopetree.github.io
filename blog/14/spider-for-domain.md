@@ -296,7 +296,7 @@ game over!
 ```
 表格的信息如图所示：
 
-![sites](https://tendcode.com/cdn/article/180511/sites.png)
+![sites](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180511/sites.png)
 
 ### 爬虫结果下载
 这个爬虫的目标是1891个页面的信息，总共的网站信息是56707个，现已把所有网站的信息上传到百度云，如果有需要的可以下载：
