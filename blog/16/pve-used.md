@@ -120,7 +120,7 @@ server {
 
 要注意下面这个页面的版本信息和下载的 .pat 文件的版本信息一致才行，不然就会出问题，比如下面选择的对应的包是 `DSM_DS920+_69057.pat`
 
-![](https://tendcode.com/cdn/2024/04/202404081302583.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404081302583.png)
 
 ### 群晖批量改名脚本
 
@@ -164,7 +164,7 @@ done
 
 执行日志：
 
-![](https://tendcode.com/cdn/2024/04/202404262251701.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404262251701.png)
 
 
 ### emby 刮削配置
