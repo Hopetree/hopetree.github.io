@@ -131,7 +131,7 @@ DEFAULT_FROM_EMAIL = os.getenv('IZONE_DEFAULT_FROM_EMAIL', 'TendCode博客 <your
 
 添加定时任务，并设置执行频率为1分钟一次：
 
-![](https://tendcode.com/cdn/2024/04/202404241137930.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404241137930.png)
 
 并添加定时任务参数 `recipient_list ` 和 `times`，前者为邮件接收方，必须有值，后者为频率，可以不填直接使用默认值。
 
@@ -139,7 +139,7 @@ DEFAULT_FROM_EMAIL = os.getenv('IZONE_DEFAULT_FROM_EMAIL', 'TendCode博客 <your
 
 手动停掉一个主机的监控通知服务，用来模拟主机挂了，然后等待1分钟，就可以收到通知，并且10分钟后可以收到第二次通知。
 
-![](https://tendcode.com/cdn/2024/04/202404241142845.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404241142845.png)
 
 ## 优化
 
@@ -147,7 +147,7 @@ DEFAULT_FROM_EMAIL = os.getenv('IZONE_DEFAULT_FROM_EMAIL', 'TendCode博客 <your
 
 下面这个是过滤前的告警，每48小时必定触发告警：
 
-![](https://tendcode.com/cdn/2024/04/202405060949517.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202405060949517.png)
 
 我添加的过滤参数：
 
@@ -167,7 +167,7 @@ def action_check_host_status(recipient_list=None, times=None, ignore_hours=None)
         return f'Ignore period for {ignore_hours}, do not check.'
 ```
 
-::: primary
+::: tip
 
 🎉 **题外话**
 
