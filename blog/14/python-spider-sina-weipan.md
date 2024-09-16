@@ -14,7 +14,7 @@
 
 首先，打开这个微盘页面可以看到每页大概有20首左右的歌曲，而每首歌都有一个下载页面，所以需要提取到每首歌的下载页面，提取的方式有多种，我比较喜欢用 xpath 语法提取。提取的思路截图如下：
 
-![页面分析](https://tendcode.com/cdn/article/190809/tendcode_2019-08-10_02-32-37.png)
+![页面分析](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190809/tendcode_2019-08-10_02-32-37.png)
 
 可以看到所有歌曲都在一个 a 标签中，这个标签里面有歌曲链接，还有歌曲的名称，分别是在 href 属性和 title 属性中，xpath 语法如下：
 
@@ -26,7 +26,7 @@
 
 提取到每首歌的下载页面地址之后，可以进入下载页，可以看到每个页面都有一个下载的按钮，点击这个按钮之后浏览器就开始下载歌曲了。
 
-![下载按钮](https://tendcode.com/cdn/article/190809/tendcode_2019-08-10_02-34-34.png)
+![下载按钮](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190809/tendcode_2019-08-10_02-34-34.png)
 
 同样可以使用 xpath 语法定位到按钮的位置，然后进行点击即可，xpath 语法如下：
 
@@ -40,7 +40,7 @@
 
 这里可以看到在首页只有“下一页”按钮，在末页只有“上一页”按钮，中间的页面两个按钮都有，所以这里的思路是定位到有“下一页”的按钮的时候就进行递归，一旦没有定位到，递归就结束了，所以有始有终。
 
-![翻页](https://tendcode.com/cdn/article/190809/tendcode_2019-08-10_03-10-18.png)
+![翻页](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190809/tendcode_2019-08-10_03-10-18.png)
 
 翻页的 xpath 语法是
 
@@ -202,11 +202,11 @@ def main(items):
 ### 代码执行
 代码执行的时候，可以看到类似如下的：
 
-![日志](https://tendcode.com/cdn/article/190809/tendcode_2019-08-10_00-58-21.png)
+![日志](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190809/tendcode_2019-08-10_00-58-21.png)
 
 ### 歌曲下载结果
 
-![歌曲](https://tendcode.com/cdn/article/190809/tendcode_2019-08-10_01-14-32.png)
+![歌曲](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190809/tendcode_2019-08-10_01-14-32.png)
 
 可以看到，已经出现了我上面提到的问题，有两首歌曲由于文件没有下载完浏览器就关闭了，所以歌曲并没有下载完整。
 
