@@ -6,7 +6,7 @@
 
 先直接看 Grafana 显示效果：
 
-![](https://tendcode.com/cdn/2024/04/202406260908066.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406260908066.png)
 
 这里是自定义的一个看板，只显示两个采集指标，分别是 PVE 的 CPU 温度和功率。
 
@@ -185,7 +185,7 @@ func main() {
 
 插件已经被我上传到 github 上面，可以自动编译，可以下载最新版本：[https://github.com/Hopetree/pve_exporter/releases](https://github.com/Hopetree/pve_exporter/releases "https://github.com/Hopetree/pve_exporter/releases")
 
-![](https://tendcode.com/cdn/2024/04/202406251722861.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251722861.png)
 
 下载命令：
 
@@ -212,7 +212,7 @@ nohup ./pve_exporter &
 
 插件启动后，访问本地 http://localhost:9010/metrics 即可查看到指标数据，指标数据如下：
 
-![](https://tendcode.com/cdn/2024/04/202406260854013.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406260854013.png)
 
 ### 4. Prometheus 对接插件
 
@@ -238,28 +238,28 @@ scrape_configs:
 
 此时在Prometheus 的 Targets 中可以查看到新增的节点信息：
 
-![](https://tendcode.com/cdn/2024/04/202406251733258.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251733258.png)
 
 然后可以查询指标信息：
 
-![](https://tendcode.com/cdn/2024/04/202406251735195.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251735195.png)
 
 ## Grafana 配置可视化图表
 
-![](https://tendcode.com/cdn/2024/04/202406251738261.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251738261.png)
 
 添加可视化：
 
-![](https://tendcode.com/cdn/2024/04/202406251738642.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251738642.png)
 
 选择数据源为 prometheus：
 
-![](https://tendcode.com/cdn/2024/04/202406251739829.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251739829.png)
 
 选择指标，并命令一个图表，然后 Apply 保存图表：
 
-![](https://tendcode.com/cdn/2024/04/202406251742810.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251742810.png)
 
 添加两个指标图表后，保存看板：
 
-![](https://tendcode.com/cdn/2024/04/202406251743141.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406251743141.png)
