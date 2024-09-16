@@ -167,6 +167,6 @@ python manage.py migrate
 
 后台配置界面如图显示：
 
-![](https://tendcode.com/cdn/article/20200716/django-tctip_admin.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200716/django-tctip_admin.png)
 
 这时候就可以去前台查看显示界面了，直接看我博客的效果即可，不贴图了。
