@@ -327,7 +327,7 @@ def qiniu_sync_github(access_key, secret_key, bucket_name, private_domain,
 
 本地调试只需要传入函数中定义的信息即可，下面是调试代码和执行结果：
 
-![调试代码和执行结果](https://tendcode.com/cdn/2024/202409160130132.png)
+![调试代码和执行结果](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409160130132.png)
 
 ## 设置成定时任务
 
@@ -371,15 +371,15 @@ def qiniu_sync_github(access_key, secret_key, bucket_name, private_domain,
 
 然后更新项目代码后去后台添加定时任务，开始可以设置成1分钟执行一次看一下效果，没问题之后设置成1小时执行一次就够了：
 
-![定时任务](https://tendcode.com/cdn/2024/202409160050447.png)
+![定时任务](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409160050447.png)
 
 添加定时任务参数，参数的解释可以看定时任务函数中的注释：
 
-![定时任务参数](https://tendcode.com/cdn/2024/202409160051588.png)
+![定时任务参数](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409160051588.png)
 
 
 ## 同步效果
 
 我空间里面大部分数据是本地调试的时候同步的，也就是存量数据，后续的增量数据才是定时任务来执行，GitHub 上面可以看到提交的效果：
 
-![提交的效果](https://tendcode.com/cdn/2024/202409160141904.png)
+![提交的效果](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409160141904.png)
