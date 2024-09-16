@@ -10,7 +10,7 @@
 
 首先看一下百度的分页效果，我截图了几种不同情况的分页效果，这些效果都是需要在设计分页的时候考虑到的。
 
-![分页](https://tendcode.com/cdn/article/2307/page-cut.png "分页")
+![分页](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/page-cut.png "分页")
 
 
 首先我们需要定义几个概念：
