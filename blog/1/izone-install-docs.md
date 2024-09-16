@@ -2,7 +2,7 @@
 
 之前更新过好几篇关于平台部署和迁移的操作，但是很多操作内容可能已经跟不上项目的更新迭代，所以打算写一篇比较基础的项目部署、升级和迁移教程供需要的人使用。这篇部署教程将作为一个长期更新的文章，所有操作都将跟随项目的迭代进行更新。
 
-::: primary
+::: tip
 
 🎉 **关于时效性**
 
@@ -182,7 +182,7 @@ mysql        5.7             92034fe9a41f   6 weeks ago   581MB
 
 ### 本地构建izone镜像
 
-::: primary 提示
+::: tip 提示
 
 如果只是想看博客部署后的效果，直接使用我项目仓库的代码构建镜像就行，而如果是打算部署到生产环境，那么建议你将代码 fork 到自己的代码仓库，以方便你可以进行一些个性化的修改。
 :::
@@ -415,7 +415,7 @@ d10bf7b555e7   moby/buildkit:buildx-stable-1   "buildkitd"              33 minut
 
 效果如下，可以去后台添加数据：
 
-![izone显示](https://tendcode.com/cdn/2023/izone-install.png "izone显示")
+![izone显示](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/izone-install.png "izone显示")
 
 后续需要设置端口转发和域名访问的话可以自行查看网上其他教程，一般都是使用nginx进行反向代理，具体怎么配置本文就不说了。
 
@@ -666,7 +666,7 @@ Creating izone_nginx ... done
 
 此时再访问一下服务器IP+8888端口看看效果，可以看到数据已经完美还原：
 
-![izone显示](https://tendcode.com/cdn/2023/izone-backup (1).png "izone显示")
+![izone显示](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/izone-backup (1).png "izone显示")
 
 ## 常见问题和解答
 
