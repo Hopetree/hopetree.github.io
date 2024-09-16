@@ -174,6 +174,6 @@ register 可以用来把一个步骤的执行结果赋值到一个变量中，�
 
 ### 执行结果
 
-![执行结果](https://tendcode.com/cdn/article/190913/tendcode_2019-09-13_22-36-51.png)
+![执行结果](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190913/tendcode_2019-09-13_22-36-51.png)
 
-![执行结果](https://tendcode.com/cdn/article/190913/tendcode_2019-09-13_22-37-16.png)
+![执行结果](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190913/tendcode_2019-09-13_22-37-16.png)
