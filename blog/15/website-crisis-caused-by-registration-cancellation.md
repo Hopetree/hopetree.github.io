@@ -43,11 +43,11 @@
 
 直接在空间管理中创建一个新的空间，最好是异地，这样方便进行跨域同步。
 
-![](https://tendcode.com/cdn/2024/08/202408291750433.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/08/202408291750433.png)
 
 然后添加一个跨区域同步任务，将原本的空间的数据全部同步给新空间。
 
-![](https://tendcode.com/cdn/2024/08/202408291757563.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/08/202408291757563.png)
 
 同步完成任务配置之后，就会自动开始同步数据，并且每当有新文件上传到旧空间也会自动同步到新空间，由此就可以使用新空间的临时域名访问原来的图片了。
 
@@ -173,4 +173,4 @@ location ^~ /cdn/ {
 
 一个多星期的备案停站直接把网站的访问量搞没了，这是我网站的访问量统计数据：
 
-![访问量](https://tendcode.com/cdn/2024/202409131102085.png)
+![访问量](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409131102085.png)
