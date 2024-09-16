@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '.vitepress/config.ts'  # 仅当配置文件修改才出发动作，保证API更新的时候不会频繁触发
 jobs:
   deploy:
     runs-on: ubuntu-latest

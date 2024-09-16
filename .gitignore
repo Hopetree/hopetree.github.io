@@ -133,3 +133,4 @@ cache/
 # vscode
 .idea/
 .vscode/
+.DS_Store
