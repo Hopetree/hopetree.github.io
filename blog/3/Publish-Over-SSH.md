@@ -30,7 +30,7 @@ Publish Over SSH 是 Jenkins 的一个插件，可以使用 SSH 的方式远程�
 
 配置项有点类似添加凭证：
 
-![ssh](https://tendcode.com/cdn/article/190729/tendcode_2019-07-30_19-06-07.png)
+![ssh](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190729/tendcode_2019-07-30_19-06-07.png)
 
 ### 任务中使用
 
@@ -84,7 +84,7 @@ drwxrwxr-x.   2 alex alex        22 Jul 29 20:05 static
 
 下面是我添加的操作：
 
-![command](https://tendcode.com/cdn/article/190729/tendcode_2019-07-30_00-27-35.png)
+![command](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190729/tendcode_2019-07-30_00-27-35.png)
 
 可以看一下这个里面命令里面的用法说明：
 
@@ -108,7 +108,7 @@ docker-compose up -d
 ### 查看运行结果
 可以查看 Jenkins 任务直接完成后的日志，查看是否所以文件传输正常，命令是否执行正常:
 
-![log](https://tendcode.com/cdn/article/190729/tendcode_2019-07-30_19-13-54.png)
+![log](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190729/tendcode_2019-07-30_19-13-54.png)
 
 
 同时，可以前往远程服务器查看服务运行结果：
