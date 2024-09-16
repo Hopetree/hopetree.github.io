@@ -8,7 +8,7 @@ Demo 演示页面：[https://tendcode.com/monitor/demo](https://tendcode.com/mon
 
 先看一下架构图：
 
-![](https://tendcode.com/cdn/2024/04/202404090945930.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404090945930.png)
 
 - **客户端**：使用 HTTP 请求定期向服务端上报服务器的信息
 - **服务端**：提供接口供客户端调用，将客户端上报的信息进行校验和处理，存入数据库；并且提供接口展示服务器信息
@@ -28,25 +28,25 @@ Demo 演示页面：[https://tendcode.com/monitor/demo](https://tendcode.com/mon
 
 先看[原版页面](https://tz.cloudcpp.com/ "原版页面")：
 
-![](https://tendcode.com/cdn/2024/04/202404091006145.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404091006145.png)
 
 再来看看我自己改后的页面效果，主打一个简洁扁平：
 
-![](https://tendcode.com/cdn/2024/04/202404091006144.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404091006144.png)
 
 展开显示服务器详情：
 
-![](https://tendcode.com/cdn/2024/04/202404091008716.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404091008716.png)
 
 暗色模式：
 
-![](https://tendcode.com/cdn/2024/04/202404091006143.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404091006143.png)
 
 移动端适配
 
-![](https://tendcode.com/cdn/2024/04/202404091011429.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404091011429.png)
 
-::: primary
+::: tip
 
 🎉 **移动端适配**
 
@@ -217,7 +217,7 @@ class AESCipher:
 
 只需要给客户端提供 `secret_key` 和 `secret_value` 信息即可，客户端可以实现跟服务端一样的加解密方法，把其他信息解析出来。
 
-![](https://tendcode.com/cdn/2024/04/202404091110417.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404091110417.png)
 
 ### 上报数据接口设计
 
