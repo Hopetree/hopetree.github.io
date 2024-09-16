@@ -70,7 +70,7 @@
 
 ### 1、[Jpress](http://doc.jpress.io/manual/article.html "Jpress")
 
-![Jpress](https://tendcode.com/cdn/20210704/screenshot.28607bcc.png)
+![Jpress](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/20210704/screenshot.28607bcc.png)
 
 JPress 是一个使用 Java 开发的、开源免费的建站神器，灵感来源于 WordPress，目前已经有超过 10w+ 的网站使用 JPress 搭建，其中包括多个政府机构，200+上市公司，中科院、红十字会等。
 
@@ -78,26 +78,26 @@ JPress 是一个使用 Java 开发的、开源免费的建站神器，灵感来�
 
 ### 2、[gum](https://github.com/gauseen/gum "gum")
 
-![gum](https://tendcode.com/cdn/20210704/Snipaste_2021-07-04_00-38-02.png)
+![gum](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/20210704/Snipaste_2021-07-04_00-38-02.png)
 
 一个命令行的 Git 用户管理器，可以创建多个 group 来保存不同的用户信息，当想要对不同的代码仓库使用不同的用户进行代码提交的时候就可以使用这个工具快速切换用户。
 
 ### 3、[在线词云图](https://tendcode.com/tool/word-cloud/)
 
-![word-cloud](https://tendcode.com/cdn/20210704/chart-word.png)
+![word-cloud](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/20210704/chart-word.png)
 
-![word-cloud](https://tendcode.com/cdn/20210704/chart2.png)
+![word-cloud](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/20210704/chart2.png)
 
 这是我根据 [highcharts 的词云图](https://www.highcharts.com.cn/demo/highcharts/wordcloud "词云图") 制作的一个在线词云图制作工具，使用了 jieba 分词所以同时支持中英文分词，并加入了常用的中英文停用词过滤，支持5万字的文本分词，对于一些有词云图要求的人来说应该会用到。
 
 ### 4、[draw.io](https://www.diagrams.net/)
 
-![draw.io](https://tendcode.com/cdn/20210704/Snipaste_2021-07-04_01-01-38.png)
+![draw.io](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/20210704/Snipaste_2021-07-04_01-01-38.png)
 
 一款开源的支持多平台的流程图软件，绝不单单是流程图那么简单，一个字：强！！！
 
 ### 5、[Microsoft Remote Desktop Beta](https://zhuanlan.zhihu.com/p/163525491)
 
-![Microsoft Remote Desktop Beta](https://tendcode.com/cdn/20210704/Snipaste_2021-07-04_01-13-01.png)
+![Microsoft Remote Desktop Beta](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/20210704/Snipaste_2021-07-04_01-13-01.png)
 
 微软官方出品的软件，Mac 远程连接 Windows 机器的最优解，真的是傻瓜式安装使用，而且非常流畅，官方版在 App Store 内地找不到，据说要美网账号，但是可以去其他 Mac 软件平台找。
