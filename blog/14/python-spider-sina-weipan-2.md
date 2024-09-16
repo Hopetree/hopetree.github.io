@@ -20,11 +20,11 @@
 
 在资源页点击下载按钮的时候会直接进行资源下载，这个时候应该开启 F12 查看接口调用，会发现调用了一个如下截图的接口：
 
-![接口](https://tendcode.com/cdn/article/190810/tendcode_2019-08-10_17-23-52.png)
+![接口](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190810/tendcode_2019-08-10_17-23-52.png)
 
 然后查看一下这个接口的返回信息，可以看到接口里面就有资源的下载地址，所以很显然，只要构造出这个接口并进行请求就可以得到资源下载链接了：
 
-![下载](https://tendcode.com/cdn/article/190810/tendcode_2019-08-10_17-24-14.png)
+![下载](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190810/tendcode_2019-08-10_17-24-14.png)
 
 ### 资源接口构造
 
@@ -199,7 +199,7 @@ def get_callback_info_by_item(self, item):
 
 其中 `link` 参数和 `wpSign` 参数都是使用正则表达式从资源页的 HTML 中提取，可以看一下网页源代码中的信息:
 
-![源代码](https://tendcode.com/cdn/article/190810/tendcode_2019-08-10_17-24-50.png)
+![源代码](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190810/tendcode_2019-08-10_17-24-50.png)
 
 参数都提取到之后，就可以构造出请求接口了，最后可以通过函数返回接口地址，同时可以把当前的页面地址也返回，因为这个可以当做 `Referer` 的值传递到请求头中。
 
@@ -259,4 +259,4 @@ def main(self):
 
 下载的歌曲总共有184首，看看结果，正好184首歌曲，全部是完整的，而且效率也挺快的，完全可以充分利用带宽，不会浪费一秒钟。
 
-![资源](https://tendcode.com/cdn/article/190810/tendcode_2019-08-11_14-23-49.png)
+![资源](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190810/tendcode_2019-08-11_14-23-49.png)
