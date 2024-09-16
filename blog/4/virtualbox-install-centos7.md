@@ -16,23 +16,23 @@ CentOS 的系统镜像可以去一些开源的镜像站上下载，我这里使�
 ## 系统安装
 启动了 CentOS 的安装之后，可以看到一个如下截图的可以进行设置的界面：
 
-![安装CentOS](https://tendcode.com/cdn/article/190131/tendcode_2019-01-31_22-04-56.png)
+![安装CentOS](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190131/tendcode_2019-01-31_22-04-56.png)
 
 这里我只进行了3个设置，也就是截图中显示的。设置时区不用多说，一般都是设置成上海时区；系统分区的时候可以默认分区也可以自定义分区，这里我会选择自定义分区，具体可以看后续截图；最后的设置可以更改主机的名称，改成自己喜欢的就行，然后需要开启一下网络，不然虚拟机创建了不能联网的。
 
 ### 设置时区
 直接看截图就行了，时区的设置跟之前的语言选择一样，都是看自己的需要，这里我选择了上海时区：
 
-![CentOS时区设置](https://tendcode.com/cdn/article/190131/tendcode_2019-01-31_22-05-35.png)
+![CentOS时区设置](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190131/tendcode_2019-01-31_22-05-35.png)
 
 ### 系统分区
 进入分区设置，首先会看到如下截图的显示，这里默认是选择的默认分区，给新手用的，虽然我对 CentOS 也不熟，但是一般我都是喜欢自定义，所以我选择自定义分区：
 
-![CentOS系统分区](https://tendcode.com/cdn/article/190131/tendcode_2019-01-31_22-08-38.png)
+![CentOS系统分区](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190131/tendcode_2019-01-31_22-08-38.png)
 
 为了能够更好的进行自定义分区，建议你先上网搜了一下关于各个分区的作用和一般分区原则，然后可以借鉴一下我下面的分区情况：
 
-![CentOS系统分区](https://tendcode.com/cdn/article/190612/virtualbox-install-centos-7.png)
+![CentOS系统分区](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190612/virtualbox-install-centos-7.png)
 
 **建议分区**
 以下是我实践之后重新确认的分区方案，以20GB为例：
@@ -46,14 +46,14 @@ swap      2GB           必须；这个分区是虚拟内存分区，大于物�
 ### 网络设置
 设置系统的主机名称和网络设置可以看截图：
 
-![CentOS网络设置](https://tendcode.com/cdn/article/190131/tendcode_2019-01-31_21-21-22.png)
+![CentOS网络设置](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190131/tendcode_2019-01-31_21-21-22.png)
 
 默认的主机名称太长了，而且也不便于记录，所以自然是需要更换成自己设置的；网络设置这个地方如果只是想要开启网路的话，只需要打开截图中的按钮即可（默认是关闭的），这样虚拟机创建之后就可以上网了，如果需要设置更过网络配置，比如网卡 IP 之类的，可以点击右下角的设置按钮进入网络设置进行自定义设置，这些设置其实可以在后续系统安装完成之后再做，所以这里就不配置了。
 
 ### 添加用户和root密码
 当前面的配置后已经配置完成之后，系统就已经开始安装了，这个过程中可以设置 root 的密码和添加一个用户，这个用户可以添加一下管理权限，作为管理用户使用。
 
-![CentOS添加用户](https://tendcode.com/cdn/article/190131/tendcode_2019-01-31_22-57-48.png)
+![CentOS添加用户](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190131/tendcode_2019-01-31_22-57-48.png)
 
 系统安装完成之后会提示系统需要重启，安装提示执行重启即可，至此，CentOS 的安装就可以全部完成了。
 
@@ -87,29 +87,29 @@ AllowUsers theusername
 
 为了让主机和其他虚拟机可以相互登陆，可以把网络模式设置成“桥接模式”，然后把混杂模式设置成“全部允许”，具体设置看截图：
 
-![端口转发](https://tendcode.com/cdn/article/190612/tendcode_2019-06-13_20-33-35.png)
+![端口转发](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190612/tendcode_2019-06-13_20-33-35.png)
 
 网络设置好了之后，重启一下虚拟机，然后可以查看一下虚拟机的网络 IP，可以发现已经有了和主机同一个内网的网段 IP，这个 192.168 的 IP 地址就可以用来进行 SSH 登陆了
 
-![虚拟机IP](https://tendcode.com/cdn/article/190612/tendcode_2019-06-13_20-41-15.png)
+![虚拟机IP](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190612/tendcode_2019-06-13_20-41-15.png)
 
 ### ssh 连接
 配置完成之后，可以试一下登录虚拟机，看看是不是可以登录上了（别忘了虚拟机首先是需要运行的），这里我登录上了，然后随便执行了一下 ping 命令：
 
-![ping](https://tendcode.com/cdn/article/190131/tendcode_2019-01-31_23-33-56.png)
+![ping](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190131/tendcode_2019-01-31_23-33-56.png)
 
 ## 复制虚拟机
 使用虚拟机可以搭建自己的虚拟机集群，这就会需要创建多个虚拟机，当然你可以一个一个的安装系统创建，不过，virtualbox 提供了复制虚拟机的方式，可以很快的使用已存在的虚拟机复制一台一模一样的虚拟机出来。
 
 复制很简单，直接点击一个关闭状态的虚拟机，复制即可，给新虚拟机机取个名字，然后勾选重置网卡参数（这个非常重要，勾选这个才会重新生成IP），同时勾选完全复制:
 
-![复制虚拟机](https://tendcode.com/cdn/article/190715/tendcode_2019-07-15_19-11-55.png)
+![复制虚拟机](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190715/tendcode_2019-07-15_19-11-55.png)
 
-![复制虚拟机2](https://tendcode.com/cdn/article/190715/tendcode_2019-07-15_19-12-04.png)
+![复制虚拟机2](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190715/tendcode_2019-07-15_19-12-04.png)
 
 等待一段时间，虚拟机创建完成之后，可以查看一下新虚拟机的网卡信息，是否已经与原来的虚拟机不一样了：
 
-![网卡信息](https://tendcode.com/cdn/article/190715/tendcode_2019-07-15_19-15-23.png)
+![网卡信息](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190715/tendcode_2019-07-15_19-15-23.png)
 
 然后可以登陆新的虚拟机查看IP信息，为了后续登陆虚拟机的方便识别，可以给新虚拟机更换一下名称（CentOS7 的方式）：
 
