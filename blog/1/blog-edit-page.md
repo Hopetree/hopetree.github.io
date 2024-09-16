@@ -103,7 +103,7 @@ path('article-edit/<slug:slug>/', DetailEditView.as_view(), name='article_edit')
 
 此时已经可以使用 /article-edit/xxxx/ 这种地址访问文章的编辑页面了，效果如下：
 
-![](https://tendcode.com/cdn/article/2306/blog-edit-page.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2306/blog-edit-page.png)
 
 这里有3个按钮，后续会讲到。
 
