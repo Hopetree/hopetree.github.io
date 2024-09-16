@@ -16,17 +16,17 @@
 
 下面这个是不使用管理员运行VMware® Workstation的时候的设置效果，可以看到提示是要管理员才可以修改的
 
-![虚拟网络编辑器](https://tendcode.com/cdn/article/2307/vmware-net-1.png "虚拟网络编辑器")
+![虚拟网络编辑器](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/vmware-net-1.png "虚拟网络编辑器")
 
 使用管理员运行VMware® Workstation之后再来设置桥接网络，模式选择桥接模式，网卡选择宿主机的网卡
 
-![虚拟网络编辑器](https://tendcode.com/cdn/article/2307/vmware-net-2.png "虚拟网络编辑器")
+![虚拟网络编辑器](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/vmware-net-2.png "虚拟网络编辑器")
 
 ### 设置虚拟机的网络适配器
 
 全局设置好VMware® Workstation的虚拟网络编辑器后需要给虚拟机设置网络模式，点击虚拟机的设置-网络适配器进行设置，网络链接选择桥接模式
 
-![虚拟机的网络适配器](https://tendcode.com/cdn/article/2307/vmware-host-net.png "虚拟机的网络适配器")
+![虚拟机的网络适配器](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/vmware-host-net.png "虚拟机的网络适配器")
 
 如果是虚拟机复制，网络这里还应该进入高级里重新生成一个MAC信息，避免重复的MAC
 
