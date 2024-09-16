@@ -120,11 +120,11 @@ docker images
 
 首先，可以看一下镜像仓库中关于推送镜像的说明，这里是阿里云的说明:
 
-![image](https://tendcode.com/cdn/article/190721/tendcode_2019-07-21_17-35-51.png)
+![image](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190721/tendcode_2019-07-21_17-35-51.png)
 
 由于这里需要使用到用户名和密码，所以在 Jenkins 中添加两个参数，一个为字符串参数，添加用户名，另一个添加密码参数，也即是密码，之后再命令行中可以使用这2个参数来取代自己的账号。
 
-![user](https://tendcode.com/cdn/article/190721/tendcode_2019-07-21_17-39-01.png)
+![user](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190721/tendcode_2019-07-21_17-39-01.png)
 
 然后根据阿里云镜像仓库的提示添加推送镜像的命令：
 
@@ -166,7 +166,7 @@ registry.cn-shenzhen.aliyuncs.com/tendcode/hao:latest
 
 容器运行之后，可以输入服务器（或者虚拟机）的 IP 地址，查看一下 vue 项目的运行页面。我这边的显示效果如下图：
 
-![vue](https://tendcode.com/cdn/article/190721/tendcode_2019-07-21_17-53-40.png)
+![vue](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190721/tendcode_2019-07-21_17-53-40.png)
 
 
 参考文章：
