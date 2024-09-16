@@ -12,7 +12,7 @@ redis 是最常用的缓存数据库（正确说是中间件），虽然redis的
 
 按照自己的系统选择对应的安装包即可，不如这里我需要选择的是CentOS7的x86版本
 
-![redis安装包下载](https://tendcode.com/cdn/2023/10/redis-download%20%281%29.png)
+![redis安装包下载](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/redis-download%20%281%29.png)
 
 复制下载地址，使用wget命令下载（这里使用-O参数自定义一下包的名称）：
 
