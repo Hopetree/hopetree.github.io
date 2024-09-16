@@ -150,4 +150,4 @@ $var
 - Github 地址：[https://github.com/oldj/SwitchHosts](https://github.com/oldj/SwitchHosts)
 - 工具界面：
 
-![image](https://tendcode.com/cdn/article/180913/capture.png)
+![image](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180913/capture.png)
