@@ -157,20 +157,20 @@ Process 11056 get one pic !!!
 ```
 最后截到的图片结果如图所示：
 
-![截图](https://tendcode.com/cdn/article/180430/pics.png)
+![截图](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180430/pics.png)
 
 ## 一个 Bug
 到目前为止，上面的整个过程并没有任何问题，我发现的这个 bug 并不是我的代码有问题，而是 PhantomJS 的截图的最大显示图片长度有问题。
 
 我测试了一个网页非常长的链接（总长度超过36000px），然后我发现最后截取到的网页的图片根本没有到达网页的底部，具体的效果图如下：
 
-![selenium截图01](https://tendcode.com/cdn/article/180429/sc01.png)
+![selenium截图01](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180429/sc01.png)
 
 这个图片长度有36277px，但是实际上显示出来图片的高度只有32767px，看看在 PS 里面的效果：
 
-![selenium截图02](https://tendcode.com/cdn/article/180429/sc02.png)
+![selenium截图02](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180429/sc02.png)
 
-![selenium截图03](https://tendcode.com/cdn/article/180429/sc03.png)
+![selenium截图03](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180429/sc03.png)
 
 一开始我以为这个只是这个网页的加载问题，可能是后面的一段没有加载出来，所以截图的时候没有截到后面的一段。但是后来我试了几个其他的比较长的网页，发现只要网页超过了32767px，就只能截取到32757px的页面信息，其他的部分显示为透明。
 
