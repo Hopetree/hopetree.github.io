@@ -29,13 +29,13 @@ TailScale的使用方式跟Zerotier是非常相似的，首先也要注册一个
 
 可以使用GitHub账号或者微软账号登录，这里建议使用微软账号。
 
-[![](https://tendcode.com/cdn/2023/tailscale-login-2.png)](https://login.tailscale.com/login?next_url=%2Fwelcome)
+[![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/tailscale-login-2.png)](https://login.tailscale.com/login?next_url=%2Fwelcome)
 
 ## 安装客户端
 
 注册登录之后，点击页面的 Download 就可以进入客户端下载页面，这里支持多种平台的客户端安装，按照需要安装即可。（IOS和macOS的安装都会跳转到App Store，大陆账号无法安装）
 
-[![](https://tendcode.com/cdn/2023/tailscale-install.png)](https://tailscale.com/download/linux/centos-7)
+[![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/tailscale-install.png)](https://tailscale.com/download/linux/centos-7)
 
 ### CentOS 安装
 
@@ -54,7 +54,7 @@ sudo yum-config-manager --add-repo https://pkgs.tailscale.com/stable/centos/7/ta
 sudo yum install tailscale
 ```
 
-::: primary
+::: tip
 
 🔔 **温馨提示**
 
@@ -89,7 +89,7 @@ tailscale ip -4
 
 安装之后，可以启动应用，然后登录自己的账号就可以加入到网络中：
 
-![](https://tendcode.com/cdn/2023/tailscale-ui.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/tailscale-ui.png)
 
  IOS 的离线安装包就没有，这个要安装的话就要切换 App Store 的账号去安装。
 
@@ -97,7 +97,7 @@ tailscale ip -4
 
 设备都加入到网络之后，可以把需要长期使用的设备的过期时间设置成不过期：
 
-![](https://tendcode.com/cdn/2023/tailscale-expiry.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/tailscale-expiry.png)
 
 然后直接使用分配的虚拟局域网IP进行访问即可。
 
