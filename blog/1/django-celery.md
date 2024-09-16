@@ -151,7 +151,7 @@ python manage.py migrate
 
 此时可以看到上面新增的应用创建的表信息，此时可以登录到后台看到两个应用的表。
 
-![](https://tendcode.com/cdn/article/2307/celery-db.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/celery-db.png)
 
 简单介绍一下这些表的作用：
 
@@ -248,7 +248,7 @@ Configuration ->
 
 首先需要添加定时任务的执行策略，比如添加一个一分钟执行一次的策略，可以到Intervals表中添加：
 
-![](https://tendcode.com/cdn/article/2307/celery-inerval.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/celery-inerval.png)
 
 其他策略也是类似的方式，具体使用三钟策略方式的哪个看需求。
 
@@ -256,13 +256,13 @@ Configuration ->
 
 策略添加之后，可以去任务的表`Periodic tasks`中添加一个定时任务，这里就选择我们添加的那个简单的任务
 
-![](https://tendcode.com/cdn/article/2307/celery-task.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/celery-task.png)
 
 这里会让你选择一个任务，可选的任务就是我们在tasks.py中定义的任务，然后还需要选择一个执行策略，选择刚才添加的1分钟执行一次。
 
 任务里面还可以配置执行参数，如果我们的任务函数可以添加参数的话，这里就可以进行配置，格式是json格式。比如我们添加的这个任务就是必须添加参数的，参数是x,y，我们可以在参数里面添加：
 
-![](https://tendcode.com/cdn/article/2307/task-args.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/task-args.png)
 
 添加参数的方式有两种，一种是列表形式，另一种是字典形式，都可以，记住格式是json，后台会自动转化成python的参数。
 
