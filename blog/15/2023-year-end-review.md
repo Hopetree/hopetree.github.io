@@ -78,7 +78,7 @@ LOL手游上个赛季带妹子上了一次王者段位，她的星比我还多�
 
 由于搭建了NAS，我现在每周末都会看电视剧，新的或者老的，反正就是各种剧下载到NAS里面看，使用的媒体软件是`emby`，感觉效果很好，主要是可以记录每个账号的播放记录，还有海报很舒服。
 
-![emby1](https://tendcode.com/cdn/2024/01/emby1-_1_.webp)
+![emby1](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/emby1-_1_.webp)
 
 看完的剧：
 
@@ -103,7 +103,7 @@ LOL手游上个赛季带妹子上了一次王者段位，她的星比我还多�
 
 我买了零刻的mini主机，然后单独买了两个16G内存和一个1T的M2固态，然后后面又加了一个1T的SATA固态专门给NAS用。
 
-![exsi](https://tendcode.com/cdn/2024/01/exsi-_1_.webp)
+![exsi](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/exsi-_1_.webp)
 
 这个mini主机我装了EXSI系统，然后就是运行各种虚拟机，比如用来搭建公司系统的测试环境，还有一些用来调试中间件数据库集群的环境，还有容器环境，最爽的是NAS。我是真没想到一个总花费2000多的主机可以带来这么爽的体验。
 
