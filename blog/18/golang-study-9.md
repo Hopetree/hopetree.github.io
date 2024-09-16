@@ -29,7 +29,7 @@
 
 每个请求的返回数据都是一个标准的 json 格式，里面包含了一个列表，记录的是每个图片的路径和名称以及大小，格式非常简单。
 
-![表情图片网站接口](https://tendcode.com/cdn/2024/02/pic000%20%281%29.png "表情图片网站接口")
+![表情图片网站接口](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/pic000%20%281%29.png "表情图片网站接口")
 
 ### 爬虫思路
 
@@ -190,7 +190,7 @@ func main() {
 
 在 Go 里面解析 json 没有 Python 方便，此时就可以利用我博客的[在线工具](https://tendcode.com/tool/json2go/ "在线工具")，将一个 json 结构转化成 Go 的结构体，这样在进行 json 反序列化的时候就很容易。
 
-![json-to-go](https://tendcode.com/cdn/2024/02/go-json%20%281%29.png "json-to-go")
+![json-to-go](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/go-json%20%281%29.png "json-to-go")
 
 这样就可以得到一个接口返回的数据的结构体，方便后续对结构体的数据进行取值：
 
@@ -238,6 +238,6 @@ type pageResult []struct {
 
 看看爬虫的效果，900多张图片，十几秒就下载完成了，速度很快。
 
-![图片爬虫](https://tendcode.com/cdn/2024/02/pic-download%20%281%29.png "图片爬虫")
+![图片爬虫](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/pic-download%20%281%29.png "图片爬虫")
 
 Go 不愧是高并发闻名的语言，使用 gorountine 写并发爬虫真的是很简单高效。
