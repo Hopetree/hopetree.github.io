@@ -27,7 +27,7 @@ pip install Scrapy-1.5.1-py2.py3-none-any.whl -i http://pypi.douban.com/simple -
 ### 安装报错
 我很清楚的记得，上一次安装的时候使用上面的第一种方式安装的时候会报错，但是使用下载的文件安装的时候不会报错的，但是这一次我试过两种方法都会导致报错，而且报错的内容基本一致，如图：
 
-![安装scrapy报错](https://tendcode.com/cdn/article/181107/install_scrapy_error.png)
+![安装scrapy报错](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/181107/install_scrapy_error.png)
 
 ### 解决办法
 首先，我们很清楚的看到报错的上面有个 error 日志，一般来说这个地方就是错误的原因，这个错误是说缺了 Microsoft Visual C++ 14.0 这个东西，我记得之前也是报这个错，但是我之前使用文件安装的时候没报错的，这次居然不起作用，于是我就开始网上查解决方法。
