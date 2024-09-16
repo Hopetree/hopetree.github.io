@@ -311,7 +311,7 @@ func pkcs7Unpad(src []byte) []byte {
 
 到客户端版本中选择最新的版本，下载跟当前系统匹配的安装包：
 
-![](https://tendcode.com/cdn/2024/04/202404022216040.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404022216040.png)
 
 下载后解压软件包：
 
