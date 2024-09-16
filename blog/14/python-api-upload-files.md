@@ -4,7 +4,7 @@
 
 一般文件上传的接口大概如下，某个字段需要上传文件，比如这里的是file字段
 
-![](https://tendcode.com/cdn/article/121002Snipaste_2021-12-10_16-22-59.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/121002Snipaste_2021-12-10_16-22-59.png)
 
 ## 正常请求
 
