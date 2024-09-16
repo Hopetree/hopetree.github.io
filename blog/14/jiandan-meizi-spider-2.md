@@ -142,7 +142,7 @@ http://jandan.net/ooxx/page-24 is ok
 
 最后去自己输入的图片保存的文件夹中就能看到下载好的图片了
 
-![妹子图](https://tendcode.com/cdn/article/180415/meizitu.png)
+![妹子图](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180415/meizitu.png)
 
 ## 完整代码
 从第一篇到第二篇的完整代码如下，只需要修改最后运行的函数中页码的起始页码数和自己想要保存的文件夹地址，就可以运行爬虫程序了。
