@@ -57,7 +57,7 @@ class PageView(models.Model):
 
 模型存储数据之后的格式如下：
 
-![](https://tendcode.com/cdn/2023/12/blog-views%20%281%29.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/12/blog-views%20%281%29.png)
 
 ### 创建流量统计装饰器
 
@@ -194,7 +194,7 @@ class TimelineView(generic.ListView):
 
 当我将文章和单页面的流量分别记录和分析之后，就可以看到每天每个小时里面文章和单页面的流量分布情况了，效果如下：
 
-![](https://tendcode.com/cdn/2023/12/%E6%AF%8F%E5%B0%8F%E6%97%B6%E8%AE%BF%E9%97%AE%E9%87%8F%E8%B6%8B%E5%8A%BF%E5%9B%BE.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/12/%E6%AF%8F%E5%B0%8F%E6%97%B6%E8%AE%BF%E9%97%AE%E9%87%8F%E8%B6%8B%E5%8A%BF%E5%9B%BE.png)
 
 当然，有了基础数据之后，这里自然也可以对单页面进行流量排序。
 
