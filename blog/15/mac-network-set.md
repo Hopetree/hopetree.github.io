@@ -19,11 +19,11 @@
 
 首先进入网络偏好设置，拿到网线的路由器 IP 信息备用
 
-![路由器](https://tendcode.com/cdn/Snipaste_2021-07-13_12-32-44.png)
+![路由器](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/Snipaste_2021-07-13_12-32-44.png)
 
 然后点击网络列表下面的...点击“设定服务顺序”，按照需要将网外（这里是Wi-Fi）调整到最前面
 
-![网络顺序](https://tendcode.com/cdn/Snipaste_2021-07-13_12-34-18.png "网络顺序")
+![网络顺序](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/Snipaste_2021-07-13_12-34-18.png "网络顺序")
 
 到这里，网络设置就 OK 了，此时可以发现电脑可以正常访问外网了，但是内网是不能访问的，这是正常的，因为内网目前走的是 Wi-Fi，肯定无法走通。
 
