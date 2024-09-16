@@ -8,7 +8,7 @@
 ### 图片下载流程图
 首先，用一张简单的流程图（非规范流程图格式）来展示一下爬取简单网的妹子图的整个流程：
 
-![煎蛋网爬虫流程图](https://tendcode.com/cdn/article/180415/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+![煎蛋网爬虫流程图](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180415/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
 
 ### 流程图解读
 1、爬取煎蛋网的妹子图，我们首先要打开任意一个妹子图的页面，比如 http://jandan.net/ooxx/page-44#comments 然后，我们需要请求这个页面，获取2个关键的信息（后续会说明信息的具体作用），其中第一个信息是每个妹子图片的 hash 值，这个是后续用来解密生成图片地址的关键信息。
