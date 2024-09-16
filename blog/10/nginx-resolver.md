@@ -78,7 +78,7 @@ location ^~ /cdn/ {
 
 进入空间管理的域名管理里面，查看域名详情就可以看到IP协议可以修改：
 
-![七牛云域名管理](https://tendcode.com/cdn/2308/Snipaste_2023-08-04_09-49-59.png)
+![七牛云域名管理](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2308/Snipaste_2023-08-04_09-49-59.png)
 
 我这里就是使用的这个方案解决的问题，算是从源头就解决吧。
 
