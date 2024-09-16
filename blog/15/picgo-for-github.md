@@ -20,7 +20,7 @@
 
 为了方便管理自己的图床文件，可以单独创建一个项目只放静态资源，比如我创建了一个名为 img 的项目：
 
-![](https://tendcode.com/cdn/2024/202409141318014.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409141318014.png)
 
 
 我们只需要在项目中上传图片，然后就可以使用 GitHub 的地址访问图片，并且更重要的是这种图片地址也是可以直接被自己的博客引用的。
@@ -31,11 +31,11 @@
 
 直接访问 GitHub 的配置地址：[https://github.com/settings/tokens?type=beta](https://github.com/settings/tokens?type=beta "https://github.com/settings/tokens?type=beta") 来创建一个 token
 
-![](https://tendcode.com/cdn/2024/202409141324091.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409141324091.png)
 
 可以给这个 token 赋权给所有项目，也可以单独选择赋权给图床这一个项目，然后添加权限点，至少需要将 `Contents` 这里设置成读写。
 
-![](https://tendcode.com/cdn/2024/202409141326369.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409141326369.png)
 
 然后复制保存一下生成的 token 备用。
 
@@ -43,7 +43,7 @@
 
 首先在 PicGo 设置中勾选上 GitHub
 
-![](https://tendcode.com/cdn/2024/202409141329525.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409141329525.png)
 
 然后在 GitHub 配置中添加配置：
 
@@ -54,7 +54,7 @@
 - 设定存储路径：项目中的路径，从项目的首层开始
 - 设定自定义域名：设置代理地址，用来加速访问，格式参考 `https://cdn.jsdelivr.net/gh/Hopetree/img@main`
 
-![](https://tendcode.com/cdn/2024/202409141330095.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409141330095.png)
 
 这里需要注意的就是自定义域名的配置，这个配置就是 GitHub 当做图床的精髓所在。经常访问 GitHub 的都知道，GitHub 现在是越来越难不适用魔法访问了，更别说当做图床来访问，但是很幸运的是，有一些 CDN 服务商提供了专门用来代理访问 GitHub 的专用 CDN，只需要使用这些代理地址就可以快速访问 GitHub 资源。
 
