@@ -202,7 +202,7 @@ jobs:
 
 ### [2. Quick Reference](https://github.com/jaywcjlove/reference)
 
-![reference](https://tendcode.com/cdn/article/2306/reference.png "reference")
+![reference](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2306/reference.png "reference")
 
 项目介绍：为开发人员分享快速参考备忘清单【速查表】。该项目其实就是一个命令速查网站，也可以当作一个 wiki 网站使用，作者收集了很多常用的编程命令和工具的常用命令。
 
@@ -215,4 +215,4 @@ jobs:
 
 项目体验：直接看效果吧！很多人的 GitHub 显示的项目统计图就是这个项目生成的。
 
-![GitHub stats](https://tendcode.com/cdn/article/2306/github-me-start.png)
+![GitHub stats](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2306/github-me-start.png)
