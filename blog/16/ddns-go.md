@@ -58,13 +58,13 @@ Usage of ./ddns-go:
 
 这里直接选择DNS服务商阿里云，然后点击创建AccessKey就进入到了阿里云的创建密钥的页面，自定登录创建即可，然后输入到页面的输入框中就行。
 
-![](https://tendcode.com/cdn/2023/10/ddns-1.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/ddns-1.png)
 
 ### 添加IPv6域名解析
 
 由于我家里的服务器没有公网IPv4，但是有公网IPv6，所以直接不开启IPv4的配置，而是开启IPv6的配置。
 
-![](https://tendcode.com/cdn/2023/10/ddns-2.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/ddns-2.png)
 
 这里直接使用网卡获取就能拿到公网IPv6，此时可以去查看一下确认一下。
 
@@ -87,7 +87,7 @@ Usage of ./ddns-go:
 
 检查本地是否支持IPv6很简单，只需要访问[IPv6的检查网站](https://www.test-ipv6.com/index.html.zh_CN)就能知道，本地支持IPv6的返回如下：
 
-![](https://tendcode.com/cdn/2023/10/ddns-3.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/ddns-3.png)
 
 ### 后续维护
 
