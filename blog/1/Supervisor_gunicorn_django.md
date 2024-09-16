@@ -36,7 +36,7 @@ pip install supervisor
 
 ### 生成Supervisor配置文件
 
-::: primary 提示
+::: tip 提示
 
 也可以使用默认的配置，默认的配置文件为 `/etc/supervisord.conf`
 :::
