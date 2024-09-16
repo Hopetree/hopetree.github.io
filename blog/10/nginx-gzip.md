@@ -10,7 +10,7 @@
 
 下面是现场的内网外访问路径的架构简图：
 
-![网络拓扑](https://tendcode.com/cdn/2024/01/%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91.webp)
+![网络拓扑](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91.webp)
 
 ### 问题现象
 
@@ -32,13 +32,13 @@
 
 可以打开任意一个请求资源，查看请求头中的 `Content-Encoding`是否为`gzip`。
 
-![请求头查看gzip](https://tendcode.com/cdn/2024/01/gzip%E8%AF%B7%E6%B1%82%E5%A4%B4_1.webp "请求头查看gzip")
+![请求头查看gzip](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/gzip%E8%AF%B7%E6%B1%82%E5%A4%B4_1.webp "请求头查看gzip")
 
 **第二种方式：查看资源大小**
 
 在请求的配置里面开启“大请求行”就可以看到每个请求资源的请求大小和实际大小，比如下面的css文件，可以看到请求大小是23.8kb，而真实大小是156kb，这就是有gzip压缩的结果。
 
-![gzip资源大小](https://tendcode.com/cdn/2024/01/gzip%E8%B5%84%E6%BA%90%E5%A4%A7%E5%B0%8F.webp "gzip资源大小")
+![gzip资源大小](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/gzip%E8%B5%84%E6%BA%90%E5%A4%A7%E5%B0%8F.webp "gzip资源大小")
 
 从这个大小我们也可以看到压缩前后的差别是很大的。
 
@@ -74,25 +74,25 @@ gzip_vary on;
 
 #### 1. 不开启gzip的请求效果
 
-![不开启gzip](https://tendcode.com/cdn/2024/01/gzip%E6%B5%8B%E8%AF%951%20%281%29.png)
+![不开启gzip](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/gzip%E6%B5%8B%E8%AF%951%20%281%29.png)
 
 这里可以看到真实大小和请求大小都是4M，的确是没有压缩过，然后请求时间这里总时间是2.33秒，而服务器请求时间是127毫秒，那也就是说文件下载的时间花了2.2秒。
 
 再看一下瀑布流的时间数据：
 
-![gzip瀑布流](https://tendcode.com/cdn/2024/01/gzip%E7%80%91%E5%B8%83%E6%B5%81%20%281%29.png "gzip瀑布流")
+![gzip瀑布流](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/gzip%E7%80%91%E5%B8%83%E6%B5%81%20%281%29.png "gzip瀑布流")
 
 这里可以明显看到，下载内容的时间花了2.2秒，这个就是因为资源的大小相对网速是比较大的，所以需要花费客户端很多的时间，比较影响用户体验。
 
 #### 2. 开启gzip后的请求效果
 
-![开启gzip](https://tendcode.com/cdn/2024/01/gzip%E6%B5%8B%E8%AF%952%20%281%29.png "开启gzip")
+![开启gzip](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/gzip%E6%B5%8B%E8%AF%952%20%281%29.png "开启gzip")
 
 这里可以看到文件请求大小只有50kb，而总时间只有382毫秒了，虽然服务器的请求时间增加了一些，但是整体请求比不开启gzip是提升巨大的。
 
 看看瀑布流数据：
 
-![gzip瀑布流](https://tendcode.com/cdn/2024/01/gzip%E7%80%91%E5%B8%83%E6%B5%812%20%281%29.png "gzip瀑布流")
+![gzip瀑布流](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/gzip%E7%80%91%E5%B8%83%E6%B5%812%20%281%29.png "gzip瀑布流")
 
 下载时间只花了184毫秒，跟之前的2.2秒相比，提升了几个档次。
 
