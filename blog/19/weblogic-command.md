@@ -106,7 +106,7 @@ Target state: stop completed on Server AdminServer
 
 此时应用状态会变成 “准备就绪”。
 
-![](https://tendcode.com/cdn/2024/04/202406041511314.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406041511314.png)
 
 ### 启动应用
 
@@ -157,7 +157,7 @@ weblogic.Deployer invoked with options:  -adminurl t3://192.168.0.212:7001 -user
 
 具体被锁的地方见下图：
 
-![](https://tendcode.com/cdn/2024/04/202406041531282.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406041531282.png)
 
 ### 卸载应用
 
@@ -204,7 +204,7 @@ fi
 
 执行成功后，配置状态变成如下，且此时再执行应用的重部署就可以成功了：
 
-![](https://tendcode.com/cdn/2024/04/202406041537015.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406041537015.png)
 
 ### 锁定配置
 
@@ -243,7 +243,7 @@ fi
 
 问题描述：有个系统在使用命令行对应用进行重部署的时候报错，直接导致 weblogic 异常停止，大概意思是内存溢出了，部分报错信息如下：
 
-![](https://tendcode.com/cdn/2024/04/202406041647933.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406041647933.png)
 
 问题分析：从系统层面排查问题肯定不现实，直接猜测是 weblogic 分配的内存不够用。
 
@@ -251,7 +251,7 @@ fi
 
 先看一下调整之前的默认内存分配，实在是太小了，最小内存是 256m，最大也才 512m。
 
-![](https://tendcode.com/cdn/2024/04/202406041651707.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406041651707.png)
 
 直接在启动脚本的同目录中找到 setDomainEnv.sh 脚本，并在最后追加一行：
 
@@ -266,4 +266,4 @@ MEM_ARGS="-Xms256m -Xmx2048m"
 
 修改完成后，重启 weblogic 服务，再次查看内存规划：
 
-![](https://tendcode.com/cdn/2024/04/202406041656117.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202406041656117.png)
