@@ -6,7 +6,7 @@
 
 这些错误请求就像下面这样：
 
-![网站扫描](https://tendcode.com/cdn/2024/03/202403190850454.png)
+![网站扫描](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/202403190850454.png)
 
 这些就是某些黑产使用网站扫描工具干的，就是在无差别的进行扫描，看你的网站是否有漏洞可以利用。
 
@@ -50,7 +50,7 @@ location ~* \.php$ {
 
 可以看一下浏览器里面的请求效果:
 
-![Gzip Bomb](https://tendcode.com/cdn/2024/03/202403190850453.png)
+![Gzip Bomb](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/202403190850453.png)
 
 可以看到在浏览器的内存占用里面是超过了1G的，这是因为浏览器会自动解压带有gzip请求头的内容。
 
