@@ -14,7 +14,7 @@
 
 现在都是使用的 jdk8，官方 jdk8 安装包的下载地址是 [jdk8 安装地址](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)，可以选择 8u211 或者 8u212 的版本，选择下载的时候需要勾选官方的同意协议，然后选择下载，下载需要登陆官方网站，所以需要注册一个账号登陆才能下载。
 
-![官方jdk8下载](https://tendcode.com/cdn/article/190710/tendcode_2019-07-10_21-37-42.png)
+![官方jdk8下载](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190710/tendcode_2019-07-10_21-37-42.png)
 
 这里我下载之后的包是 jdk-8u211-linux-x64.tar.gz
 
@@ -63,21 +63,21 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.211-b12, mixed mode)
 
 安装完成之后可以看到插件管理中已经按照的插件中有这个：
 
-![SSH Slaves](https://tendcode.com/cdn/article/190710/tendcode_2019-07-10_22-00-58.png)
+![SSH Slaves](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190710/tendcode_2019-07-10_22-00-58.png)
 
 ### 添加凭证
 插件安装之后需要在 Jenkins 上面添加一个凭证，也就是用来登陆从节点的账号。凭证可以选择密码登陆也可以选择密钥，这里我选择的密码登陆因为我的虚拟机是密码，之前 GitHub 那篇是密码登陆。
 
-![user](https://tendcode.com/cdn/article/190710/tendcode_2019-07-10_22-39-34.png)
+![user](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190710/tendcode_2019-07-10_22-39-34.png)
 
 ### 配置从节点
 插件和凭证都准备好了就可以开始配置一个从节点了，基本配置可以看截图，主要是启动方式要选择 Launch agent agents via SSH，而且这个选项只有在安装了插件才会有。
 
-![ssh](https://tendcode.com/cdn/article/190710/tendcode_2019-07-11_23-05-03.png)
+![ssh](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190710/tendcode_2019-07-11_23-05-03.png)
 
 基本配置一目了然，然后还要配置一个高级配置项，这个里面比较重要的是 java 路径，这个也就是为什么要从节点安装 java 环境的原因。
 
-![java](https://tendcode.com/cdn/article/190710/tendcode_2019-07-10_23-00-17.png)
+![java](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190710/tendcode_2019-07-10_23-00-17.png)
 
 其他的设置就看个人需求了，标签很重要，这个必须填写至少一个标签，因为这个是任务选择执行机的一个方式。
 
