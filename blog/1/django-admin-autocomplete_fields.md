@@ -10,7 +10,7 @@
 
 具体可以看下面这种图，这里我要给一个文章绑定专题，由于专题数量非常多，导致我要找到想绑定的专题非常困难，试想一下，如果我的专题数量有500个会是什么情况……
 
-![](https://tendcode.com/cdn/article/2307/Snipaste_2023-07-18_10-25-49.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/Snipaste_2023-07-18_10-25-49.png)
 
 ## 使用autocomplete_fields
 
@@ -47,7 +47,7 @@ class ArticleAdmin(admin.ModelAdmin):
 
 看一下效果：
 
-![](https://tendcode.com/cdn/article/2307/Snipaste_2023-07-18_10-26-54.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/Snipaste_2023-07-18_10-26-54.png)
 
 这里已经出现了搜索框，可以通过搜索条件来过滤选项，而且可以搜索的规则也是自己可以定义的字读，需求完美完成。
 
