@@ -191,28 +191,28 @@ Gin 服务启动方式：编译成二进制文件直接运行即可。
 
 ### jmeter 聚合报告
 
-![jmeter-500](https://tendcode.com/cdn/2024/02/jmeter-500.png "jmeter-500")
+![jmeter-500](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/jmeter-500.png "jmeter-500")
 
 
 ### Flask 服务器压力
 
-![flask-500](https://tendcode.com/cdn/2024/02/500-flask.png "flask-500")
+![flask-500](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/500-flask.png "flask-500")
 
 ### FastAPI 服务器压力
 
-![fastapi-500](https://tendcode.com/cdn/2024/02/fastapi-500.png "fastapi-500")
+![fastapi-500](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/fastapi-500.png "fastapi-500")
 
 ### Tornado 服务器压力
 
-![tornado-500](https://tendcode.com/cdn/2024/02/tornado-500.png "tornado-500")
+![tornado-500](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/tornado-500.png "tornado-500")
 
 ### Sanic 服务器压力
 
-![sanic-500](https://tendcode.com/cdn/2024/02/sanic-500.png "sanic-500")
+![sanic-500](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/sanic-500.png "sanic-500")
 
 ### Gin 服务器压力
 
-![gin-500](https://tendcode.com/cdn/2024/02/gin-500.png "gin-500")
+![gin-500](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/gin-500.png "gin-500")
 
 这里可以看到，Gin 对于服务器的压力很低，CPU 都还没有利用完，还有很大的利用空间。
 
