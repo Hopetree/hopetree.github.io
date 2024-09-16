@@ -417,7 +417,7 @@ izone_web     gunicorn izone.wsgi -b 0.0 ...   Up
 去看看服务器上面是不是已经可以运行了？
 下图是我的虚拟机运行的效果
 
-![izone-docker](https://tendcode.com/cdn/article/190121/web.png)
+![izone-docker](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190121/web.png)
 
 ## 迁移和升级
 ### 升级代码
