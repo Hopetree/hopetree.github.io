@@ -90,7 +90,7 @@ net start ServiceName
 
 下载后解压放到一个目录里面，然后把里面的 nssm.exe 所在目录添加到环境变量中:
 
-![nssm](https://tendcode.com/cdn/2024/04/202404031632143.png)
+![nssm](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404031632143.png)
 
 ### 创建启动程序的 bat
 
@@ -123,4 +123,4 @@ SERVICE_RUNNING
 
 此时也可以查看到自己服务管理里面已经有这个服务，可以在这里进行启停操作：
 
-![gomonitor](https://tendcode.com/cdn/2024/04/202404031632142.png)
+![gomonitor](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404031632142.png)
