@@ -34,7 +34,7 @@ sudo passwd weblogic
 
 下载的时候选择 `Generic` 的：
 
-![](https://tendcode.com/cdn/2024/04/202405261605614.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202405261605614.png)
 
 下载后可以得到一个类似这种的压缩包：fmw_12.2.1.4.0_wls_lite_Disk1_1of1.zip
 
@@ -371,7 +371,7 @@ sh startWebLogic.sh
 然后就可以访问控制台，输入地址：http://ip:7001/console 就可以登录。
 
 
-![](https://tendcode.com/cdn/2024/04/202405261732583.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202405261732583.png)
 
 
 验证没问题后，可以在后台启动服务：
