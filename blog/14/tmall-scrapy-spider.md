@@ -24,7 +24,7 @@
 
 首先，通过将网页设置成手机浏览模式，天猫的域名就会自动切换成手机接口。进入某个天猫店铺，然后选择“所有商品”，然后模拟手机的滑动屏幕操作，刷新屏幕，这样就能看到网站调用了什么接口，具体分析过程可以看截图：
 
-![分析](https://tendcode.com/cdn/article/181112/tianmao.png)
+![分析](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/181112/tianmao.png)
 
 拿到了接口之后，事情并没有完，还需要分析接口的具体构成，这个分析过程就要靠经验了，这里不做过多的阐述。
 
@@ -155,7 +155,7 @@ scrapy 的具体的使用方法其实看官方的一些文档会更加容易理�
 
 ### 信息展示
 爬到的信息保存为 csv 的表格形式，看截图：
-![信息](https://tendcode.com/cdn/article/181112/muji.png)
+![信息](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/181112/muji.png)
 
 ## 一个脚本分享
 为了这个文章里面输出一个目录树，我单独写了一个脚本来生成目录树。虽然说 Windows 的命令行有 `tree` 可以直接输出目录树，但是并不能达到我想要屏幕指定目录文件的要求，所以还是自己动手丰衣足食吧！
