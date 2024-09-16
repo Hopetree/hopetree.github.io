@@ -10,13 +10,13 @@
 
 首先通过一张截图来看翻译加载的请求链接：
 
-![有道翻译请求链接](https://tendcode.com/cdn/article/180415/youdao01.png)
+![有道翻译请求链接](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180415/youdao01.png)
 
 通过多次输入新的翻译内容，通过 F12 查看 XHR 中的异步加载的内容，可以看到每次都有一个新的请求产生，所以可以初步预测这个链接就是请求的链接。
 
 继续查看请求的结果信息：
 
-![有道翻译请求结果](https://tendcode.com/cdn/article/180415/youdao02.png)
+![有道翻译请求结果](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180415/youdao02.png)
 
 查看每个请求的结果内容，果然能看到翻译的结果，所以现在可以肯定这个链接就是有道翻译的请求地址了。
 
@@ -30,11 +30,11 @@
 
 可以根据截图来看一下这个链接的这些参数，首先是请求参数：
 
-![有道翻译参数1](https://tendcode.com/cdn/article/180415/youdao011.png)
+![有道翻译参数1](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180415/youdao011.png)
 
 然后是传递的参数 data:
 
-![有道翻译参数2](https://tendcode.com/cdn/article/180415/youdao03.png)
+![有道翻译参数2](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180415/youdao03.png)
 
 ### 对比参数
 可以通过多次重复提交要翻译的信息来查看每次参数的变化情况，最后能得到一个大概的结论，就是传递的 data 参数中除了需要的翻译的信息外，还有2个参数是会每次都变动的，它们就是 salt 和 sign。
@@ -205,4 +205,4 @@ You are my little apple, and I am your beauty.
 
 ```
 爬虫运行的截图效果：
-![youdao-spider](https://tendcode.com/cdn/article/180512/youdaospider.png)
+![youdao-spider](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180512/youdaospider.png)
