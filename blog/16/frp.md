@@ -24,7 +24,7 @@ frp 主要由 客户端(frpc) 和 服务端(frps) 组成，服务端通常部署
 
 看一下frp的架构
 
-![frp](https://tendcode.com/cdn/article/2307/frp.png "frp")
+![frp](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/2307/frp.png "frp")
 
 ## 服务端搭建
 
