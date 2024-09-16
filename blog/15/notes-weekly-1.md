@@ -11,14 +11,14 @@
 
 ### 1、[Fiddler Everywhere](https://juejin.cn/post/6888863697129701389)
 
-![Fiddler Everywhere](https://tendcode.com/cdn/181c751122594c52aa9603fa49760319_tplv-k3u1fbpfcp-watermark.png)
+![Fiddler Everywhere](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/181c751122594c52aa9603fa49760319_tplv-k3u1fbpfcp-watermark.png)
 
 多平台通用的免费抓包工具，功能跟fiddler类似，同时结合了postman的能力。
 
 
 ### 2、[Playwright](https://juejin.cn/post/6906866546094637064)
 
-![Playwright](https://tendcode.com/cdn/91da3a38f52f4c598fd34017b7139b1d_tplv-k3u1fbpfcp-watermark.gif)
+![Playwright](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/91da3a38f52f4c598fd34017b7139b1d_tplv-k3u1fbpfcp-watermark.gif)
 
 Playwright是一个强大的Python库，仅用一个API即可自动执行Chromium、Firefox、WebKit等主流浏览器自动化操作，并同时支持以无头模式、有头模式运行。
 
@@ -26,7 +26,7 @@ Playwright提供的自动化技术是绿色的、功能强大、可靠且快速�
 
 ### 3、[FinalShell](https://mp.weixin.qq.com/s/YH--5AvbJ-czA6AuliFVmw)
 
-![FinalShell](https://tendcode.com/cdn/3c8b5603e0155f9b.webp)
+![FinalShell](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/3c8b5603e0155f9b.webp)
 
 FinalShell是一款免费的国产的集SSH工具、服务器管理、远程桌面加速的良心软件,同时支持Windows,macOS,Linux，它不单单是一个SSH工具，完整的说法应该叫一体化的服务器/网络管理软件。
 
@@ -34,7 +34,7 @@ FinalShell在很大程度上可以免费替代XShell，是国产中不多见的�
 
 ### 4、[kafka-map](https://mp.weixin.qq.com/s/BgAMA42LnhenreYpahmVLw)
 
-![kafka-map](https://tendcode.com/cdn/eb4c3dd0fe8bf145.png)
+![kafka-map](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/eb4c3dd0fe8bf145.png)
 
 kafka map是使用Java11和React开发的一款kafka可视化工具。
 
