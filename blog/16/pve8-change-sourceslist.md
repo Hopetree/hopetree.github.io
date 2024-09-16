@@ -6,7 +6,7 @@
 
 更新之后的效果：
 
-![](https://tendcode.com/cdn/2024/04/202404071656843.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404071656843.png)
 
 ## 基本信息
 
