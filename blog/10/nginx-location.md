@@ -123,7 +123,7 @@ location ~* \.(css|js)\.map$ {
 
 我经过咨询和学习，对location这里的规则进行了一个总结，并且画了一个流程图来体现：
 
-![]( /cdn/2023/12/Nginx%E9%85%8D%E7%BD%AElocation%E8%A7%84%E5%88%99.png)
+![](https://tendcode.com/cdn/2023/12/Nginx%E9%85%8D%E7%BD%AElocation%E8%A7%84%E5%88%99.png)
 
 有如下结论：
 
