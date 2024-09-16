@@ -162,15 +162,15 @@ docker-compose up -d
 
 管理用户的用户名为 `CN=admin,DC=tendcode,DC=com` 密码为 `admin@123`，具体要看上面设置的环境变量，用户名里面CN是默认的admin，DC就是域名。
 
-![openldap](https://tendcode.com/cdn/2024/04/202408161120111.png)
+![openldap](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202408161120111.png)
 
 ### 创建 ou
 
 上面的属性有介绍，`ou` 是组织部门的概念，可以表示公司-部门-组等层级，创建一个组织部门如下：
 
-![ldap-create-ou](https://tendcode.com/cdn/2024/04/202408161127129.png)
+![ldap-create-ou](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202408161127129.png)
 
-![ldap-create-ou](https://tendcode.com/cdn/2024/04/202408161128461.png)
+![ldap-create-ou](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202408161128461.png)
 
 然后输入组织名称，后面还要提交一下就可以了。组织部门可以创建很多层级，按照组织架构创建即可。
 
@@ -194,19 +194,19 @@ userpassword: npc@123
 
 直接提交后就可以创建用户
 
-![](https://tendcode.com/cdn/2024/04/202408161317094.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202408161317094.png)
 
-![](https://tendcode.com/cdn/2024/04/202408161320030.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202408161320030.png)
 
 ### 查询数据
 
 这里可以根据条件查询数据，组织和用户都是数据，可以根据不同条件查询，比如我这里查询所有用户，可以设置调试为 `objectClass=person`：
 
-![](https://tendcode.com/cdn/2024/04/202408161323474.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202408161323474.png)
 
 也可以按照具体的 Base DN 查询，获取某个组织下面所有数据（包括组织和用户），比如这里查询 `ou=wuhan,dc=tendcode,dc=com` 下面所有数据：
 
-![](https://tendcode.com/cdn/2024/04/202408161325366.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202408161325366.png)
 
 **真实需求**：获取某个子公司下面所有部门，然后获取每个部门下所有用户。
 
