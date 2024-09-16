@@ -12,7 +12,7 @@ GoLand 相对于 Go 就像 Pycharm 相对于 Python 一样，但是很遗憾的�
 
 下载地址：[https://www.jetbrains.com.cn/go/download/other.html](https://www.jetbrains.com.cn/go/download/other.html "https://www.jetbrains.com.cn/go/download/other.html")
 
-![GoLand 2021.1.3 版本下载](https://tendcode.com/cdn/2024/01/goland-download-1.png "goland 下载")
+![GoLand 2021.1.3 版本下载](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/goland-download-1.png "goland 下载")
 
 ## 安装插件
 
@@ -30,7 +30,7 @@ IDE Eval Reset 插件是一个可以将 JetBrains IDEs 的试用期无限重置�
 
 添加了插件库之后，可以在插件的 Marketplace 中搜索 IDE Eval Reset 并进行安装。
 
-![IDE Eval Reset 安装](https://tendcode.com/cdn/2024/01/Snipaste_2024-01-23_09-44-49%20%281%29.png "1")
+![IDE Eval Reset 安装](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/Snipaste_2024-01-23_09-44-49%20%281%29.png "1")
 
 **step 3：使用 IDE Eval Reset**
 
@@ -38,7 +38,7 @@ IDE Eval Reset 安装好之后，可以使用一下，将 GoLand 的试用期到
 
 首先点击 GoLand 的帮助，此时可以看到最下面有个 Eval Reset，然后点击 Eval Reset，就可以看到下面如图的显示，这里可以看到 GoLand 的证书的到期时间，此时执行一下 Reset 就可以将到期时间重置为一个月后。
 
-![IDE Eval Reset使用](https://tendcode.com/cdn/2024/01/Snipaste_2024-01-23_09-49-19%20%281%29.png "4")
+![IDE Eval Reset使用](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/Snipaste_2024-01-23_09-49-19%20%281%29.png "4")
 
 这里勾选自动重置，只要每个月都使用 GoLand 就可以保证一直可以试用。
 
@@ -58,7 +58,7 @@ IDE Eval Reset 安装好之后，可以使用一下，将 GoLand 的试用期到
 
 进入插件的设置中，选择“Install Plugin from Disk.”，也就是从磁盘安装插件，然后选择下载好的插件包文件（应该是一个jar包）即可。
 
-![Chinese (Simplified) Language Pack](https://tendcode.com/cdn/2024/01/Chinese%20%28Simplified%29%20Language%20Pack%20%281%29.png "d34")
+![Chinese (Simplified) Language Pack](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/01/Chinese%20%28Simplified%29%20Language%20Pack%20%281%29.png "d34")
 
 **step 3：重启 GoLand**
 
@@ -74,7 +74,7 @@ Go 安装包下载地址：[https://go.dev/dl/](https://go.dev/dl/ "https://go.d
 
 选择自己系统对应的包即可，我比较喜欢 tar.gz 的包，直接下载后解压，而不是使用执行包，M1 芯片的使用 go1.21.7.darwin-arm64.tar.gz 包。
 
-![go](https://tendcode.com/cdn/2024/02/go1.21.7%20%281%29.png "go")
+![go](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/02/go1.21.7%20%281%29.png "go")
 
 然后下载后将安装包放到 /usr/local 目录下面进行解压：
 
