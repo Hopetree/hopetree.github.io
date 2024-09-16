@@ -17,7 +17,7 @@ Redis哨兵模式是一种特殊的模式，首先Redis提供了哨兵的命令�
 
 这个是搭建之后的架构：
 
-![](https://tendcode.com/cdn/2023/10/redis-sentinel%20%281%29.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/redis-sentinel%20%281%29.png)
 
 ## redis主备搭建
 
