@@ -6,7 +6,7 @@ MongoDB的集群部署方式主要是三种，分别是主从备份（Master - S
 
 副本集（Replica Set）模式，简单来说就是集群当中包含了多份数据，保证主节点挂掉了，备节点能继续提供数据服务，提供的前提就是数据需要和主节点一致。如下图：
 
-![mongodb副本集（Replica Set）模式](https://tendcode.com/cdn/2023/10/mongo-replica-set.png)
+![mongodb副本集（Replica Set）模式](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/mongo-replica-set.png)
 
 Mongodb(M)表示主节点，Mongodb(S)表示备节点，Mongodb(A)表示仲裁节点。主备节点存储数据，仲裁节点不存储数据。客户端同时连接主节点与备节点，不连接仲裁节点。
 
@@ -68,7 +68,7 @@ sudo yum install libcurl openssl
 
 根据自己的需要选择要下载的版本、平台，然后选择下载为tgz格式并复制下载链接
 
-![](https://tendcode.com/cdn/2023/10/mongo-pkg%20%281%29.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/10/mongo-pkg%20%281%29.png)
 
 然后登录到服务器下载安装包
 
