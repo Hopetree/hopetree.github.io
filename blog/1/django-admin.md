@@ -137,20 +137,20 @@ fieldsets = (
 ```
 这个属性其实就是将模型的字段按照给定的方式分类排列，这样相当于把一些相似的字段归类，方便查看，例如上面这个的后台展示效果如图：
 
-![fieldsets](https://tendcode.com/cdn/article/180426/fieldset.png)
+![fieldsets](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180426/fieldset.png)
 
 - `list_display` 属性是在后台显示模型实例的列表的时候需要显示的模型的字段，字段的顺序根据给的顺序来列出，如图：
 
-![list_display](https://tendcode.com/cdn/article/180426/list_display.png)
+![list_display](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180426/list_display.png)
 
 - `list_display_links` 这个属性是给 `list_display` 中展示的字段添加 `<a>` 标签属性的，也就是说添加了这个属性的字段都可以点击进入模型实例的内容页，如上图中所示，我给 title 这个字段就添加了这个属性。不设置这个字段的时候默认是第一个字段添加 `<a>` 标签。
 - `list_filter` 属性是过滤器，可以用来筛选，设置了这个之后可以在后台的侧边栏看到可以用来筛选的字段的列表，效果如图所示：
 
-![list_filter](https://tendcode.com/cdn/article/180426/list_filter.png)
+![list_filter](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180426/list_filter.png)
 
 - `filter_horizontal` 这个属性非常有用，它可以给模型中的多选字段添加左右选框，方便进行字段的添加，效果如图所示：
 
-![filter_horizontal](https://tendcode.com/cdn/article/180426/filter_horizontal.png)
+![filter_horizontal](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180426/filter_horizontal.png)
 
 其他的属性可以看注释，一般常用的就是上面介绍的属性了。
 
@@ -170,7 +170,7 @@ show_content.short_description = '评论内容'
 ```
 上面的代码定义了一个函数，这个函数返回模型的一个字段的一部分内容。定义了这个函数之后，可以使用 `.short_description` 来给这个自定义的字段添加一个字段名称，然后就可以把这个函数当做一个字段添加到 `list_display` 中展示到后台了，展示的效果如图：
 
-![comment](https://tendcode.com/cdn/article/180426/comment.png)
+![comment](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/180426/comment.png)
 
 ### 重写函数
 除了可以重新定义默认的属性，还可以重写管理类的函数，这个很好理解，如下代码我重新定义了一下用户的查看权限：
