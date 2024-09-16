@@ -8,7 +8,7 @@ Python 在自动化测试方面也是非常好用的语言，平时我的工作�
 
 首先，搭建环境之前，我先来使用一个我随便画的一个不标准的流程图来说明一下我所理解的环境中各个工具的作用，这样可以避免去搭建多余的环境，也不会造成环境很乱。
 
-![appium环境搭建](https://tendcode.com/cdn/article/20200705python-appium.jpg "appium环境搭建")
+![appium环境搭建](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705python-appium.jpg "appium环境搭建")
 
 结合流程图，我来说明一下搭建环境必要的一些工具及每个工具的作用：
 
@@ -32,7 +32,7 @@ Java HotSpot(TM) Client VM (build 25.144-b01, mixed mode)
 
 Java 环境搭建好之后就可以下载 Android-SDK 包，参考下载地址(网站中的 SDK Tools) [https://www.androiddevtools.cn/#](https://www.androiddevtools.cn/#) 下载之后放到本地任意目录（不要有中文名，防止未知错误）然后解压即可。解压之后，需要点击 SDK Manager.exe 运行，会得到一个安装各种工具的界面，这个时候就到了选择工具的关键时刻了。这个里面必须安装的工具有两项，看截图
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705tendcode_2020-07-05_19-10-50.png "Android-SDK-tool")
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705tendcode_2020-07-05_19-10-50.png "Android-SDK-tool")
 
 这两个工具是必须安装的，因为里面会包含之前那个流程图里面提到的 ADB 工具，这个工具是最关键的工具绝对不能缺少。如果你要使用 Android-SDK 的模拟器功能，那么你除了安装上述两个工具外，还需要安装至少一个版本的镜像，然后把最后那个工具目录里面的工具全部选取，由于我试过 Android-SDK 自带的模拟器，简直卡的怀疑人生，所以我果断放弃，直接使用其他模拟器，所以这里我只安装了我提到的必装两项。
 
@@ -40,11 +40,11 @@ Java 环境搭建好之后就可以下载 Android-SDK 包，参考下载地址(�
 
 首先添加一个新的环境变量 ANDROID_HOME，值就是自己的 Android-SDK 目录，如下
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705/tendcode_2020-07-05_19-25-28.png)
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705/tendcode_2020-07-05_19-25-28.png)
 
 然后在环境变量 Path 中添加两个目录路径，如下
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705/tendcode_2020-07-05_19-28-36.png)
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705/tendcode_2020-07-05_19-28-36.png)
 
 添加完环境变量之后，可以来验证 Android-SDK 工具是否搭建好，直接在任意目录使用命令行执行 adb 即可，可以看到如下输入即可
 
@@ -63,7 +63,7 @@ Installed as D:\Program Files (x86)\android-sdk_r24.4.1-windows\android-sdk-wind
 
 模拟器的安装就不用多说了，无脑下一步即可，然后创建一个手机出来，这个时候有个关键步骤不能少，那就是开启 ADB 链接，如果不开启，那 ADB 会链接不上的。
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705/tendcode_2020-07-05_19-44-10.png)
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705/tendcode_2020-07-05_19-44-10.png)
 
 当你运行一个模拟器之后，可以使用 adb 的命令查看是否连接上了当前模拟器，命令为 `adb devices` ，输出应该是如下
 
@@ -81,7 +81,7 @@ appium 工具是一个安装包，建议使用 GitHub 地址下载安装，地�
 
 直接按照提示按照完成即可，安装完成之后桌面会多一个紫色的启动图标，可以启动服务，界面如下
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705/tendcode_2020-07-05_19-35-30.png)
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705/tendcode_2020-07-05_19-35-30.png)
 
 启动服务没有问题即可。
 
@@ -91,7 +91,7 @@ appium 工具是一个安装包，建议使用 GitHub 地址下载安装，地�
 
 启动 Appium 服务，然后创建一个连接，如图
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705/tendcode_2020-07-05_19-53-48.png)
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705/tendcode_2020-07-05_19-53-48.png)
 
 然后添加三个参数，platformName 为 Android 是固定的，因为我们这是 Android 自动化测试，platformVersion 参数可以通过命令查询得到，如下：
 
@@ -108,11 +108,11 @@ List of devices attached
 emulator-5554   device
 ```
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705/tendcode_2020-07-05_19-57-24.png)
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705/tendcode_2020-07-05_19-57-24.png)
 
 填完之后，可以启动链接，如果没有报错的话，就可以得到一个调试界面了，这个界面就是可以用来定位 APP 中元素的，类似于浏览器的 F12 功能。
 
-![Android-SDK-tool](https://tendcode.com/cdn/article/20200705/tendcode_2020-07-05_20-01-03.png)
+![Android-SDK-tool](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/20200705/tendcode_2020-07-05_20-01-03.png)
 
 看到没有，这个会映射当前的手机的界面，这样就可以进行调试了，其实到这里，我们的 appium 环境基本就算完成了，剩余的就是跟自己使用的编程语言进行连接的事情了。
 
