@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  ignoreDeadLinks: true,
   lang: 'zh-CN',
   title: "我的文档",
   description: "A VitePress Site",
@@ -14,7 +15,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-09-16 22:06:36
+    // update date:2024-09-17 02:02:02
     sidebar: {
   "/blog/1/": [
     {
