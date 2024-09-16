@@ -64,7 +64,7 @@ Swap:          2047           1        2046
 
 经常使用 docker 的都知道，大部分的基础镜像多有很多个版本，比如 python 镜像，不同的基础镜像的大小也是不同的。
 
-![python](https://tendcode.com/cdn/2024/04/202404211620302.png)
+![python](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/04/202404211620302.png)
 
 一般镜像会有三种基本的版本：
 
