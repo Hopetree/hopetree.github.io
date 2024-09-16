@@ -18,7 +18,7 @@
 
 比如看到如下一个项目的包：
 
-![pkg](https://tendcode.com/cdn/2024/03/202404021656846.png)
+![pkg](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/202404021656846.png)
 
 一般软件包都是会提供各种平台的版本，显然这不是靠作者自己去每个平台打包出来的，这种基本都是依靠 Github Actions 实现的。
 
@@ -302,11 +302,11 @@ jobs:
 
 首先去你的 Github 的个人设置中创建一个 Token: [https://github.com/settings/tokens](https://github.com/settings/tokens "https://github.com/settings/tokens")  创建的时候选择权限我猜测应该勾选上 packages
 
-![](https://tendcode.com/cdn/2024/03/202404021726452.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/202404021726452.png)
 
 然后进入项目的配置，在项目中添加 token：
 
-![](https://tendcode.com/cdn/2024/03/202404021728895.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/202404021728895.png)
 
 ### 4. 创建并推送 tag
 
@@ -314,7 +314,7 @@ jobs:
 
 下面是我的项目打包出来的：
 
-![](https://tendcode.com/cdn/2024/03/202404021744972.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/202404021744972.png)
 
 ## 相关文档
 
