@@ -152,7 +152,7 @@ print(dir(accounts))
 ### 邮箱状态查看
 可以在个人资料中查看到当前邮箱是否验证，第三方账号登录的用户可以忽略这个状态，以为默认已经判定为认证用户
 
-![look-email](https://tendcode.com/cdn/article/190308/Snipaste_2019-03-08_16-26-25.png)
+![look-email](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190308/Snipaste_2019-03-08_16-26-25.png)
 
 ### 邮箱验证页面
 可以从个人资料中跳转到邮箱验证页面，这个页面可以进如下几个操作：
@@ -162,12 +162,12 @@ print(dir(accounts))
 - 删除邮箱，仅当邮箱不唯一的时候可以用
 - 添加邮箱，给账号绑定其他邮箱
 
-![eamil-page](https://tendcode.com/cdn/article/190308/Snipaste_2019-03-08_16-27-52.png)
+![eamil-page](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190308/Snipaste_2019-03-08_16-27-52.png)
 
 ### 评论页面
 评论页面给认证用户的特权显示效果，主要是认证图标和用户个人主页的超链接显示
 
-![user](https://tendcode.com/cdn/article/190308/Snipaste_2019-03-08_16-30-31.png)
+![user](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/article/190308/Snipaste_2019-03-08_16-30-31.png)
 
 ## 设置https
 
