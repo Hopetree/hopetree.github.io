@@ -102,11 +102,13 @@ features:
   link: /blog/19/
   linkText: 查看主题文章
   title: 中间件
+- details: 未分类文章
+  icon: 📘
+  link: /blog/free/
+  linkText: 查看其他文章
+  title: 其他文章
 - details: 未完待续
-  icon: 📒
-  title: 待完成
-- details: 未完待续
-  icon: 📒
+  icon: 📝
   title: 待完成
 
 ---
