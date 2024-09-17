@@ -451,7 +451,7 @@ systemctl enable gomonitor
 systemctl status gomonitor
 ```
 
-::: info 提示
+::: tip 提示
 
 客户端在 Windows 上面也是可以运行的，数据采集已经得到验证，关于如何在 Windows 上面将程序设置成系统服务，可以查看我的博文: [《Windows 系统将 .exe 程序设置为系统服务的方案》](https://tendcode.com/subject/article/windows-system-service/ "Windows 系统将 .exe 程序设置为系统服务的方案")
 :::
