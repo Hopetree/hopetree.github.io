@@ -15,7 +15,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-09-17 16:49:25
+    // update date:2024-09-17 19:21:18
     sidebar: {
   "/blog/1/": [
     {
@@ -1010,7 +1010,8 @@ export default defineConfig({
         }
       ]
     }
-  ]
+  ],
+  "/blog/free/": []
 },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Hopetree/hopetree.github.io' }
