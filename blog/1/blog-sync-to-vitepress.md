@@ -147,7 +147,13 @@ def deal_with_body(self, body, title=None):
     return body
 ```
 
-### 2. 上传主页配置文件 index.md
+### 2. 更新 README.md 文件
+
+为了方便直接通过GitHub项目也能查看文章，我将文章按照专题-主题-文章的层次结构形成了一个导航放到 README.md 文件中，效果如下：
+
+![README.md](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409181717712.png)
+
+### 3. 上传主页配置文件 index.md
 
 文章上传之后，就可以保证 VitePress 中能通过地址访问到具体的文章了，但是没有导航，所以根本看不到文章的清单，非常不方便。
 
@@ -172,7 +178,7 @@ features:
   title: Python
 ```
 
-### 3. 上传项目配置文件 config.ts
+### 4. 上传项目配置文件 config.ts
 
 有了主页导航还不够，还需要配置文章的左侧导航，这样才能保证访问每个文章可以有清晰的层次结构，具体就是修改项目中的 .vitepress/config.ts 文件中的 `sidebar` 内容，文件的内容有点多，具体可以看[源码文件](https://github.com/Hopetree/hopetree.github.io/blob/main/.vitepress/config.ts "源码文件")。
 
@@ -181,7 +187,7 @@ features:
 由于提交内容与原文件内容一样的时候，不会进行 commit 操作，也就不会触发 action，所以在提交 config.ts 文件的时候，为了保证每次都能提交变更，我特意加了一个日期当做注释，这样既不会影响内容也可以保证每次都提交。
 :::
 
-### 4. 配置成定时任务
+### 5. 配置成定时任务
 
 配置成博客的定时任务，运行频率一天两次就够了，反正只是一个灾备同步，具体的配置就不说了，之前分享过很多次我博客的定时任务配置。
 
@@ -194,7 +200,7 @@ features:
 
 ![更多参数](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409171701763.png)
 
-### 5. 配置 GitHub workflows
+### 6. 配置 GitHub workflows
 
 我的 VitePress 项目从一开始就配置过 GitHub workflows，一直通过 action 自动构建发布的，这次的同步方案实施后，主要需要改动的一个点就是触发条件需要加一下，仅当 config.ts 文件变动时才触发，修改 .github/workflows/deploy.yml 文件，配置 paths 内容如下：
 
