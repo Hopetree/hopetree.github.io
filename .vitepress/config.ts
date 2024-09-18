@@ -15,7 +15,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-09-17 19:36:37
+    // update date:2024-09-18 09:32:20
     sidebar: {
   "/blog/1/": [
     {
@@ -179,6 +179,10 @@ export default defineConfig({
       "text": "灾备方案",
       "collapsed": false,
       "items": [
+        {
+          "text": "博客灾备方案（2）：博客文章同步到VitePress静态站",
+          "link": "/blog/1/blog-sync-to-vitepress"
+        },
         {
           "text": "博客灾备方案（1）：七牛云图床增量同步到GitHub",
           "link": "/blog/1/qiniu-sync-to-github"
