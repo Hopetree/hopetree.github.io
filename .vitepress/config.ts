@@ -15,7 +15,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-09-19 12:30:23
+    // update date:2024-09-19 15:44:42
     sidebar: {
   "/blog/1/": [
     {
@@ -874,6 +874,10 @@ export default defineConfig({
       "text": "工具分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "记录一些使用 lodash.js 处理 Dashboard 数据的案例",
+          "link": "/blog/15/deal-with-data-by-lodash"
+        },
         {
           "text": "使用 PicGo 配置 GitHub 图床",
           "link": "/blog/15/picgo-for-github"
