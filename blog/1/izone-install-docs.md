@@ -666,7 +666,7 @@ Creating izone_nginx ... done
 
 此时再访问一下服务器IP+8888端口看看效果，可以看到数据已经完美还原：
 
-![izone显示](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/izone-backup (1).png "izone显示")
+![izone显示](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/izone-backup%20(1).png "izone显示")
 
 ## 常见问题和解答
 
