@@ -336,3 +336,64 @@ console.log(data);
 dashboard 展示效果：
 
 ![将值显示成映射值](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409191117014.png)
+
+
+### 6. 按照指定的key排序并补充空值
+
+**需求**：首先需要按照指定的key显示，然后如果某些key没有值则显示为0或者固定的值
+
+调试代码：
+
+```js
+const _ = require('lodash');
+
+const DATA = {
+    "list": [{
+            "status": "完成",
+            "工单数": 1
+        },
+        {
+            "status": "待评估",
+            "工单数": 2
+        },
+        {
+            "status": "拒绝",
+            "工单数": 2
+        }
+    ]
+};
+
+const result = _.chain(DATA.list)
+    // 按 status 字段分组，并统计每个组的 num 总和
+    .groupBy("status")
+    .mapValues(items => _.sumBy(items, "工单数")) // 按 num 汇总
+    // 根据指定的 key 补全缺失的键并保证顺序
+    .thru(data => _.map(
+        ["待评估", "计划制定中", "需求澄清中", "需求开发中", "需求实施中", "完成", "拒绝"],
+        key => ({
+            status: key,
+            count: data[key] || 0
+        })
+    ))
+    .value();
+
+console.log(result);
+```
+
+输出效果：
+
+```js
+[
+  { status: '待评估', count: 2 },
+  { status: '计划制定中', count: 0 },
+  { status: '需求澄清中', count: 0 },
+  { status: '需求开发中', count: 0 },
+  { status: '需求实施中', count: 0 },
+  { status: '完成', count: 1 },
+  { status: '拒绝', count: 2 }
+]
+```
+
+dashboard 展示效果：
+
+![按照指定的key排序并补充空值](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409191654905.png)
