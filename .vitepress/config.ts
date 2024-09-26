@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-09-25 23:30:08
+    // update date:2024-09-26 12:30:12
     sidebar: {
   "/blog/1/": [
     {
@@ -148,6 +148,10 @@ export default defineConfig({
         {
           "text": "Django使用Celery实现异步和定时任务功能",
           "link": "/blog/1/django-celery"
+        },
+        {
+          "text": "使用 Python 的异步模块 asyncio 改造 I/O 密集型定时任务",
+          "link": "/blog/1/asyncio-task"
         },
         {
           "text": "Django博客网站可以用定时任务做些什么事？",
