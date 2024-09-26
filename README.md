@@ -57,6 +57,7 @@ npm run docs:build
 		- [Django 使用 django-redis 作为缓存的正确用法，别忽略缓存的使用原则](/blog/1/django-redis-for-cache.md)
 	- 定时任务
 		- [Django使用Celery实现异步和定时任务功能](/blog/1/django-celery.md)
+		- [使用 Python 的异步模块 asyncio 改造 I/O 密集型定时任务](/blog/1/asyncio-task.md)
 		- [Django博客网站可以用定时任务做些什么事？](/blog/1/django-celery-tasks.md)
 	- 数据清理
 		- [给Django网站来一个大扫除——清理过期Session](/blog/1/django-web-clear.md)
