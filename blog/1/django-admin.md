@@ -207,6 +207,21 @@ admin.site.site_header = '网站管理'
 admin.site.site_title = '博客后台管理'
 ```
 
+### 设置某个字段的属性
+
+如果要设置某个模型的某个字段的输入框的高度，可以重写 `formfield_for_dbfield` 函数来实现，这个函数可以给字段的输入框添加 HTML 属性，比如下面是设置了最小显示高度：
+
+```python
+@admin.register(SiteConfig)
+class SiteConfigViewAdmin(admin.ModelAdmin):
+    def formfield_for_dbfield(self, db_field, request, **kwargs):
+        if db_field.name == 'config_data':  # 替换为你的 TextField 字段名
+            kwargs['widget'] = widgets.AdminTextareaWidget(attrs={
+                'style': 'min-height: 30rem;',  # 设置最小高度
+            })
+        return super().formfield_for_dbfield(db_field, request, **kwargs)
+```
+
 ## admin 的拓展
 admin 除了使用 Django 自带的后台管理系统以外，如果你能力足够的话，也可以自己写自己的后台，当然，何必重复造轮子呢？在自己写后台之前可以找一下别人已经写好的管理插件。
 
