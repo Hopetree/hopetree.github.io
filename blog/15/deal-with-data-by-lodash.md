@@ -397,3 +397,69 @@ console.log(result);
 dashboard 展示效果：
 
 ![按照指定的key排序并补充空值](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409191654905.png)
+
+
+### 7. 统计数据增加百分比字段
+
+**需求**：为了在饼图中显示百分比数据（有的饼图自身可以计算有的不行），可以显示的给数据增加一个百分比的字段
+
+**处理思路**：这里先利用 `sumBy` 方法统计数据中指定字段的和，然后再计算出百分比赋值给字段 percent 即可，这里还可以利用 `toFixed` 进行小数点保留几位数的设置
+
+调试代码：
+
+```js
+var _ = require('lodash');
+
+const DATA = {
+    "list": [{
+            "isLevelAccurate": true,
+            "num": 1
+        },
+        {
+            "isLevelAccurate": false,
+            "num": 2
+        },
+        {
+            "isLevelAccurate": null,
+            "num": 3
+        }
+    ]
+}
+
+var data = _.chain(DATA.list)
+    .map(item => ({
+        ...item,
+        // 将 true/false/null 转换为 "是"/"否"/"无"
+        isLevelAccurate: item.isLevelAccurate === true ? "是" :
+                         item.isLevelAccurate === false ? "否" :
+                         item.isLevelAccurate === null ? "无" : String(item.isLevelAccurate)
+    }))
+    .sortBy(item =>
+        // 使用 _.indexOf 获取 isLevelAccurate 在 predefinedOrder 中的索引
+        _.indexOf(["是", "否", "无"], item.isLevelAccurate) === -1
+        // 如果值不在预定义列表中，则返回 Infinity（排在最后）
+        ?
+        Infinity :
+        _.indexOf(["是", "否", "无"], item.isLevelAccurate)
+    )
+    .map(item => ({...item, percent: (item.num / _.sumBy(DATA.list, "num")).toFixed(3)}))
+    .value();
+
+// 输出统计结果
+console.log(data);
+
+```
+
+输出效果：
+
+```js
+[
+  { isLevelAccurate: '是', num: 1, percent: '0.167' },
+  { isLevelAccurate: '否', num: 2, percent: '0.333' },
+  { isLevelAccurate: '无', num: 3, percent: '0.500' }
+]
+```
+
+图标效果：
+
+![统计数据增加百分比字段](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409231023449.png)
