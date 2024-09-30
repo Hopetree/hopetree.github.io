@@ -96,7 +96,7 @@ cd ~/go
 mkdir src bin pkg
 ```
 
-::: success 注意
+::: tip 注意
 
 不用太在意 GOPATH 目录管理项目的这种方式，后续项目管理都是使用 go mod 来管理，项目都是独立的依赖。
 :::
