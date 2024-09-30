@@ -247,6 +247,34 @@ class GitHubManager:
 
 ```
 
+后续我优化了 GitHub 中获取目录文件的逻辑，弃用了递归，直接一个接口搞定：
+
+```python
+def list_all_files_v2(self, path=''):
+    """
+    获取一个目录下所有文件，使用tree接口，而不是递归
+    @param path:
+    @return:
+    """
+    files = []
+    url = f"https://api.github.com/repos/{self.owner}/{self.repo}/git/trees/{self.branch}?recursive=1"
+    headers = {
+        "Authorization": f"Bearer {self.token}",
+        "Accept": "application/vnd.github.v3+json"
+    }
+    response = requests.get(url, headers=headers, timeout=20)
+    if response.status_code == 200:
+        # 解析响应
+        result = response.json()
+        for item in result["tree"]:
+            if item["path"].startswith(path) and item["type"] == "blob":
+                files.append(item["path"])
+        return files
+    else:
+        raise Exception(
+            f"Query failed with status code {response.status_code}: {response.text}")
+```
+
 ### 创建同步函数
 
 创建一个同步函数，将两个封装好的类结合起来，具体逻辑就是我的思路中提到的：
