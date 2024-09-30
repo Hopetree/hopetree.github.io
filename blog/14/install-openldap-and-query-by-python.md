@@ -305,6 +305,11 @@ uid=xiaohong,ou=product,ou=shanghai,dc=tendcode,dc=com
 {"mail": ["xiaohong@163.com"], "sn": ["\u5c0f\u7ea2"], "cn": ["xiaohong"]}
 ```
 
+::: tip 友情提示
+
+在使用 ldap 查询用户的时候需要注意翻页问题，比如某个公司有用户5000人，如果按照公司层级去查是不会一次性把所有人查出来的，所以可以把查询条件改成按照部门去查，然后循环所有部门（实际需求中大部分情况只需要查询指定部门，比如把信息科技部的用户查询出来同步到运维系统中）去查询用户即可。
+:::
+
 ## 参考文章
 
 - [LDAP简单介绍及使用](https://www.cnblogs.com/strongmore/p/18113978 "LDAP简单介绍及使用")
