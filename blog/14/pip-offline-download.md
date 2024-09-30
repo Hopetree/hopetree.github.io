@@ -150,6 +150,74 @@ python -m pip download --only-binary=:all: --platform=win_amd64 --python-version
 python -m pip install --no-index --find-links=".\packages" -r requirements.txt
 ```
 
+## 更多参数解释
+
+下面是更多与 `pip` 参数 `--platform` 对应的平台标识表，涵盖了各种操作系统和架构组合。这些平台标识帮助 `pip` 下载特定平台的二进制文件（如 `.whl` 文件）。
+
+### 常见平台标识对照表
+
+| 平台                   | 架构                     | `--platform` 值                        |
+|------------------------|--------------------------|----------------------------------------|
+| **Linux**              | x86 (32-bit)             | `manylinux1_i686`, `manylinux2014_i686`|
+| **Linux**              | x86_64 (64-bit)          | `manylinux1_x86_64`, `manylinux2014_x86_64` |
+| **Linux**              | ARM (32-bit)             | `manylinux2014_armv7l`                 |
+| **Linux**              | ARM (64-bit)             | `manylinux2014_aarch64`                |
+| **Linux**              | PowerPC (64-bit)         | `manylinux2014_ppc64le`                |
+| **Linux**              | IBM Z (s390x)            | `manylinux2014_s390x`                  |
+| **Windows**            | x86 (32-bit)             | `win32`                                |
+| **Windows**            | x86_64 (64-bit)          | `win_amd64`                            |
+| **macOS**              | x86_64 (64-bit)          | `macosx_10_9_x86_64`, `macosx_11_0_x86_64` |
+| **macOS**              | ARM64 (Apple Silicon)    | `macosx_11_0_arm64`, `macosx_12_0_arm64` |
+| **Linux**              | RISC-V (64-bit)          | `manylinux2014_riscv64`                |
+| **FreeBSD**            | x86_64 (64-bit)          | `freebsd_11_0_x86_64`, `freebsd_12_0_x86_64` |
+| **Solaris**            | SPARC (64-bit)           | `solaris_2_11_sparc`                   |
+| **Solaris**            | x86_64 (64-bit)          | `solaris_2_11_x86_64`                  |
+| **AIX**                | PowerPC (64-bit)         | `aix_7_2_ppc64`                        |
+
+### 详细解释：
+
+- **`manylinux1` / `manylinux2014`**: 是一类 Linux 平台上的兼容二进制打包标准，适用于不同架构。`manylinux1` 是早期版本，`manylinux2014` 是新版标准，支持更多架构（如 ARM 和 IBM Z）。
+  
+- **Windows**:
+	- `win32`: 用于 Windows 32 位系统。
+	- `win_amd64`: 用于 Windows 64 位系统。
+
+- **macOS**:
+	- `macosx_10_9_x86_64`: 针对 macOS 10.9 及更高版本的 64 位 Intel 机器。
+	- `macosx_11_0_arm64`: 针对 Apple Silicon (ARM64) 架构的 macOS 11.0 及更高版本。
+
+- **FreeBSD**:
+	- `freebsd_11_0_x86_64`: 用于 FreeBSD 11.0 的 64 位架构。
+	- `freebsd_12_0_x86_64`: 用于 FreeBSD 12.0 的 64 位架构。
+
+- **Solaris**:
+	- `solaris_2_11_x86_64`: 针对 Solaris 11 上的 64 位 x86 架构。
+	- `solaris_2_11_sparc`: 针对 Solaris 11 上的 64 位 SPARC 架构。
+
+- **AIX**:
+	- `aix_7_2_ppc64`: 针对 IBM AIX 系统上的 PowerPC 架构。
+
+### 使用 `--platform` 参数下载示例
+
+假设你在 Windows 系统上，但是你想为 Linux ARM 架构下载包，你可以使用如下命令：
+
+```bash
+pip download <package_name> --platform manylinux2014_aarch64 --python-version 38 --only-binary=:all: --dest .
+```
+
+其中：
+- `<package_name>`: 你要下载的包名。
+- `manylinux2014_aarch64`: 目标平台的标识，代表 Linux 64-bit ARM 架构。
+- `--python-version 38`: 表示目标平台上使用 Python 3.8。
+- `--only-binary=:all:`: 强制下载 `.whl` 二进制文件，而不下载源代码。
+- `--dest .`: 指定下载到当前目录。
+
+这样可以确保你下载的包与指定平台和架构兼容。
+
+### 结论：
+- `--platform` 参数允许你为不同的操作系统和架构下载兼容的 Python 包。
+- 确保你下载的 `.whl` 文件与目标 Python 版本、平台和架构匹配。
+
 ## 总结
 
 在了解到`wheel`和`download`的用法之前，我下载离线包都是在本地准备一个干净的Python虚拟环境，然后安装我需要的依赖库，然后去查看当前总共安装了那些包，然后拿着这包的版本去pypi的官网一个一个的下载离线whl文件，经常会因为漏掉某些依赖或者下载的依赖不适合当前的环境导致要重复的拷贝离线包，非常麻烦。
