@@ -40,14 +40,14 @@ sudo xattr -d com.apple.quarantine "/Applications/PicGo.app"
 
 直接参考官方文档：[七牛图床](https://picgo.github.io/PicGo-Doc/zh/guide/config.html#%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A "https://picgo.github.io/PicGo-Doc/zh/guide/config.html#%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A")
 
-![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/20240301_110648 (1).png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/20240301_110648%20(1).png)
 
 
 ### 存储区域的填写
 
 可以在自己的空间里面看到自己空间的区域，然后可以看下面这个区域对照表填写，当然，你用可以查看当前页面的调试模式查看七牛的接口里面返回的区域码（我就是用的这个方式，最准确。）
 
-![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/20240301_110035 (1).png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/03/20240301_110035%20(1).png)
 
 - 华东：z0
 - 华北：z1
