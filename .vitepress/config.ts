@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-10-18 00:30:11
+    // update date:2024-10-19 00:30:10
     sidebar: {
   "/blog/1/": [
     {
@@ -872,6 +872,10 @@ export default defineConfig({
       "text": "经验分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "慢跑助力健康减肥：我的10斤减脂之路",
+          "link": "/blog/15/Jogging-and-weight-loss"
+        },
         {
           "text": "Windows 系统将 .exe 程序设置为系统服务的方案",
           "link": "/blog/15/windows-system-service"
