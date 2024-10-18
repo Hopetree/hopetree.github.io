@@ -222,6 +222,7 @@ npm run docs:build
 		- [烂笔头周刊（第2期）：职业发展的最好方法是换公司？！](/blog/15/notes-weekly-2.md)
 		- [烂笔头周刊（第1期）：好记性不如烂笔头](/blog/15/notes-weekly-1.md)
 	- 经验分享
+		- [慢跑助力健康减肥：我的10斤减脂之路](/blog/15/Jogging-and-weight-loss.md)
 		- [Windows 系统将 .exe 程序设置为系统服务的方案](/blog/15/windows-system-service.md)
 		- [Mac同时使用无线wifi和有线上网，解决内网外网一起访问的问题](/blog/15/mac-network-set.md)
 	- 工具分享
