@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-10-21 00:30:09
+    // update date:2024-10-22 00:30:13
     sidebar: {
   "/blog/1/": [
     {
@@ -383,6 +383,10 @@ export default defineConfig({
       "text": "技巧分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "Python 脚本中日志级别控制示例",
+          "link": "/blog/14/python-logging-level"
+        },
         {
           "text": "分享一种使用 Python 调用接口“失败”后重试的通用方案",
           "link": "/blog/14/python-loop-retry"
