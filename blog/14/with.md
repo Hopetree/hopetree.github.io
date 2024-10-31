@@ -170,4 +170,77 @@ ssh.close()
 
 很明显，上面的自定义类 with 语句返回的是一个 SSHClient 对象，所以使用时直接按照这个对象的方法调用即可，调用结束会自动断开连接。
 
+### Telnet 连接操作
+
+下面是封装的一个Telnet客户端类，以实现与Telnet协议的连接、执行命令和安全关闭连接的功能
+
+```python
+import telnetlib
+import time
+
+class TelnetClient:
+    def __init__(self, hostname, username, password, port=23):
+        self.hostname = hostname
+        self.username = username
+        self.password = password
+        self.port = port
+        self.client = None
+
+    def connect(self):
+        if self.client is None:
+            self.client = telnetlib.Telnet(self.hostname, self.port, timeout=10)
+            self._login()
+
+    def _login(self):
+        self.client.read_until(b'Username: ')
+        self.client.write(self.username.encode('ascii') + b'\n')
+        self.client.read_until(b'Password: ')
+        self.client.write(self.password.encode('ascii') + b'\n')
+        time.sleep(1)  # 等待登录完成
+
+    def execute_command(self, command):
+        if self.client is None:
+            raise Exception("Telnet client is not connected")
+        self.client.write(command.encode('ascii') + b'\n')
+        time.sleep(1)  # 等待命令执行
+        return self.client.read_very_eager().decode('ascii')
+
+    def close(self):
+        if self.client:
+            self.client.write(b'exit\n')
+            self.client.close()
+            self.client = None
+
+    def __enter__(self):
+        self.connect()
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.close()
+        if exc_type:
+            print(f"An exception occurred: {exc_value}")
+        return False  # 不处理异常，异常会被重新抛出
+
+# 使用示例
+if __name__ == "__main__":
+    with TelnetClient('192.168.1.1', 'admin', 'password') as telnet:
+        output = telnet.execute_command('show ip interface brief')
+        print("Command Output:\n", output)
+
+    # 交互式执行命令
+    with TelnetClient('192.168.1.1', 'admin', 'password') as telnet:
+        shell = telnet.client  # 获取Telnet客户端
+        shell.write(b'ifconfig\n')  # 执行命令
+        time.sleep(1)
+        output = shell.read_very_eager().decode('ascii')  # 读取输出
+        print("Interactive Command Output:\n", output)
+
+    # 直接连接
+    telnet = TelnetClient('192.168.1.1', 'admin', 'password')
+    telnet.connect()
+    output = telnet.execute_command('show version')
+    print("Command Output:\n", output)
+    telnet.close()
+```
+
 总结：自定义 with 语句简单理解就是非常适合一些“有始有终”的场景，通过自定义上下文管理器，可以把一些需要重复执行的固定操作简化，只需要关注特定的操作本身。
