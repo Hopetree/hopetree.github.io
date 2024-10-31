@@ -185,6 +185,8 @@ npm run docs:build
 		- [MongoDB集群部署——（Replica Set）副本集模式](/blog/6/mongodb-install-Replica-Set.md)
 	- 数据迁移
 		- [记一次因MongoDB数据迁移的失误导致的灾备环境事故](/blog/6/mongodb-restore.md)
+	- 配置变更
+		- [MongoDB 集群主机 IP 变更后恢复集群状态的方案](/blog/6/mongodb-change-host-ip.md)
 - **kubernetes**
 	- 安装部署
 		- [CentOS 系统搭建 k8s 环境v1.16.0](/blog/7/k8s_install-k8s.md)
