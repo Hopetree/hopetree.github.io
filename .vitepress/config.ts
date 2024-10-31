@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-10-31 00:30:09
+    // update date:2024-11-01 00:30:15
     sidebar: {
   "/blog/1/": [
     {
@@ -713,6 +713,16 @@ export default defineConfig({
         {
           "text": "记一次因MongoDB数据迁移的失误导致的灾备环境事故",
           "link": "/blog/6/mongodb-restore"
+        }
+      ]
+    },
+    {
+      "text": "配置变更",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "MongoDB 集群主机 IP 变更后恢复集群状态的方案",
+          "link": "/blog/6/mongodb-change-host-ip"
         }
       ]
     }
