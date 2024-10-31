@@ -174,7 +174,7 @@ python -m pip install --no-index --find-links=".\packages" -r requirements.txt
 | **Solaris**            | x86_64 (64-bit)          | `solaris_2_11_x86_64`                  |
 | **AIX**                | PowerPC (64-bit)         | `aix_7_2_ppc64`                        |
 
-### 详细解释：
+### 详细解释
 
 - **`manylinux1` / `manylinux2014`**: 是一类 Linux 平台上的兼容二进制打包标准，适用于不同架构。`manylinux1` 是早期版本，`manylinux2014` 是新版标准，支持更多架构（如 ARM 和 IBM Z）。
   
@@ -214,7 +214,7 @@ pip download <package_name> --platform manylinux2014_aarch64 --python-version 38
 
 这样可以确保你下载的包与指定平台和架构兼容。
 
-### 结论：
+### 小结
 - `--platform` 参数允许你为不同的操作系统和架构下载兼容的 Python 包。
 - 确保你下载的 `.whl` 文件与目标 Python 版本、平台和架构匹配。
 
