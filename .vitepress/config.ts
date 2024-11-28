@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-11-28 00:30:09
+    // update date:2024-11-29 00:30:11
     sidebar: {
   "/blog/1/": [
     {
@@ -409,6 +409,10 @@ export default defineConfig({
       "text": "Web 开发",
       "collapsed": false,
       "items": [
+        {
+          "text": "Python2.7 环境中 Tornado 实现异步接口请求的两种方式",
+          "link": "/blog/14/tornado-async-for-python2"
+        },
         {
           "text": "Flask、Tornado、FastAPI、Sanic 以及 Gin 框架性能对比",
           "link": "/blog/14/Flask-Tornado-FastAPI-Sanic-Gin"
