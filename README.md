@@ -116,6 +116,7 @@ npm run docs:build
 		- [python2 和 python3 常见差异及兼容方式梳理](/blog/14/py2_and_py3.md)
 		- [分享一个简单的 Python 脚本库：将 requests 代码转换成 curl 命令](/blog/14/python-to-curl.md)
 	- Web 开发
+		- [Python2.7 环境中 Tornado 实现异步接口请求的两种方式](/blog/14/tornado-async-for-python2.md)
 		- [Flask、Tornado、FastAPI、Sanic 以及 Gin 框架性能对比](/blog/14/Flask-Tornado-FastAPI-Sanic-Gin.md)
 	- 自动化测试
 		- [【Appium 自动化测试】搭建 Appium 环境踩坑记录](/blog/14/appium-env.md)
