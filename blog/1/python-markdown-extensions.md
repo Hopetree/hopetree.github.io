@@ -407,7 +407,7 @@ markdown 文本如下：
 
 ### 代码组的效果
 
-我还按照 vuepress 的渲染格式实现了代码组的效果，这个效果主要依靠 bootstrap 的效果，而且实现这个效果不仅仅是依靠 markdown 拓展，还需要写 js 代码来实现。
+我还按照 vitepress 的渲染格式实现了代码组的效果，这个效果主要依靠 bootstrap 的效果，而且实现这个效果不仅仅是依靠 markdown 拓展，还需要写 js 代码来实现。
 
 
 :::: code-group
