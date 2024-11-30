@@ -13,7 +13,6 @@
 
 1. 通过网络偏好设置，自定义网络使用的先后顺序，优先使用 Wi-Fi 上网
 2. 设置 route 给内网环境的网段添加指定路由，使得内网网段的访问走网线而不是  Wi-Fi
-3. 设置定时任务，解决每次重新插入网线需要重新添加路由的问题
 
 ## 网络偏好设置
 
@@ -41,41 +40,11 @@ sudo route add 10.224.xx.xx/24 10.225.xx.xx
 
 添加完成之后，再去 ping 一下内网 ip 就会发现已经可以通了，此时大功告成。
 
-## 查询和删除路由
+## 更多命令
 
 ```bash
 #查询路由
-route get 10.224.xx.xx/24
+sudo route get 10.224.xx.xx/24
 #删除路由
 sudo route delete 10.224.xx.xx/24
-```
-
-## 定时任务
-
-虽然上面我们已经完成了内网外网同时访问，但是有个问题，就是当网线拔出来，再插进去，我们设置的路由就失效了，就需要重新添加路由，所以我添加了一个定时任务，定期检查内网是否通。
-
-脚本很简单：
-
-```shell
-#!/bin/bash
-# 定期添加路由，避免网线拔出来要重新设置
-
-destination=10.224.xx.xx/24
-gateway=10.225.xx.xx
-ip=10.224.xx.xx
-
-function echo_exit() {
-    echo $*
-    exit 1
-}
-
-[ "$(id -u)" -ne 0 ] && echo_exit "请使用root用户执行脚本"
-
-ping -c 3 -n ${ip}
-if [ $? -ne 0 ]; then
-    echo 'nok'
-    echo "route add ${destination} ${gateway}"
-    route add ${destination} ${gateway}
-    echo 'set route ok'
-fi
 ```
