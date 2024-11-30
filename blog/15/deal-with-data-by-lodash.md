@@ -463,3 +463,84 @@ console.log(data);
 图标效果：
 
 ![统计数据增加百分比字段](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202409231023449.png)
+
+
+### 8. 将属性中的子属性变成属性
+
+**需求**：数组中每个元素有个属性是一个对象，这个对象可能有很多属性，需要将属性中的子属性变成元素的属性
+
+**处理思路**：参考代码：
+
+```js
+const _ = require('lodash');
+
+const DATA = {
+    "list": [{
+        "date": "2024-11-04",
+        "details": {
+            "statusStatistical": [{
+                    "count": 141,
+                    "key": "流转中",
+                    "percent": 73.82
+                },
+                {
+                    "count": 39,
+                    "key": "已完成",
+                    "percent": 20.42
+                },
+                {
+                    "count": 0,
+                    "key": "已关闭",
+                    "percent": 0
+                },
+                {
+                    "count": 11,
+                    "key": "已作废",
+                    "percent": 5.76
+                },
+                {
+                    "count": 0,
+                    "key": "已挂起",
+                    "percent": 0
+                }
+            ]
+        },
+        "total": 191
+    }]
+};
+
+
+
+const data = _.chain(DATA.list)
+    .map(item => ({
+        date: item.date,
+        total: item.total,
+        differenceNum: item.differenceNum ?? 0,
+        ..._.fromPairs(item.details.statusStatistical.map(status => [status.key, status.count]))
+    }))
+    .orderBy(["date"], ["desc"]) // 按日期倒序排序
+    .value();
+
+console.log(data);
+```
+
+输出结果：
+
+```js
+[
+  {
+    date: '2024-11-04',
+    total: 191,
+    differenceNum: 0,
+    '流转中': 141,
+    '已完成': 39,
+    '已关闭': 0,
+    '已作废': 11,
+    '已挂起': 0
+  }
+]
+```
+
+显示效果：
+
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2024/202411051544455.png)
