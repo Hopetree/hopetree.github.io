@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-12-20 00:30:09
+    // update date:2024-12-21 00:30:12
     sidebar: {
   "/blog/1/": [
     {
@@ -271,6 +271,10 @@ export default defineConfig({
       "text": "实战经验",
       "collapsed": false,
       "items": [
+        {
+          "text": "如何在 Python 2.7 中获取未调用函数的局部变量",
+          "link": "/blog/14/get-function-args-python2"
+        },
         {
           "text": "企业微信 SSO 单点登录——使用 Python 调用企业微信接口",
           "link": "/blog/14/weixin-sso-by-python"
