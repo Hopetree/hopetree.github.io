@@ -84,6 +84,7 @@ npm run docs:build
 		- [容器化部署博客（3）—— 更换服务器，5分钟完成项目迁移](/blog/5/docker-rebuild.md)
 - **Python**
 	- 实战经验
+		- [如何在 Python 2.7 中获取未调用函数的局部变量](/blog/14/get-function-args-python2.md)
 		- [企业微信 SSO 单点登录——使用 Python 调用企业微信接口](/blog/14/weixin-sso-by-python.md)
 		- [容器化部署OpenLDAP并使用Python查询LDAP数据](/blog/14/install-openldap-and-query-by-python.md)
 		- [使用Python SDK操作VMware进行虚拟机创建和配置变更](/blog/14/python-sdk-for-vmware.md)
