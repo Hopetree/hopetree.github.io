@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-12-22 00:30:11
+    // update date:2024-12-23 00:30:10
     sidebar: {
   "/blog/1/": [
     {
@@ -271,6 +271,10 @@ export default defineConfig({
       "text": "实战经验",
       "collapsed": false,
       "items": [
+        {
+          "text": "ITSM 流程中自动化对接 JumpServer 的实战经验",
+          "link": "/blog/14/JumpServer-for-ITSM"
+        },
         {
           "text": "如何在 Python 2.7 中获取未调用函数的局部变量",
           "link": "/blog/14/get-function-args-python2"
