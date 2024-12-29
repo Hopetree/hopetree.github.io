@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2024-12-29 00:30:09
+    // update date:2024-12-30 00:30:09
     sidebar: {
   "/blog/1/": [
     {
@@ -938,6 +938,10 @@ export default defineConfig({
       "text": "年终总结",
       "collapsed": false,
       "items": [
+        {
+          "text": "2024 年终总结",
+          "link": "/blog/15/2024-year-end-review"
+        },
         {
           "text": "2023 年终总结",
           "link": "/blog/15/2023-year-end-review"
