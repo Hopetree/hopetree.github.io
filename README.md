@@ -237,6 +237,7 @@ npm run docs:build
 		- [一场由“备案注销”带来的网站危机](/blog/15/website-crisis-caused-by-registration-cancellation.md)
 		- [Mac 使用图床神器 PicGo 的踩坑指南](/blog/15/PicGo-for-mac.md)
 	- 年终总结
+		- [2024 年终总结](/blog/15/2024-year-end-review.md)
 		- [2023 年终总结](/blog/15/2023-year-end-review.md)
 - **上网**
 	- 内网穿透
