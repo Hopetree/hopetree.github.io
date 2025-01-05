@@ -87,7 +87,7 @@ features:
   link: /blog/15/
   linkText: 查看主题文章
   title: 个人笔记
-- details: 学会好好上网！！！
+- details: 好好学习，天天上网！
   icon: 📚
   link: /blog/16/
   linkText: 查看主题文章
