@@ -19,7 +19,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-01-11 00:30:11
+    // update date:2025-01-13 00:30:11
     sidebar: {
   "/blog/1/": [
     {
@@ -683,6 +683,10 @@ export default defineConfig({
         {
           "text": "ChatGPT提问的艺术",
           "link": "/blog/2/chatgpt-prompts"
+        },
+        {
+          "text": "依靠 ChatGPT 开发一个完整功能的浏览器插件",
+          "link": "/blog/2/develop-browser-plugin-with-chatgpt"
         },
         {
           "text": "[ChatGPT解决方案]获取 nginx 日志中请求 IP 统计数，设置 IP 流量限制",
