@@ -1,6 +1,9 @@
 {
+  "type": "module",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.64"
+    "esbuild": "^0.17.19",
+    "vite": "^4.5.5",
+    "vitepress": "^1.5.0"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
