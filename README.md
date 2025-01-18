@@ -234,6 +234,7 @@ npm run docs:build
 		- [Windows 系统将 .exe 程序设置为系统服务的方案](/blog/15/windows-system-service.md)
 		- [Mac同时使用无线wifi和有线上网，解决内网外网一起访问的问题](/blog/15/mac-network-set.md)
 	- 工具分享
+		- [VitePress 网站配置 Algolia 搜索](/blog/15/vitepress-search-by-algolia.md)
 		- [记录一些使用 lodash.js 处理 Dashboard 数据的案例](/blog/15/deal-with-data-by-lodash.md)
 		- [使用 PicGo 配置 GitHub 图床](/blog/15/picgo-for-github.md)
 		- [一场由“备案注销”带来的网站危机](/blog/15/website-crisis-caused-by-registration-cancellation.md)
