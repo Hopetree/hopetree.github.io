@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-01-17 09:12:07
+    // update date:2025-01-19 02:30:10
     sidebar: {
   "/blog/1/": [
     {
@@ -976,6 +976,10 @@ export default defineConfig({
       "text": "工具分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "VitePress 网站配置 Algolia 搜索",
+          "link": "/blog/15/vitepress-search-by-algolia"
+        },
         {
           "text": "记录一些使用 lodash.js 处理 Dashboard 数据的案例",
           "link": "/blog/15/deal-with-data-by-lodash"
