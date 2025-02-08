@@ -263,6 +263,8 @@ npm run docs:build
 		- [Redis哨兵模式部署](/blog/17/redis-install-sentinel.md)
 		- [Redis单机部署](/blog/17/redis-install.md)
 - **中间件**
+	- Kafka
+		- [初学 Kafka：Python 接入 Kafka 的基本操作与实战](/blog/19/beginner-kafka-python-connection.md)
 	- Tomcat
 		- [Tomcat 9 安装部署](/blog/19/install-tomcat9.md)
 	- WebLogic
