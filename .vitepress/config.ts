@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-02-05 02:30:11
+    // update date:2025-02-09 02:30:09
     sidebar: {
   "/blog/1/": [
     {
@@ -1104,6 +1104,16 @@ export default defineConfig({
     }
   ],
   "/blog/19/": [
+    {
+      "text": "Kafka",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "初学 Kafka：Python 接入 Kafka 的基本操作与实战",
+          "link": "/blog/19/beginner-kafka-python-connection"
+        }
+      ]
+    },
     {
       "text": "Tomcat",
       "collapsed": false,
