@@ -184,6 +184,8 @@ npm run docs:build
 		- [[ChatGPT解决方案]🤖️ChatGPT协助我完成博客代码块添加复制代码和显示代码语言功能](/blog/2/ChatGPT-blog-req.md)
 		- [[ChatGPT解决方案]Nginx配置实现请求失败图片的统一转发](/blog/2/ChatGPT-nginx-error.md)
 		- [[ChatGPT解决方案]生成 nginx 自签名证书](/blog/2/ChatGPT-nginx-sert.md)
+	- Trae
+		- [再一次被 AI 的编程能力折服！！！](/blog/2/amazing-ai.md)
 - **MongoDB**
 	- 安装部署
 		- [MongoDB单实例部署](/blog/6/mongodb-install-standalone.md)
