@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-02-19 02:30:09
+    // update date:2025-02-23 02:30:11
     sidebar: {
   "/blog/1/": [
     {
@@ -759,6 +759,16 @@ export default defineConfig({
         {
           "text": "[ChatGPT解决方案]生成 nginx 自签名证书",
           "link": "/blog/2/ChatGPT-nginx-sert"
+        }
+      ]
+    },
+    {
+      "text": "Trae",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "再一次被 AI 的编程能力折服！！！",
+          "link": "/blog/2/amazing-ai"
         }
       ]
     }
