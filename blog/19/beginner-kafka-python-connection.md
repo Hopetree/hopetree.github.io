@@ -156,6 +156,237 @@ finally:
 - **消息处理**：使用 `poll` 方法轮询 Kafka，`timeout` 设置了超时时间，确保消费者在没有消息时会等待一段时间。
 - **异常处理**：使用 `try-except` 来捕获并处理可能发生的异常，包括解析 JSON 时可能出现的错误。
 
+## 实战
+
+下面是一个实际运行的服务，用于启动一个消费者将原始数据处理后推送到另一个平台。
+
+```python
+# -*- coding:utf-8 -*-
+# @Author: 
+# @Time  : 
+# @Desc  :
+# @args  :
+# @name  : kafka_event_server
+# @cron  :
+import json
+import sys
+import signal
+import logging
+
+import requests
+from confluent_kafka import Consumer, KafkaError
+
+if sys.version_info[0] == 2:
+    from imp import reload
+
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+
+FORMAT = '[%(asctime)s (line:%(lineno)d) %(levelname)s] %(message)s'
+logging.basicConfig(level=logging.INFO, datefmt='%Y-%m-%d %H:%M:%S', format=FORMAT,
+                    filename='server.log')
+logger = logging.getLogger(__name__)
+logging.getLogger("requests").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
+
+
+class KafkaConsumer:
+    def __init__(self, servers, topic, push_url, group_id='omp', offset='latest'):
+        self.servers = servers
+        self.topic = topic
+        self.push_url = push_url
+        self.group_id = group_id
+        self.offset = offset
+        self.conf = {
+            'bootstrap.servers': self.servers,
+            'group.id': self.group_id,
+            'auto.offset.reset': self.offset
+        }
+
+    def run(self):
+        consumer = Consumer(self.conf)
+        consumer.subscribe([self.topic])
+
+        # 捕获 SIGTERM 信号并优雅退出
+        def signal_handler(sig, frame):
+            logger.error('Received SIGTERM, closing consumer...')
+            consumer.close()  # 关闭消费者
+            sys.exit(0)  # 正常退出
+
+        # 注册信号处理函数
+        signal.signal(signal.SIGTERM, signal_handler)
+
+        try:
+            while True:
+                msg = consumer.poll(timeout=1.0)  # 轮询 Kafka，超时时间 1 秒
+                if msg is None:
+                    continue  # 没有消息则继续轮询
+                if msg.error():
+                    if msg.error().code() == KafkaError._PARTITION_EOF:
+                        continue  # 分区读取完毕，继续下一条
+                    else:
+                        logger.error("Error: %s", msg.error())
+                        break
+                # 解码 JSON 消息
+                message_value = msg.value().decode('utf-8')
+                try:
+                    message_data = json.loads(message_value)  # 解析 JSON
+                    logger.info("Received JSON message: %s", message_data['df_event_id'])
+                    self.monitor_to_event(message_data)
+                except ValueError:
+                    logger.error("Received non-JSON message: %s", message_value)
+
+        except KeyboardInterrupt:
+            logger.error("Stopping consumer...")
+        finally:
+            consumer.close()  # 关闭消费者
+
+    @staticmethod
+    def check_fields(data):
+        """
+        检查字段是否合法
+        :param data: 需要检查的字典
+        :return: 合法返回 True，不合法返回 False
+        """
+        # 必须包含的字段列表
+        required_fields = ["df_event_id", "df_source", "df_title", "df_message", "date",
+                           "df_status", "df_workspace_name"]
+
+        # 检查 data 是否是字典类型
+        if not isinstance(data, dict):
+            return False
+
+        # 检查必填字段是否有值（值不能为空或 None）
+        for field in required_fields:
+            if not data.get(field):
+                return False
+
+        # 检查 df_source 字段的值是否为 "monitor"
+        if data.get("df_source") != "monitor":
+            return False
+
+        return True
+
+    @staticmethod
+    def clean_data(data):
+        """
+        清洗数据，数据转换
+        :param data:
+        :return:
+        """
+        # 维度合并
+        """
+        df_workspace_name：系统简称
+        service: 服务
+        host：主机名
+        host_ip:主机IP
+        instance_name: 实例名称
+        cluster_name_k8s：k8s集群名称
+        container_host/pod_name：pod名称
+        """
+        alert_dims = {'df_workspace_name': data['df_workspace_name']}
+        tags = {}
+        if data.get('df_dimension_tags'):
+            try:
+                tags = json.loads(data['df_dimension_tags'])
+            except Exception:
+                tags = {}
+        alert_dims.update(tags)
+
+        # 状态，判断是否恢复
+        if data['df_status'] == 'ok':
+            event_status = True
+        else:
+            event_status = False
+
+        clean_data = {
+            "alertId": data['df_event_id'],
+            "alertDims": alert_dims,
+            "metricName": "",
+            "value": "",
+            "metricUnit": "",
+            "subject": data['df_title'],
+            "content": data['df_message'],
+            "time": int(data['date'] / 1000),
+            "isRecover": event_status,
+            "extInfo": {"df_status": data['df_status']},
+            "originInfo": {},
+            "source": "guance"
+        }
+
+        return clean_data
+
+    def push_event(self, data):
+        logger.debug(data)
+        resp = requests.post(self.push_url, json=data)
+        if resp.status_code == 200 and resp.json()['code'] == 0:
+            logger.info('推送事件成功：%s', data['alertId'])
+        elif resp.status_code == 400 and 'not match any cmdb instance' in resp.json()['error']:
+            logger.warning('没有匹配到任何实例：%s', data['alertDims'])
+        else:
+            logger.error('推送事件失败，请求：%s，返回：%s', data, resp.text)
+
+    def monitor_to_event(self, data):
+        # 校验
+        check_ok = self.check_fields(data)
+        if not check_ok:
+            logger.warning('数据字段校验不通过：%s', data)
+            return
+
+        # 清洗
+        try:
+            clean_data = self.clean_data(data)
+        except Exception as e:
+            logger.error('数据转换错误: %s', e)
+            return
+
+        # 推送
+        try:
+            self.push_event(clean_data)
+        except Exception as e:
+            logger.error('推送告警事件错误, 数据: %s, 错误：%s', clean_data, e)
+            return
+
+
+def main():
+    KFK.run()
+
+
+if __name__ == "__main__":
+    Webhook = 'https://xx.xxx.xx'
+    KFK = KafkaConsumer('xx.xx.xx.xx:9094', 'event', Webhook)
+
+    main()
+
+```
+
+系统服务配置：
+
+```ini
+[Unit]
+Description=Kafka Consumer Service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/kafka_event
+ExecStart=/xxx/bin/python /opt/kafka_event/kafka_event_server.py
+Restart=on-failure
+TimeoutStopSec=30s
+KillSignal=SIGTERM
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+重点关注：
+
+- 异常处理，保证服务正常
+- 退出的机制，保证退出前释放资源
+- 服务运行方式，使用系统服务来管理
+
 ## Kafka 的基本概念
 
 了解 Kafka 的基本概念对于高效使用 Kafka 非常重要。以下是一些常见的概念：
