@@ -84,6 +84,7 @@ npm run docs:build
 		- [容器化部署博客（3）—— 更换服务器，5分钟完成项目迁移](/blog/5/docker-rebuild.md)
 - **Python**
 	- 实战经验
+		- [处理 Python 读取 CSV 时多出 \ufeff 的问题](/blog/14/python-read-csv.md)
 		- [ITSM 流程中自动化对接 JumpServer 的实战经验](/blog/14/JumpServer-for-ITSM.md)
 		- [如何在 Python 2.7 中获取未调用函数的局部变量](/blog/14/get-function-args-python2.md)
 		- [企业微信 SSO 单点登录——使用 Python 调用企业微信接口](/blog/14/weixin-sso-by-python.md)
@@ -235,6 +236,7 @@ npm run docs:build
 		- [慢跑助力健康减肥：我的10斤减脂之路](/blog/15/Jogging-and-weight-loss.md)
 		- [Windows 系统将 .exe 程序设置为系统服务的方案](/blog/15/windows-system-service.md)
 		- [Mac同时使用无线wifi和有线上网，解决内网外网一起访问的问题](/blog/15/mac-network-set.md)
+	- 杂谈
 	- 工具分享
 		- [VitePress 网站配置 Algolia 搜索](/blog/15/vitepress-search-by-algolia.md)
 		- [记录一些使用 lodash.js 处理 Dashboard 数据的案例](/blog/15/deal-with-data-by-lodash.md)
