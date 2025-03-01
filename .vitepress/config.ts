@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-02-26 02:30:08
+    // update date:2025-03-02 02:30:08
     sidebar: {
   "/blog/1/": [
     {
@@ -323,6 +323,10 @@ export default defineConfig({
       "text": "实战经验",
       "collapsed": false,
       "items": [
+        {
+          "text": "处理 Python 读取 CSV 时多出 \\ufeff 的问题",
+          "link": "/blog/14/python-read-csv"
+        },
         {
           "text": "ITSM 流程中自动化对接 JumpServer 的实战经验",
           "link": "/blog/14/JumpServer-for-ITSM"
@@ -981,6 +985,11 @@ export default defineConfig({
           "link": "/blog/15/mac-network-set"
         }
       ]
+    },
+    {
+      "text": "杂谈",
+      "collapsed": false,
+      "items": []
     },
     {
       "text": "工具分享",
