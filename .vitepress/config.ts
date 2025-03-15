@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-03-12 02:30:09
+    // update date:2025-03-16 02:30:17
     sidebar: {
   "/blog/1/": [
     {
@@ -144,6 +144,10 @@ export default defineConfig({
         {
           "text": "服务器监控应用（3）：监控告警通知开发",
           "link": "/blog/1/server-status-3"
+        },
+        {
+          "text": "markdown 支持 Mermaid 流程图的方案",
+          "link": "/blog/1/markdown-use-Mermaid"
         },
         {
           "text": "Django博客评论区显示用户操作系统与浏览器信息",
@@ -1154,6 +1158,30 @@ export default defineConfig({
         {
           "text": "Weblogic 命令行操作，进行应用的停止、启动和更新",
           "link": "/blog/19/weblogic-command"
+        }
+      ]
+    }
+  ],
+  "/blog/20/": [
+    {
+      "text": "流程规范",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "ITSM事件管理流程规范",
+          "link": "/blog/20/itsm-incident-management-process"
+        },
+        {
+          "text": "ITSM问题管理流程规范",
+          "link": "/blog/20/itsm-problem-management-process"
+        },
+        {
+          "text": "ITSM变更管理流程规范",
+          "link": "/blog/20/itsm-change-management-process"
+        },
+        {
+          "text": "ITSM服务请求流程规范",
+          "link": "/blog/20/itsm-service-request-process-guide"
         }
       ]
     }
