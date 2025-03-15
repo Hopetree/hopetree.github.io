@@ -44,6 +44,7 @@ npm run docs:build
 		- [服务器监控应用（1）：服务端开发](/blog/1/server-status-1.md)
 		- [服务器监控应用（2）：使用 Golang 开发客户端](/blog/1/server-status-2.md)
 		- [服务器监控应用（3）：监控告警通知开发](/blog/1/server-status-3.md)
+		- [markdown 支持 Mermaid 流程图的方案](/blog/1/markdown-use-Mermaid.md)
 		- [Django博客评论区显示用户操作系统与浏览器信息](/blog/1/show-user-agent.md)
 		- [Django分页功能改造，一比一还原百度搜索的分页效果](/blog/1/django-paginator.md)
 		- [添加文章编辑页面，支持 markdown 编辑器实时预览编辑](/blog/1/blog-edit-page.md)
@@ -274,5 +275,11 @@ npm run docs:build
 	- WebLogic
 		- [WebLogic 安装部署](/blog/19/weblogic-install.md)
 		- [Weblogic 命令行操作，进行应用的停止、启动和更新](/blog/19/weblogic-command.md)
+- **ITSM**
+	- 流程规范
+		- [ITSM事件管理流程规范](/blog/20/itsm-incident-management-process.md)
+		- [ITSM问题管理流程规范](/blog/20/itsm-problem-management-process.md)
+		- [ITSM变更管理流程规范](/blog/20/itsm-change-management-process.md)
+		- [ITSM服务请求流程规范](/blog/20/itsm-service-request-process-guide.md)
 - **其他文章**
 	- 无分类文章
