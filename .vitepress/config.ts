@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-03-16 02:30:17
+    // update date:2025-03-19 02:30:11
     sidebar: {
   "/blog/1/": [
     {
@@ -327,6 +327,10 @@ export default defineConfig({
       "text": "实战经验",
       "collapsed": false,
       "items": [
+        {
+          "text": "解决 Python 找不到 libpython3.x.so.1.0 问题的几种方案",
+          "link": "/blog/14/python-not-find-libpython"
+        },
         {
           "text": "处理 Python 读取 CSV 时多出 \\ufeff 的问题",
           "link": "/blog/14/python-read-csv"
