@@ -86,7 +86,7 @@ find /usr/local/python3.12 -name "libpython3.12.so.1.0"
 ```bash
 patchelf --set-rpath /usr/local/python3.12/lib /usr/local/python3.12/bin/python3.12
 ```
-⚠ **如果 `patchelf` 未安装**，可以使用以下命令安装：
+⚠️ **如果 `patchelf` 未安装**，可以使用以下命令安装：
 ```bash
 # Ubuntu/Debian
 sudo apt install patchelf
