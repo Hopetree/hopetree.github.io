@@ -388,3 +388,24 @@ def asset_to_user(table_info, order_num):
         print_json(data)
 
 ```
+
+#### 4. 采集用户的资产
+
+利用采集的用户信息，进而查询到每个用户的资产清单，进而可以反向建立资产和用户的关系。
+
+
+```python
+def get_user_assets(self, user_id, params=None):
+	"""
+	获取资产列表
+	:return:
+	"""
+	api = '/api/v1/perms/users/{}/assets/'.format(user_id)
+	method = 'GET'
+	return self.request(api, method, params=params)
+```
+
+
+消费场景：查询每个用户拥有的资产，查询每个资产授权的用户，效果类似如下
+
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2025/202503101129178.png)
