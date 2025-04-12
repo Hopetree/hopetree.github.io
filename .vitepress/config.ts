@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-04-02 02:30:10
+    // update date:2025-04-13 02:30:10
     sidebar: {
   "/blog/1/": [
     {
@@ -204,6 +204,10 @@ export default defineConfig({
         {
           "text": "Django使用Celery实现异步和定时任务功能",
           "link": "/blog/1/django-celery"
+        },
+        {
+          "text": "让定时任务支持执行自定义脚本",
+          "link": "/blog/1/task-for-script"
         },
         {
           "text": "把 Celery 定时任务变成实时触发的任务",
