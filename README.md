@@ -58,6 +58,7 @@ npm run docs:build
 		- [Django 使用 django-redis 作为缓存的正确用法，别忽略缓存的使用原则](/blog/1/django-redis-for-cache.md)
 	- 定时任务
 		- [Django使用Celery实现异步和定时任务功能](/blog/1/django-celery.md)
+		- [让定时任务支持执行自定义脚本](/blog/1/task-for-script.md)
 		- [把 Celery 定时任务变成实时触发的任务](/blog/1/run-celery-task-now.md)
 		- [使用 Python 的异步模块 asyncio 改造 I/O 密集型定时任务](/blog/1/asyncio-task.md)
 		- [Django博客网站可以用定时任务做些什么事？](/blog/1/django-celery-tasks.md)
