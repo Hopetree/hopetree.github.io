@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-04-13 02:30:10
+    // update date:2025-04-16 02:30:11
     sidebar: {
   "/blog/1/": [
     {
@@ -917,6 +917,10 @@ export default defineConfig({
       "collapsed": false,
       "items": [
         {
+          "text": "Git 提交信息规范与最佳实践",
+          "link": "/blog/11/git-commit"
+        },
+        {
           "text": "Git 常用及特殊命令笔记",
           "link": "/blog/11/git-note"
         }
@@ -929,6 +933,16 @@ export default defineConfig({
         {
           "text": "分享一些 GitHub Actions 的实用技巧",
           "link": "/blog/11/github-actions"
+        }
+      ]
+    },
+    {
+      "text": "Gitea",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "使用 Docker 搭建个人私有化 Git 服务：Gitea + SSH 配置实践",
+          "link": "/blog/11/install-gitea"
         }
       ]
     }
