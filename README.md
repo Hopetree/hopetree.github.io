@@ -220,9 +220,12 @@ npm run docs:build
 		- [Nginx使用resolver配置解决域名解析成ipv6的问题](/blog/10/nginx-resolver.md)
 - **Git**
 	- Git操作
+		- [Git 提交信息规范与最佳实践](/blog/11/git-commit.md)
 		- [Git 常用及特殊命令笔记](/blog/11/git-note.md)
 	- Github相关
 		- [分享一些 GitHub Actions 的实用技巧](/blog/11/github-actions.md)
+	- Gitea
+		- [使用 Docker 搭建个人私有化 Git 服务：Gitea + SSH 配置实践](/blog/11/install-gitea.md)
 - **OneFile**
 	- HTTPS证书
 		- [HTTPS证书过期时间获取](/blog/12/https-cert-info.md)
