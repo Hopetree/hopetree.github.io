@@ -131,6 +131,7 @@ npm run docs:build
 		- [VMware虚拟机桥接网络设置固定静态IP](/blog/4/vmware-bridged-network.md)
 		- [VirtualBox 安装 CentOS 7 系统并通过主机 ssh 连接虚拟机](/blog/4/virtualbox-install-centos7.md)
 	- 学习笔记
+		- [Linux 系统 OOM 排查指南](/blog/4/linux-oom.md)
 		- [记录一些在持续部署中可复用的shell命令和函数](/blog/4/shell-functions-and-commands.md)
 		- [Linux系统中负载过高问题的排查思路与解决方案](/blog/4/Linux-Load-Average.md)
 		- [检查服务器端口连通性的几种方法](/blog/4/port-check.md)
