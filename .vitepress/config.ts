@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-04-27 02:30:09
+    // update date:2025-04-30 02:30:10
     sidebar: {
   "/blog/1/": [
     {
@@ -525,6 +525,10 @@ export default defineConfig({
       "text": "学习笔记",
       "collapsed": false,
       "items": [
+        {
+          "text": "Linux 系统 OOM 排查指南",
+          "link": "/blog/4/linux-oom"
+        },
         {
           "text": "记录一些在持续部署中可复用的shell命令和函数",
           "link": "/blog/4/shell-functions-and-commands"
