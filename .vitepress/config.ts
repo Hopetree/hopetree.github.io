@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-05-04 02:30:08
+    // update date:2025-05-07 02:30:09
     sidebar: {
   "/blog/1/": [
     {
