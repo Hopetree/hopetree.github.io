@@ -65,7 +65,7 @@ services:
       - "222:22"
 ```
 
-### 文件说明：
+**文件说明**：
 
 - `/data/gitea:/data`：Gitea 所有数据，包括仓库、配置文件、用户信息等
 - `13000:3000`：本地访问 Gitea 的 Web 管理界面 [http://localhost:13000](http://localhost:13000)
@@ -136,7 +136,68 @@ Host gitea
 git clone gitea:your_user/your_repo.git
 ```
 
-## 五、总结
+## 五、配置域名访问
+
+### 1. 场景说明
+
+| 服务  |   主机IP|  描述 |
+| ------------ | ------------ | ------------ |
+|gitea   | 192.168.0.203  | 宿主机A，容器映射 13000/222|
+| Nginx  |  192.168.0.202 |  宿主机B，监听端口80用来反向代理到gitea |
+|  域名解析 |  git.home.local -> 192.168.0.202（Nginx） |   |
+
+### 2. 添加 Nginx 配置
+
+在 Nginx 中添加配置如下：
+
+```nginx
+server {
+    listen 80;
+    server_name git.home.local;
+
+    location / {
+        proxy_pass http://192.168.0.203:13000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+这样 Web 就没问题了，访问 http://git.home.local 会看到 Gitea 页面。
+
+### 3. 本地配置 ssh 
+
+不能通过 Nginx 配置 ssh 转发，所以可以在本地配置将 ssh 直接走到 gitea 上面，在客户端本地 ~/.ssh/config 添加：
+
+```ini
+Host git.home.local
+    HostName 192.168.0.203
+    Port 222
+    User git
+```
+
+然后就可以使用域名克隆项目：
+
+```bash
+git clone git@git.home.local:your_user/your_repo.git
+```
+
+### 4. 更新 gitea 配置
+
+更新配置只需要修改请求地址并将 SSH_PORT 改回 22 端口即可：
+
+```ini
+[server]
+DOMAIN = git.home.local
+SSH_DOMAIN = git.home.local
+SSH_PORT = 22
+```
+
+改完之后重启容器即可，参考之前的配置修改方式。
+
+## 六、总结
 
 通过 Gitea + Docker + SSH 的组合，可以非常高效地搭建起个人私有 Git 服务，具有如下优势：
 
