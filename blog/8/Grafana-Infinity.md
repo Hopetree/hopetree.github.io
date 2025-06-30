@@ -17,7 +17,7 @@ Grafana Infinity 是一个 Grafana 插件，用于从几乎任何 REST API 获�
 ## Infinity 数据源的使用案例
 
 
-## 表格数据
+### 表格数据
 
 在使用 Infinity 数据源的时候，默认会提供一个 github 的接口当做示例展示，这个接口地址为：[https://github.com/grafana/grafana-infinity-datasource/blob/main/testdata/users.json](https://github.com/grafana/grafana-infinity-datasource/blob/main/testdata/users.json "https://github.com/grafana/grafana-infinity-datasource/blob/main/testdata/users.json")
 
