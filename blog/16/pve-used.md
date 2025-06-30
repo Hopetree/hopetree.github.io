@@ -31,7 +31,7 @@ PVE 系统在安装的时候默认会把储存划分为 local 和 local-lvm 两�
 
 ## 更换 PVE 源
 
-参考文档：[Proxmox VE 8 换源](https://blog.fallenbreath.me/zh-CN/2023/pve8-change-sourceslist/)
+参考文档：[Proxmox VE 8 换源](https://tendcode.com/subject/article/pve8-change-sourceslist/)
 
 ::: tip 注意事项
 
