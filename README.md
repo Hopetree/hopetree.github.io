@@ -39,6 +39,7 @@ npm run docs:build
 	- 配置管理
 	- 后台管理
 		- [使用 Django 的 admin 定制后台，丰富自己网站的后台管理系统](/blog/1/django-admin.md)
+		- [Django 中 locale 的用法：自定义翻译](/blog/1/django-locale.md)
 		- [Django管理后台技巧分享之实例关系的搜索，autocomplete_fields字段使用](/blog/1/django-admin-autocomplete_fields.md)
 	- 功能开发
 		- [服务器监控应用（1）：服务端开发](/blog/1/server-status-1.md)
@@ -215,6 +216,7 @@ npm run docs:build
 		- [Nginx配置中server模块的加载顺序和规则](/blog/10/nginx-server.md)
 		- [终于理解了Nginx配置中location规则的优先级问题](/blog/10/nginx-location.md)
 	- Nginx配置实战
+		- [来自网信办的安全巡检报告：SSL弱密码整改](/blog/10/ssl-ciphers.md)
 		- [Nginx 应对网站扫描工具的方案](/blog/10/web-scan.md)
 		- [Nginx配置gzip压缩的重要性](/blog/10/nginx-gzip.md)
 		- [Nginx配置移动端访问自动重定向到指定请求](/blog/10/nginx-mobile-conf.md)
