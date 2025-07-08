@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-07-06 02:30:08
+    // update date:2025-07-09 02:30:11
     sidebar: {
   "/blog/1/": [
     {
@@ -122,6 +122,10 @@ export default defineConfig({
         {
           "text": "使用 Django 的 admin 定制后台，丰富自己网站的后台管理系统",
           "link": "/blog/1/django-admin"
+        },
+        {
+          "text": "Django 中 locale 的用法：自定义翻译",
+          "link": "/blog/1/django-locale"
         },
         {
           "text": "Django管理后台技巧分享之实例关系的搜索，autocomplete_fields字段使用",
@@ -896,6 +900,10 @@ export default defineConfig({
       "text": "Nginx配置实战",
       "collapsed": false,
       "items": [
+        {
+          "text": "来自网信办的安全巡检报告：SSL弱密码整改",
+          "link": "/blog/10/ssl-ciphers"
+        },
         {
           "text": "Nginx 应对网站扫描工具的方案",
           "link": "/blog/10/web-scan"
