@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-07-09 02:30:11
+    // update date:2025-07-13 02:30:11
     sidebar: {
   "/blog/1/": [
     {
@@ -1011,6 +1011,10 @@ export default defineConfig({
       "collapsed": false,
       "items": [
         {
+          "text": "Redis “Cannot assign requested address” 故障排查实录",
+          "link": "/blog/15/redis-Cannot-assign-requested-address"
+        },
+        {
           "text": "慢跑助力健康减肥：我的10斤减脂之路",
           "link": "/blog/15/Jogging-and-weight-loss"
         },
@@ -1033,6 +1037,10 @@ export default defineConfig({
       "text": "工具分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "Nginx Proxy Manager：Docker环境下反向代理的绝佳选择",
+          "link": "/blog/15/Nginx-Proxy-Manager"
+        },
         {
           "text": "VitePress 网站配置 Algolia 搜索",
           "link": "/blog/15/vitepress-search-by-algolia"
