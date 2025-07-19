@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-07-16 02:30:09
+    // update date:2025-07-20 02:30:17
     sidebar: {
   "/blog/1/": [
     {
@@ -900,6 +900,10 @@ export default defineConfig({
       "text": "Nginx配置实战",
       "collapsed": false,
       "items": [
+        {
+          "text": "被国产某SSL续签工具背刺",
+          "link": "/blog/10/fuck-httpsok"
+        },
         {
           "text": "来自网信办的安全巡检报告：SSL弱密码整改",
           "link": "/blog/10/ssl-ciphers"
