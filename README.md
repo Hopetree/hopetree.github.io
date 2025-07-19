@@ -216,6 +216,7 @@ npm run docs:build
 		- [Nginx配置中server模块的加载顺序和规则](/blog/10/nginx-server.md)
 		- [终于理解了Nginx配置中location规则的优先级问题](/blog/10/nginx-location.md)
 	- Nginx配置实战
+		- [被国产某SSL续签工具背刺](/blog/10/fuck-httpsok.md)
 		- [来自网信办的安全巡检报告：SSL弱密码整改](/blog/10/ssl-ciphers.md)
 		- [Nginx 应对网站扫描工具的方案](/blog/10/web-scan.md)
 		- [Nginx配置gzip压缩的重要性](/blog/10/nginx-gzip.md)
