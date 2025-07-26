@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-07-23 02:30:15
+    // update date:2025-07-27 02:30:16
     sidebar: {
   "/blog/1/": [
     {
@@ -463,6 +463,10 @@ export default defineConfig({
       "text": "技巧分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "Python 日志中 exc_info 和 stacklevel 参数的使用场景",
+          "link": "/blog/14/python-logging-traceback"
+        },
         {
           "text": "Python 脚本中日志级别控制示例",
           "link": "/blog/14/python-logging-level"
