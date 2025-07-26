@@ -117,6 +117,7 @@ npm run docs:build
 		- [使用 python 执行 shell 命令的几种常用方式](/blog/14/python-shell-cmd.md)
 		- [Python 命令行参数的3种传入方式](/blog/14/python-shell.md)
 	- 技巧分享
+		- [Python 日志中 exc_info 和 stacklevel 参数的使用场景](/blog/14/python-logging-traceback.md)
 		- [Python 脚本中日志级别控制示例](/blog/14/python-logging-level.md)
 		- [分享一种使用 Python 调用接口“失败”后重试的通用方案](/blog/14/python-loop-retry.md)
 		- [Python 上下文管理及 with 语句的实用技巧](/blog/14/with.md)
