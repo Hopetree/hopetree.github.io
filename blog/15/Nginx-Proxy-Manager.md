@@ -24,6 +24,10 @@ Nginx Proxy Manager的核心功能是反向代理管理，通过`Proxy Hosts`模
 #### 1.2. **目标地址（Forward Hostname / IP）**
    - 这是目标服务的地址，通常是Docker容器的IP地址或主机名。
    - 例如，如果你的服务运行在Docker容器中，监听在`localhost:8080`，则目标地址为`http://localhost:8080`。
+   
+   注意，如果是要反向代理到宿主机IP，应该填写 `172.17.0.1`，这个是容器里面指向宿主机的IP：
+   
+   ![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2025/202507181241159.png)
 
 #### 1.3. **目标端口（Forward Port）**
    - 这是目标服务的端口号。例如，如果你的服务运行在`localhost:8080`，则目标端口为`8080`。
@@ -32,6 +36,10 @@ Nginx Proxy Manager的核心功能是反向代理管理，通过`Proxy Hosts`模
    - Nginx Proxy Manager支持自动申请和续期Let's Encrypt证书。
    - 你也可以上传自定义的SSL证书和私钥。
    - 通过启用SSL，可以为代理主机启用HTTPS，确保流量的安全。
+   
+   可以自动审批HTTPS证书：
+   
+   ![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2025/202507181240195.png)
 
 #### 1.5. **访问控制（Access List）**
    - 你可以为每个代理主机设置访问控制，限制特定IP地址或IP范围的访问。
@@ -43,6 +51,10 @@ Nginx Proxy Manager的核心功能是反向代理管理，通过`Proxy Hosts`模
 #### 1.7. **高级配置（Advanced Configuration）**
    - Nginx Proxy Manager允许你在代理主机配置中添加自定义的Nginx配置指令。
    - 这为需要特殊配置的用户提供了灵活性。
+   
+   比如我的网站添加的配置：
+   
+   ![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2025/202507181239964.png)
 
 ### 2. SSL证书管理（SSL Certificates）
 
