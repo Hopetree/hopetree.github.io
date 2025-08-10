@@ -155,7 +155,11 @@ telnet 127.0.0.1 6379
 
 ### 8. redis 密码问题
 
-虽然上面解决了 redis 的访问问题，但是客户端又开始报错 “redis.exceptions.ResponseError: AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?”
+虽然上面解决了 redis 的访问问题，但是客户端又开始报错:
+
+```bash
+“redis.exceptions.ResponseError: AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?”
+```
 
 这个问题麻烦就看出来，是因为客户端在使用密码连接 Redis，但是 Redis 根本没有密码，所以进一步解决这个问题。关于这个密码配置丢失的问题就不展开记录了，反正就是保证 Redis 有密码就行了。
 
