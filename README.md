@@ -45,7 +45,6 @@ npm run docs:build
 		- [服务器监控应用（1）：服务端开发](/blog/1/server-status-1.md)
 		- [服务器监控应用（2）：使用 Golang 开发客户端](/blog/1/server-status-2.md)
 		- [服务器监控应用（3）：监控告警通知开发](/blog/1/server-status-3.md)
-		- [markdown 支持 Mermaid 流程图的方案](/blog/1/markdown-use-Mermaid.md)
 		- [Django博客评论区显示用户操作系统与浏览器信息](/blog/1/show-user-agent.md)
 		- [Django分页功能改造，一比一还原百度搜索的分页效果](/blog/1/django-paginator.md)
 		- [添加文章编辑页面，支持 markdown 编辑器实时预览编辑](/blog/1/blog-edit-page.md)
@@ -72,6 +71,7 @@ npm run docs:build
 		- [博客灾备方案（2）：博客文章同步到VitePress静态站](/blog/1/blog-sync-to-vitepress.md)
 		- [博客灾备方案（1）：七牛云图床增量同步到GitHub](/blog/1/qiniu-sync-to-github.md)
 	- 拓展
+		- [markdown 支持 Mermaid 流程图的方案](/blog/1/markdown-use-Mermaid.md)
 		- [Python-Markdown 自定义拓展](/blog/1/python-markdown-extensions.md)
 - **Docker**
 	- 安装部署
