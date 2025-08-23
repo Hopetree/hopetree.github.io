@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-08-20 02:30:17
+    // update date:2025-08-24 02:30:14
     sidebar: {
   "/blog/1/": [
     {
@@ -148,10 +148,6 @@ export default defineConfig({
         {
           "text": "服务器监控应用（3）：监控告警通知开发",
           "link": "/blog/1/server-status-3"
-        },
-        {
-          "text": "markdown 支持 Mermaid 流程图的方案",
-          "link": "/blog/1/markdown-use-Mermaid"
         },
         {
           "text": "Django博客评论区显示用户操作系统与浏览器信息",
@@ -269,6 +265,10 @@ export default defineConfig({
       "text": "拓展",
       "collapsed": false,
       "items": [
+        {
+          "text": "markdown 支持 Mermaid 流程图的方案",
+          "link": "/blog/1/markdown-use-Mermaid"
+        },
         {
           "text": "Python-Markdown 自定义拓展",
           "link": "/blog/1/python-markdown-extensions"
