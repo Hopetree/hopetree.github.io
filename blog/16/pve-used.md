@@ -177,3 +177,7 @@ done
 13.226.34.78 api.themoviedb.org
 13.226.34.79 api.themoviedb.org
 ```
+
+查找新的IP，可以访问这个地址：<https://dnschecker.org/country/cn/#A/api.themoviedb.org></https://dnschecker.org/country/cn/#A/api.themoviedb.org>
+
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2025/202508221659627.png)
