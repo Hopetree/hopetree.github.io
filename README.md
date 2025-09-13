@@ -140,6 +140,7 @@ npm run docs:build
 		- [Linux 三剑客（grep awk sed）常用操作笔记](/blog/4/grep-awk-sed.md)
 		- [Linux 学习笔记 ——第（1）期](/blog/4/study-linux-01.md)
 	- 案例分享
+		- [iptables 规则导致的容器监听端口无法被外部访问问题记录](/blog/4/iptables-rule-docker-forward.md)
 		- [使用curl命令获取请求接口每个阶段的耗时](/blog/4/curl-time.md)
 		- [rsync 实时同步方案](/blog/4/rsync.md)
 		- [Linux 设置 SSH 密钥登陆及更换登录端口](/blog/4/ssh-id_rsa.md)
