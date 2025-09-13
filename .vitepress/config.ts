@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-09-10 02:30:17
+    // update date:2025-09-14 02:30:16
     sidebar: {
   "/blog/1/": [
     {
@@ -563,6 +563,10 @@ export default defineConfig({
       "text": "案例分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "iptables 规则导致的容器监听端口无法被外部访问问题记录",
+          "link": "/blog/4/iptables-rule-docker-forward"
+        },
         {
           "text": "使用curl命令获取请求接口每个阶段的耗时",
           "link": "/blog/4/curl-time"
