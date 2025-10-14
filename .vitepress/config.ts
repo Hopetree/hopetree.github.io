@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-09-17 02:30:16
+    // update date:2025-10-15 02:30:22
     sidebar: {
   "/blog/1/": [
     {
@@ -1236,6 +1236,22 @@ export default defineConfig({
         {
           "text": "ITSM服务请求流程规范",
           "link": "/blog/20/itsm-service-request-process-guide"
+        }
+      ]
+    }
+  ],
+  "/blog/21/": [
+    {
+      "text": "硬件基础",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "装机硬件解析系列（一）：CPU 选购指南",
+          "link": "/blog/21/diy-cpu"
+        },
+        {
+          "text": "装机硬件解析系列（二）：显卡选购指南",
+          "link": "/blog/21/diy-xianka"
         }
       ]
     }
