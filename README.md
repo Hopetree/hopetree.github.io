@@ -294,5 +294,9 @@ npm run docs:build
 		- [ITSM问题管理流程规范](/blog/20/itsm-problem-management-process.md)
 		- [ITSM变更管理流程规范](/blog/20/itsm-change-management-process.md)
 		- [ITSM服务请求流程规范](/blog/20/itsm-service-request-process-guide.md)
+- **装机DIY**
+	- 硬件基础
+		- [装机硬件解析系列（一）：CPU 选购指南](/blog/21/diy-cpu.md)
+		- [装机硬件解析系列（二）：显卡选购指南](/blog/21/diy-xianka.md)
 - **其他文章**
 	- 无分类文章
