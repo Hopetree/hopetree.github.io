@@ -107,10 +107,24 @@ features:
   link: /blog/20/
   linkText: 查看主题文章
   title: ITSM
+- details: 记录一些装机DIY需要的知识和经验
+  icon: 📚
+  link: /blog/21/
+  linkText: 查看主题文章
+  title: 装机DIY
 - details: 未分类文章
   icon: 📘
   link: /blog/free/
   linkText: 查看其他文章
   title: 其他文章
+- details: 未完待续
+  icon: 📝
+  title: 待完成
+- details: 未完待续
+  icon: 📝
+  title: 待完成
+- details: 未完待续
+  icon: 📝
+  title: 待完成
 
 ---
