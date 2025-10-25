@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-10-22 02:30:17
+    // update date:2025-10-26 02:30:19
     sidebar: {
   "/blog/1/": [
     {
@@ -872,6 +872,10 @@ export default defineConfig({
       "text": "采集插件",
       "collapsed": false,
       "items": [
+        {
+          "text": "给 Node Exporter 添加自定义指标 —— 以温度监控为例",
+          "link": "/blog/8/node_exporter-Textfile-Collector"
+        },
         {
           "text": "自定义Prometheus指标采集插件，采集并显示PVE系统的温度和功率",
           "link": "/blog/8/prometheus-exporter-plugin-for-PVE"
