@@ -210,6 +210,7 @@ npm run docs:build
 	- 安装部署
 		- [安装部署Prometheus和Grafana，并配置主机监控面板](/blog/8/install-prometheus-and-grafana.md)
 	- 采集插件
+		- [给 Node Exporter 添加自定义指标 —— 以温度监控为例](/blog/8/node_exporter-Textfile-Collector.md)
 		- [自定义Prometheus指标采集插件，采集并显示PVE系统的温度和功率](/blog/8/prometheus-exporter-plugin-for-PVE.md)
 	- Grafana
 		- [在 Grafana 中通过 Infinity 数据源可视化接口数据](/blog/8/Grafana-Infinity.md)
