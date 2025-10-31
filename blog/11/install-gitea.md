@@ -50,9 +50,6 @@ services:
   server:
     image: docker.gitea.com/gitea:1.23.7
     container_name: gitea
-    environment:
-      - USER_UID=1000
-      - USER_GID=1000
     restart: always
     networks:
       - gitea
