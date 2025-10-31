@@ -466,207 +466,58 @@ docker-compose run web python manage.py migrate
 
 上面的步骤足够完成新平台的搭建，如果涉及到平台的迁移，比如更换服务器，可以参考下面的步骤进行操作。
 
-### 数据备份
+### 打包数据
 
-平台需要备份的数据包括两部分：数据库，静态文件。
+将整个 izone-docker 目录从旧环境打包，方便转移到新环境，打包的时候忽略掉日志目录。
 
-可以直接参考我的备份脚本，我一般的都是在平台上面设置成定时任务进行自动备份。
-
-首先是静态文件备份脚本:
-
-```shell
-#!/bin/bash
-
-# crontab -e
-# 0 05 * * * sh /home/zero/scripts/backup_media.sh
-
-input_dir=/opt/cloud/izone-docker/web
-backup_dir=/home/zero/backup
-maxnum=15
-backup_name=media_$(date +'%Y%m%d_%H%M%S').zip
-
-# 备份 media 目录到指定目录
-cd $input_dir
-zip -r $backup_dir/$backup_name ./media
-
-function check_files()
-{
-    cd $backup_dir
-    local file_lis=$(ls | grep media.*zip)
-    for file in ${file_lis[@]}
-    do
-        num=$(ls | grep media.*zip | wc -l)
-        if [[ $num -lt $maxnum ]]; then
-            break
-        else
-            rm -f $file && echo "remove ${file}"
-        fi
-    done
-    echo "$(ls)"
-}
-
-check_files
-```
-
-然后是数据库备份脚本：
-
-```shell
-#!/bin/bash
-
-# crontab -e
-# 0 05 * * * sh /home/zero/scripts/backup_mysql.sh
-
-backup_dir=/home/zero/backup
-backup_name=izone_$(date +'%Y%m%d_%H%M%S').sql
-maxnum=15
-db_name=izone_db
-
-# 执行 db 容器的备份命令
-docker exec $db_name sh -c 'exec mysqldump -uroot -p$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE' > ${backup_dir}/${backup_name}
-[[ $? -eq 0 ]] && echo "backup $backup_name successfully." || echo "backup $backup_name failed."
-
-# 检查备份文件数量，如果多余最大保存数量，就删除多余的备份
-function check_files()
-{
-    cd $backup_dir
-    local file_lis=$(ls | grep izone.*sql)
-    for file in ${file_lis[@]}
-    do
-        num=$(ls | grep izone.*sql | wc -l)
-        if [[ $num -lt $maxnum ]]; then
-            break
-        else
-            rm -f $file && echo "remove ${file}"
-        fi
-    done
-    echo "$(ls)"
-}
-
-check_files
-```
-
-### 拷贝备份数据
-
-将备份数据拷贝到新的平台中，包括数据库备份和静态资源备份，还有项目的环境变量文件(.env和izone.env)，这里只有izone.env是自定义的配置，所以只拷贝这个就行。当然，你也应该把备份脚本、Nginx配置等拷贝到新平台。
-
-这里只说平台的备份文件：
-
-```bash
-[root@zero-0 ~]# ll
-total 148300
--rw-------. 1 root root      1244 Sep 15 21:26 anaconda-ks.cfg
--rw-r--r--. 1 root root       979 Sep 18 13:35 docker_install.sh
-drwxr-xr-x. 8 root root       264 Sep 18 14:23 izone
--rw-r--r--. 1 root root 149309999 Sep 18 16:25 izone_20230918_050001.sql
-drwxr-xr-x. 6 root root       222 Sep 18 14:39 izone-docker
--rw-r--r--. 1 root root      2195 Sep 18 16:52 izone.env
--rw-r--r--. 1 root root   2531706 Sep 18 16:06 media_20230918_050001.zip
-```
-
-### 数据还原
-
-1、还原配置文件
-
-将`izone.env`文件覆盖项目的`izone.env`
-
-```bash
-mv -f izone.env
-```
-
-2、还原静态文件
-
-执行还原命令，注意根据实际的目录修改命令：
-
-```bash
-unzip /root/media_20230918_050001.zip -d /root/izone-docker/web
-```
-
-这个解压会把压缩包中的media目录解压到/root/izone-docker/web中的media，可以解压后查看验证。
-
-3、还原数据库
-
-首先将数据库备份文件复制到mysql容器中，直接放到/tmp目录下面即可：
-
-```bash
-docker cp /root/izone_20230918_050001.sql izone_db:/tmp/
-```
-
-然后登录数据库容器：
-
-```bash
-docker exec -it izone_db bash
-```
-
-然后执行数据库还原命令：
-
-```bash
-mysql -uroot -p$MYSQL_ROOT_PASSWORD -D $MYSQL_DATABASE --default-character-set=utf8 < /tmp/izone_20230918_050001.sql
-```
-
-
-执行完成输入exit后退出容器即可。
-
-以上几个命令的输入输出如下：
-
-```bash
-[root@zero-0 media]# docker cp /root/izone_20230918_050001.sql izone_db:/tmp/
-Successfully copied 149MB to izone_db:/tmp/
-[root@zero-0 media]# docker exec -it izone_db bash
-bash-4.2# mysql -uroot -p$MYSQL_ROOT_PASSWORD -D $MYSQL_DATABASE --default-character-set=utf8 < /tmp/izone_20230918_050001.sqlmysql: [Warning] Using a password on the command line interface can be insecure.
-bash-4.2# exit
-exit
-[root@zero-0 media]# 
-```
-
-### 更新资源
-
-由于静态文件和数据都是导入的，所以需要在Django里面进行更新，执行静态资源收集和搜索索引更新命令:
-
-```bash
-docker exec -it izone_web python manage.py collectstatic
-```
-
-```bash
-docker exec -it izone_web python manage.py update_index
-```
-
-然后进入izone-docker的项目中，重启容器：
+先停掉服务，避免打包过程中文件变动：
 
 ```bash
 docker-compose down
-docker-compose up -d
 ```
 
-输入输出如下：
+进入项目目录的父目录中，打包目录，并忽略日志目录：
 
 ```bash
-[root@zero-0 izone-docker]# docker-compose down
-/usr/lib/python2.7/site-packages/paramiko/transport.py:33: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
-  from cryptography.hazmat.backends import default_backend
-Stopping izone_nginx ... done
-Stopping izone_web   ... done
-Stopping izone_db    ... done
-Stopping izone_redis ... done
-Removing izone_nginx ... done
-Removing izone_web   ... done
-Removing izone_db    ... done
-Removing izone_redis ... done
-Removing network izone-docker_frontend
-Removing network izone-docker_backend
-[root@zero-0 izone-docker]# docker-compose up -d
-/usr/lib/python2.7/site-packages/paramiko/transport.py:33: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
-  from cryptography.hazmat.backends import default_backend
-Creating network "izone-docker_frontend" with driver "bridge"
-Creating network "izone-docker_backend" with driver "bridge"
-Creating izone_db    ... done
-Creating izone_redis ... done
-Creating izone_web   ... done
-Creating izone_nginx ... done
+tar -zcvf izone-docker.tar.gz --exclude='izone-docker/web/log/' izone-docker/
+```
+
+### 转移打包数据
+
+将打包的数据转移到新环境，可以使用 scp 或者直接在旧环境上面开启一个临时的文件共享服务，开启服务更快。
+
+开启临时服务（注意旧环境的端口使用已经被防火墙放行的）：
+
+```bash
+python3 -m http.server 7005 --bind 0.0.0.0
+```
+
+新环境上面下载包：
+
+```bash
+wget -O izone-docker.tar.gz  http://xx.xx.xx.xx:7005/izone-docker.tar.gz
+```
+
+下载完成之后解压：
+
+```bash
+tar -zxvf izone-docker.tar.gz
+```
+
+
+### 启动新环境
+
+首先需要拉取服务代码打镜像，这个操作跟部署一样，这里就不再重复说明。
+
+镜像都拉好，就可以直接启动服务：
+
+```bash
+docker-compose up -d
 ```
 
 此时再访问一下服务器IP+8888端口看看效果，可以看到数据已经完美还原：
 
-![izone显示](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2023/izone-backup%20(1).png "izone显示")
+![博客迁移](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2025/202510170932244.png)
 
 ## 常见问题和解答
 
