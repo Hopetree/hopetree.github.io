@@ -84,6 +84,7 @@ npm run docs:build
 		- [Docker volume 挂载时文件或文件夹不存在【转】](/blog/5/docker-volume.md)
 	- docker-compose
 		- [容器化部署博客（2）—— docker-compose 部署 izone 博客](/blog/5/izone-docker.md)
+		- [关于 docker compose 的安装和升级问题](/blog/5/update-for-docker-compose.md)
 		- [容器化部署博客（3）—— 更换服务器，5分钟完成项目迁移](/blog/5/docker-rebuild.md)
 - **Python**
 	- 实战经验
