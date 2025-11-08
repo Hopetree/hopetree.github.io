@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-11-05 02:30:16
+    // update date:2025-11-09 02:30:19
     sidebar: {
   "/blog/1/": [
     {
@@ -322,6 +322,10 @@ export default defineConfig({
         {
           "text": "容器化部署博客（2）—— docker-compose 部署 izone 博客",
           "link": "/blog/5/izone-docker"
+        },
+        {
+          "text": "关于 docker compose 的安装和升级问题",
+          "link": "/blog/5/update-for-docker-compose"
         },
         {
           "text": "容器化部署博客（3）—— 更换服务器，5分钟完成项目迁移",
