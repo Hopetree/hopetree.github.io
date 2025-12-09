@@ -247,6 +247,7 @@ npm run docs:build
 		- [烂笔头周刊（第2期）：职业发展的最好方法是换公司？！](/blog/15/notes-weekly-2.md)
 		- [烂笔头周刊（第1期）：好记性不如烂笔头](/blog/15/notes-weekly-1.md)
 	- 经验分享
+		- [🚀 告别自动登出：浏览器控制台心跳保持会话指南](/blog/15/keep-page-Session.md)
 		- [Redis “Cannot assign requested address” 故障排查实录](/blog/15/redis-Cannot-assign-requested-address.md)
 		- [慢跑助力健康减肥：我的10斤减脂之路](/blog/15/Jogging-and-weight-loss.md)
 		- [Windows 系统将 .exe 程序设置为系统服务的方案](/blog/15/windows-system-service.md)
