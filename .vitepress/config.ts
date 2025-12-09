@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2025-12-07 02:30:16
+    // update date:2025-12-10 02:30:18
     sidebar: {
   "/blog/1/": [
     {
@@ -1030,6 +1030,10 @@ export default defineConfig({
       "text": "经验分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "🚀 告别自动登出：浏览器控制台心跳保持会话指南",
+          "link": "/blog/15/keep-page-Session"
+        },
         {
           "text": "Redis “Cannot assign requested address” 故障排查实录",
           "link": "/blog/15/redis-Cannot-assign-requested-address"
