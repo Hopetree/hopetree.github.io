@@ -301,5 +301,6 @@ npm run docs:build
 	- 硬件基础
 		- [装机硬件解析系列（一）：CPU 选购指南](/blog/21/diy-cpu.md)
 		- [装机硬件解析系列（二）：显卡选购指南](/blog/21/diy-xianka.md)
+- **NAS**
 - **其他文章**
 	- 无分类文章
