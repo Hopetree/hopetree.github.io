@@ -302,5 +302,8 @@ npm run docs:build
 		- [装机硬件解析系列（一）：CPU 选购指南](/blog/21/diy-cpu.md)
 		- [装机硬件解析系列（二）：显卡选购指南](/blog/21/diy-xianka.md)
 - **NAS**
+	- 影音娱乐
+		- [NAS 媒体文件命名规范](/blog/22/nas-media-name-rule.md)
+		- [飞牛 NAS 安装 MoonTV](/blog/22/fnos-install-moonTV.md)
 - **其他文章**
 	- 无分类文章
