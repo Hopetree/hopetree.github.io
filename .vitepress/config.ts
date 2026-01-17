@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-01-11 02:30:17
+    // update date:2026-01-18 02:30:16
     sidebar: {
   "/blog/1/": [
     {
@@ -1268,7 +1268,22 @@ export default defineConfig({
       ]
     }
   ],
-  "/blog/22/": [],
+  "/blog/22/": [
+    {
+      "text": "影音娱乐",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "NAS 媒体文件命名规范",
+          "link": "/blog/22/nas-media-name-rule"
+        },
+        {
+          "text": "飞牛 NAS 安装 MoonTV",
+          "link": "/blog/22/fnos-install-moonTV"
+        }
+      ]
+    }
+  ],
   "/blog/free/": [
     {
       "text": "无分类文章",
