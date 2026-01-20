@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-01-18 02:30:16
+    // update date:2026-01-21 02:30:19
     sidebar: {
   "/blog/1/": [
     {
@@ -400,6 +400,10 @@ export default defineConfig({
         {
           "text": "CentOS下使用pip安装python依赖报错的解决思路",
           "link": "/blog/14/pip-upgrade"
+        },
+        {
+          "text": "使用 python-build-standalone 创建 Python3 可移植运行环境",
+          "link": "/blog/14/python-build-standalone-portable-python3-env"
         },
         {
           "text": "使用 setup.py 将 Python 库打包分发到 PyPI 踩坑指南",
