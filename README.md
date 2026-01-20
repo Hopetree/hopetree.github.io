@@ -103,6 +103,7 @@ npm run docs:build
 	- 包管理
 		- [使用pip下载python依赖包whl文件并进行离线安装](/blog/14/pip-offline-download.md)
 		- [CentOS下使用pip安装python依赖报错的解决思路](/blog/14/pip-upgrade.md)
+		- [使用 python-build-standalone 创建 Python3 可移植运行环境](/blog/14/python-build-standalone-portable-python3-env.md)
 		- [使用 setup.py 将 Python 库打包分发到 PyPI 踩坑指南](/blog/14/setup-to-pypy.md)
 	- 爬虫
 		- [Python 有道翻译爬虫，破解 sign 参数加密反爬机制，解决{"errorCode":50}错误](/blog/14/youdao-spider.md)
