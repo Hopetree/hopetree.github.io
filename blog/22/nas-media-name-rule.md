@@ -94,7 +94,7 @@ Movies根目录
     └── trailer.mkv
 ```
 
-- 电影文件夹必须包含上映年份  
+- 电影文件夹必须包含上映年份，使用英文括号  
 - 同一电影的多个版本应以“电影名 (年份) - 版本说明”命名  
 - Emby 会在播放端提供版本切换  
 
@@ -135,3 +135,7 @@ Movies根目录
 - 常用的重命名与整理工具包括 FileBot 和 TinyMediaManager
 
 按照以上结构整理后，大多数资源都可以被 Emby 类似的媒体库自动正确识别，减少人工干预，并保持库内显示的一致性。
+
+参考文档：
+
+- [Emby 电视剧命名规范](https://emby.media/support/articles/TV-Naming.html "Emby 电视剧命名规范")
