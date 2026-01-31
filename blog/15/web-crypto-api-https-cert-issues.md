@@ -150,11 +150,7 @@ sudo nginx -s reload
 
 1.  **重启浏览器**：为了确保缓存清除，建议彻底关闭 Chrome (`Command + Q`) 后重新打开。
 2.  **检查地址栏**：再次访问 `https://dev.home.local`，地址栏的小锁头图标应变为灰色或黑色（表示安全），且无红色警告。
-3.  **检查 API 状态**：打开开发者工具 (`F12`)，在 Console 中输入：
-    ```javascript
-    window.isSecureContext
-    ```
-    应返回 `true`。此时再次测试你的业务代码，`window.crypto.subtle.importKey` 等 API 应当可以正常调用。
+3.  **检查 API 状态**：打开开发者工具 (`F12`)，在 Console 中输入：`window.isSecureContext` 应返回 `true`。此时再次测试你的业务代码，`window.crypto.subtle.importKey` 等 API 应当可以正常调用。
 
 ## 总结 / 反思
 
