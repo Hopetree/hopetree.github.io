@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-03-25 02:30:21
+    // update date:2026-03-29 02:30:18
     sidebar: {
   "/blog/1/": [
     {
@@ -768,6 +768,11 @@ export default defineConfig({
     }
   ],
   "/blog/2/": [
+    {
+      "text": "Claude Code",
+      "collapsed": false,
+      "items": []
+    },
     {
       "text": "ChatGPT",
       "collapsed": false,
