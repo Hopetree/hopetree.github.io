@@ -186,6 +186,7 @@ npm run docs:build
 		- [【Jenkins 插件】使用 SSH Slaves 创建从节点执行任务](/blog/3/jenkins-slave.md)
 		- [【Jenkins 插件】使用 github 插件从 GitHub 上拉取项目代码](/blog/3/jenkins_link_github.md)
 - **AI**
+	- Claude Code
 	- ChatGPT
 		- [ChatGPT提问的艺术](/blog/2/chatgpt-prompts.md)
 		- [浏览器插件开发：一个简单的站外搜索插件](/blog/2/browser-plugin-site-search.md)
