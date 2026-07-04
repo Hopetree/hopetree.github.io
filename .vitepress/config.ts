@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-07-01 02:31:23
+    // update date:2026-07-05 02:30:20
     sidebar: {
   "/blog/1/": [
     {
@@ -1039,6 +1039,10 @@ export default defineConfig({
       "text": "经验分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "Chrome 浏览器插件离线下载与安装指南",
+          "link": "/blog/15/Chrome-extensions-downlaod"
+        },
         {
           "text": "解决 Web Crypto API 加密报错及 HTTPS 证书信任问题",
           "link": "/blog/15/web-crypto-api-https-cert-issues"
