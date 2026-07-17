@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-07-17 16:27:36
+    // update date:2026-07-17 17:07:29
     sidebar: {
   "/blog/1/": [
     {
@@ -1298,6 +1298,10 @@ export default defineConfig({
       "text": "影音娱乐",
       "collapsed": false,
       "items": [
+        {
+          "text": "NAS 常用 Docker 容器推荐",
+          "link": "/blog/22/nas-docker-recommend"
+        },
         {
           "text": "NAS 媒体文件命名规范",
           "link": "/blog/22/nas-media-name-rule"
