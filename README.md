@@ -45,6 +45,7 @@ npm run docs:build
 		- [服务器监控应用（1）：服务端开发](/blog/1/server-status-1.md)
 		- [服务器监控应用（2）：使用 Golang 开发客户端](/blog/1/server-status-2.md)
 		- [服务器监控应用（3）：监控告警通知开发](/blog/1/server-status-3.md)
+		- [用 Claude Code Skill 实现博客文章一键发布](/blog/1/claude-code-skill-article-publish.md)
 		- [Django博客评论区显示用户操作系统与浏览器信息](/blog/1/show-user-agent.md)
 		- [Django分页功能改造，一比一还原百度搜索的分页效果](/blog/1/django-paginator.md)
 		- [添加文章编辑页面，支持 markdown 编辑器实时预览编辑](/blog/1/blog-edit-page.md)
@@ -277,6 +278,7 @@ npm run docs:build
 		- [使用 Cloudflare 搭建自己的 Docker Hub 镜像代理](/blog/16/docker-hub-on-cloudflare.md)
 	- PVE
 		- [PVE 系统最佳实践](/blog/16/pve-used.md)
+		- [PVE LXC（CentOS Stream 9）安装 Tailscale（Userspace Networking 模式）实践](/blog/16/pve-lxc-install-tailscale.md)
 		- [Proxmox VE 8 换源【转】](/blog/16/pve8-change-sourceslist.md)
 		- [PVE系统在概要中显示CPU温度的方法](/blog/16/pve-cpu-temperature.md)
 	- DDNS
