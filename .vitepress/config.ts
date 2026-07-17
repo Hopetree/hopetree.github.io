@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-07-08 02:30:17
+    // update date:2026-07-17 16:27:36
     sidebar: {
   "/blog/1/": [
     {
@@ -148,6 +148,10 @@ export default defineConfig({
         {
           "text": "服务器监控应用（3）：监控告警通知开发",
           "link": "/blog/1/server-status-3"
+        },
+        {
+          "text": "用 Claude Code Skill 实现博客文章一键发布",
+          "link": "/blog/1/claude-code-skill-article-publish"
         },
         {
           "text": "Django博客评论区显示用户操作系统与浏览器信息",
@@ -1161,6 +1165,10 @@ export default defineConfig({
         {
           "text": "PVE 系统最佳实践",
           "link": "/blog/16/pve-used"
+        },
+        {
+          "text": "PVE LXC（CentOS Stream 9）安装 Tailscale（Userspace Networking 模式）实践",
+          "link": "/blog/16/pve-lxc-install-tailscale"
         },
         {
           "text": "Proxmox VE 8 换源【转】",
