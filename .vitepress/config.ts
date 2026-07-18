@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-07-17 17:07:29
+    // update date:2026-07-19 02:30:20
     sidebar: {
   "/blog/1/": [
     {
@@ -773,17 +773,16 @@ export default defineConfig({
   ],
   "/blog/2/": [
     {
-      "text": "Claude Code",
-      "collapsed": false,
-      "items": []
-    },
-    {
       "text": "ChatGPT",
       "collapsed": false,
       "items": [
         {
           "text": "ChatGPT提问的艺术",
           "link": "/blog/2/chatgpt-prompts"
+        },
+        {
+          "text": "AI 编程效率背后的隐性账单：从 24% 提速到 19% 倒挂",
+          "link": "/blog/2/ai-coding-hidden-costs"
         },
         {
           "text": "浏览器插件开发：一个简单的站外搜索插件",
@@ -1317,7 +1316,12 @@ export default defineConfig({
     {
       "text": "无分类文章",
       "collapsed": false,
-      "items": []
+      "items": [
+        {
+          "text": "智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范",
+          "link": "/blog/free/agent-skill-creation-standard"
+        }
+      ]
     }
   ]
 },
