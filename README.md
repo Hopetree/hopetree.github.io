@@ -187,9 +187,9 @@ npm run docs:build
 		- [【Jenkins 插件】使用 SSH Slaves 创建从节点执行任务](/blog/3/jenkins-slave.md)
 		- [【Jenkins 插件】使用 github 插件从 GitHub 上拉取项目代码](/blog/3/jenkins_link_github.md)
 - **AI**
-	- Claude Code
 	- ChatGPT
 		- [ChatGPT提问的艺术](/blog/2/chatgpt-prompts.md)
+		- [AI 编程效率背后的隐性账单：从 24% 提速到 19% 倒挂](/blog/2/ai-coding-hidden-costs.md)
 		- [浏览器插件开发：一个简单的站外搜索插件](/blog/2/browser-plugin-site-search.md)
 		- [依靠 ChatGPT 开发一个完整功能的浏览器插件](/blog/2/develop-browser-plugin-with-chatgpt.md)
 		- [[ChatGPT解决方案]获取 nginx 日志中请求 IP 统计数，设置 IP 流量限制](/blog/2/ChatGPT-nginx-ip-limit.md)
@@ -314,3 +314,4 @@ npm run docs:build
 		- [飞牛 NAS 安装 MoonTV](/blog/22/fnos-install-moonTV.md)
 - **其他文章**
 	- 无分类文章
+		- [智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范](/blog/free/agent-skill-creation-standard.md)
