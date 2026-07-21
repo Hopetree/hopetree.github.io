@@ -189,13 +189,18 @@ npm run docs:build
 - **AI**
 	- ChatGPT
 		- [ChatGPT提问的艺术](/blog/2/chatgpt-prompts.md)
-		- [AI 编程效率背后的隐性账单：从 24% 提速到 19% 倒挂](/blog/2/ai-coding-hidden-costs.md)
 		- [浏览器插件开发：一个简单的站外搜索插件](/blog/2/browser-plugin-site-search.md)
 		- [依靠 ChatGPT 开发一个完整功能的浏览器插件](/blog/2/develop-browser-plugin-with-chatgpt.md)
 		- [[ChatGPT解决方案]获取 nginx 日志中请求 IP 统计数，设置 IP 流量限制](/blog/2/ChatGPT-nginx-ip-limit.md)
 		- [[ChatGPT解决方案]🤖️ChatGPT协助我完成博客代码块添加复制代码和显示代码语言功能](/blog/2/ChatGPT-blog-req.md)
 		- [[ChatGPT解决方案]Nginx配置实现请求失败图片的统一转发](/blog/2/ChatGPT-nginx-error.md)
 		- [[ChatGPT解决方案]生成 nginx 自签名证书](/blog/2/ChatGPT-nginx-sert.md)
+	- LLM
+		- [大模型技术演进：从 Scaling Law 到推理优化的七场关键战役](/blog/2/llm-tech-evolution.md)
+		- [大模型命名规则完全指南：一眼看懂模型名](/blog/2/llm-naming-guide.md)
+	- Skills
+		- [智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范](/blog/2/agent-skill-creation-standard.md)
+	- Agent
 	- Trae
 		- [再一次被 AI 的编程能力折服！！！](/blog/2/amazing-ai.md)
 - **MongoDB**
@@ -314,4 +319,3 @@ npm run docs:build
 		- [飞牛 NAS 安装 MoonTV](/blog/22/fnos-install-moonTV.md)
 - **其他文章**
 	- 无分类文章
-		- [智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范](/blog/free/agent-skill-creation-standard.md)
