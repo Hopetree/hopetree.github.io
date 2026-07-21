@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-07-19 02:30:20
+    // update date:2026-07-22 02:30:24
     sidebar: {
   "/blog/1/": [
     {
@@ -781,10 +781,6 @@ export default defineConfig({
           "link": "/blog/2/chatgpt-prompts"
         },
         {
-          "text": "AI 编程效率背后的隐性账单：从 24% 提速到 19% 倒挂",
-          "link": "/blog/2/ai-coding-hidden-costs"
-        },
-        {
           "text": "浏览器插件开发：一个简单的站外搜索插件",
           "link": "/blog/2/browser-plugin-site-search"
         },
@@ -809,6 +805,35 @@ export default defineConfig({
           "link": "/blog/2/ChatGPT-nginx-sert"
         }
       ]
+    },
+    {
+      "text": "LLM",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "大模型技术演进：从 Scaling Law 到推理优化的七场关键战役",
+          "link": "/blog/2/llm-tech-evolution"
+        },
+        {
+          "text": "大模型命名规则完全指南：一眼看懂模型名",
+          "link": "/blog/2/llm-naming-guide"
+        }
+      ]
+    },
+    {
+      "text": "Skills",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范",
+          "link": "/blog/2/agent-skill-creation-standard"
+        }
+      ]
+    },
+    {
+      "text": "Agent",
+      "collapsed": false,
+      "items": []
     },
     {
       "text": "Trae",
@@ -1316,12 +1341,7 @@ export default defineConfig({
     {
       "text": "无分类文章",
       "collapsed": false,
-      "items": [
-        {
-          "text": "智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范",
-          "link": "/blog/free/agent-skill-creation-standard"
-        }
-      ]
+      "items": []
     }
   ]
 },
