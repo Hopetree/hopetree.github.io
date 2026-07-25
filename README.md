@@ -255,6 +255,8 @@ npm run docs:build
 		- [烂笔头周刊（第2期）：职业发展的最好方法是换公司？！](/blog/15/notes-weekly-2.md)
 		- [烂笔头周刊（第1期）：好记性不如烂笔头](/blog/15/notes-weekly-1.md)
 	- 经验分享
+		- [HTTP QUERY 方法来了：RFC 10008 解读与实战](/blog/15/http-query-method-rfc-10008.md)
+		- [Word 技术文档代码块排版指南](/blog/15/word-code-block-methods.md)
 		- [Chrome 浏览器插件离线下载与安装指南](/blog/15/Chrome-extensions-downlaod.md)
 		- [解决 Web Crypto API 加密报错及 HTTPS 证书信任问题](/blog/15/web-crypto-api-https-cert-issues.md)
 		- [🚀 告别自动登出：浏览器控制台心跳保持会话指南](/blog/15/keep-page-Session.md)
