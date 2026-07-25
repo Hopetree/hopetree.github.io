@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-07-22 02:30:24
+    // update date:2026-07-26 02:30:23
     sidebar: {
   "/blog/1/": [
     {
@@ -1067,6 +1067,14 @@ export default defineConfig({
       "text": "经验分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "HTTP QUERY 方法来了：RFC 10008 解读与实战",
+          "link": "/blog/15/http-query-method-rfc-10008"
+        },
+        {
+          "text": "Word 技术文档代码块排版指南",
+          "link": "/blog/15/word-code-block-methods"
+        },
         {
           "text": "Chrome 浏览器插件离线下载与安装指南",
           "link": "/blog/15/Chrome-extensions-downlaod"
