@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-07-29 02:30:20
+    // update date:2026-08-01 02:31:27
     sidebar: {
   "/blog/1/": [
     {
@@ -810,6 +810,10 @@ export default defineConfig({
       "text": "LLM",
       "collapsed": false,
       "items": [
+        {
+          "text": "MCP 协议无状态化：从 Session 黏性到分布式架构的设计演进",
+          "link": "/blog/2/mcp-stateless-architecture"
+        },
         {
           "text": "大模型技术演进：从 Scaling Law 到推理优化的七场关键战役",
           "link": "/blog/2/llm-tech-evolution"
