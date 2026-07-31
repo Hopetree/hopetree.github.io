@@ -38,6 +38,58 @@ PVE 系统在安装的时候默认会把储存划分为 local 和 local-lvm 两�
 不管更新什么源，首先必须备份原始源文件，非常重要！！！
 :::
 
+## PVE LXC 非特权容器配置 TUN 模式
+
+本方案通过在 PVE 宿主机上修改容器配置文件，赋予非特权（Unprivileged）LXC 容器访问内核 /dev/net/tun 设备的权限。
+
+---
+
+### 第一步：在 PVE 宿主机上修改配置
+
+1. 使用 SSH 登录 PVE 宿主机（或在 PVE Web 界面点击节点打开 Shell）。
+2. 使用文本编辑器（如 vim）打开目标容器的配置文件。将命令中的 100 替换为你的 LXC 容器 ID：
+
+```
+vim /etc/pve/lxc/100.conf
+```
+3. 连按光标移动到文件最末尾，添加以下两行配置：
+
+```
+lxc.cgroup2.devices.allow: c 10:200 rwm
+lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
+```
+
+4. 保存并退出编辑器：
+* 如果使用的是 nano，按 Ctrl + O 然后回车确认保存，再按 Ctrl + X 退出。
+
+
+5. 重启该 LXC 容器以使配置生效。
+
+---
+
+### 第二步：在 LXC 容器内验证
+
+进入该 LXC 容器的 Shell，执行以下操作进行验证：
+
+1. 检查设备文件状态
+
+```
+ls -la /dev/net/tun
+```
+
+* 正常输出示例：crw-rw-rw- 1 root root 10, 200 ... /dev/net/tun
+
+
+2. 核心状态测试（终极测试）
+
+```
+cat /dev/net/tun
+```
+
+* 预期的正确返回：cat: /dev/net/tun: File descriptor in bad state
+* 注：收到此报错（文件描述符状态错误）说明内核已成功响应请求，TUN 设备已完全正常工作。
+
+
 ## 安装后的问题
 
 ### vim 编辑的上下左右变成了ab
