@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-08-02 02:30:17
+    // update date:2026-08-05 02:30:20
     sidebar: {
   "/blog/1/": [
     {
@@ -807,9 +807,23 @@ export default defineConfig({
       ]
     },
     {
+      "text": "AI编程实践",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "Obsidian 插件开发实录：代码文件预览",
+          "link": "/blog/2/obsidian-plugin-code-preview"
+        }
+      ]
+    },
+    {
       "text": "LLM",
       "collapsed": false,
       "items": [
+        {
+          "text": "模型 API 生态：是谁在提供接口？",
+          "link": "/blog/2/model-api-ecosystem"
+        },
         {
           "text": "MCP 协议无状态化：从 Session 黏性到分布式架构的设计演进",
           "link": "/blog/2/mcp-stateless-architecture"
