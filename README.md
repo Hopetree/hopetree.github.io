@@ -195,7 +195,10 @@ npm run docs:build
 		- [[ChatGPT解决方案]🤖️ChatGPT协助我完成博客代码块添加复制代码和显示代码语言功能](/blog/2/ChatGPT-blog-req.md)
 		- [[ChatGPT解决方案]Nginx配置实现请求失败图片的统一转发](/blog/2/ChatGPT-nginx-error.md)
 		- [[ChatGPT解决方案]生成 nginx 自签名证书](/blog/2/ChatGPT-nginx-sert.md)
+	- AI编程实践
+		- [Obsidian 插件开发实录：代码文件预览](/blog/2/obsidian-plugin-code-preview.md)
 	- LLM
+		- [模型 API 生态：是谁在提供接口？](/blog/2/model-api-ecosystem.md)
 		- [MCP 协议无状态化：从 Session 黏性到分布式架构的设计演进](/blog/2/mcp-stateless-architecture.md)
 		- [大模型技术演进：从 Scaling Law 到推理优化的七场关键战役](/blog/2/llm-tech-evolution.md)
 		- [大模型命名规则完全指南：一眼看懂模型名](/blog/2/llm-naming-guide.md)
