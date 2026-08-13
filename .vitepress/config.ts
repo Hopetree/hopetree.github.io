@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-08-05 02:30:20
+    // update date:2026-08-13 13:19:10
     sidebar: {
   "/blog/1/": [
     {
@@ -288,6 +288,10 @@ export default defineConfig({
         {
           "text": "容器化部署博客（1）—— 安装 docker 和 docker-compose",
           "link": "/blog/5/install-docker"
+        },
+        {
+          "text": "APISIX 运维部署与配置指南",
+          "link": "/blog/5/apisix-deployment-guide"
         },
         {
           "text": "使用 Ansible 工具批量操作虚拟机集群，自动化安装 Docker",
