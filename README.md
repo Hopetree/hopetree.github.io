@@ -77,6 +77,7 @@ npm run docs:build
 - **Docker**
 	- 安装部署
 		- [容器化部署博客（1）—— 安装 docker 和 docker-compose](/blog/5/install-docker.md)
+		- [APISIX 运维部署与配置指南](/blog/5/apisix-deployment-guide.md)
 		- [使用 Ansible 工具批量操作虚拟机集群，自动化安装 Docker](/blog/5/ansible-and-docker.md)
 	- 镜像操作
 		- [分享一个给 Django 镜像瘦身 50% 的经验](/blog/5/docker-image-for-django.md)
