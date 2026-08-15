@@ -206,6 +206,7 @@ npm run docs:build
 	- Skills
 		- [智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范](/blog/2/agent-skill-creation-standard.md)
 	- Agent
+		- [AI Agent 评测，到底在测什么？](/blog/2/ai-agent-evaluation-guide.md)
 	- Trae
 		- [再一次被 AI 的编程能力折服！！！](/blog/2/amazing-ai.md)
 - **MongoDB**
