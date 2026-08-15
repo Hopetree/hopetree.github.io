@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-08-13 13:59:12
+    // update date:2026-08-16 02:30:18
     sidebar: {
   "/blog/1/": [
     {
@@ -855,7 +855,12 @@ export default defineConfig({
     {
       "text": "Agent",
       "collapsed": false,
-      "items": []
+      "items": [
+        {
+          "text": "AI Agent 评测，到底在测什么？",
+          "link": "/blog/2/ai-agent-evaluation-guide"
+        }
+      ]
     },
     {
       "text": "Trae",
