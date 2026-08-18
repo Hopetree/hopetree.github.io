@@ -261,6 +261,8 @@ npm run docs:build
 		- [烂笔头周刊（第2期）：职业发展的最好方法是换公司？！](/blog/15/notes-weekly-2.md)
 		- [烂笔头周刊（第1期）：好记性不如烂笔头](/blog/15/notes-weekly-1.md)
 	- 经验分享
+		- [堡垒机 Mac 客户端磁盘映射失效排查与修复](/blog/15/mac-accessclient-drive-redirection-fix.md)
+		- [Mac 下 AccessClient（堡垒机）适配踩坑与解决全记录](/blog/15/mac-accessclient-troubleshooting.md)
 		- [HTTP QUERY 方法来了：RFC 10008 解读与实战](/blog/15/http-query-method-rfc-10008.md)
 		- [Word 技术文档代码块排版指南](/blog/15/word-code-block-methods.md)
 		- [Chrome 浏览器插件离线下载与安装指南](/blog/15/Chrome-extensions-downlaod.md)
@@ -291,6 +293,7 @@ npm run docs:build
 		- [使用 Cloudflare 搭建自己的 Docker Hub 镜像代理](/blog/16/docker-hub-on-cloudflare.md)
 	- PVE
 		- [PVE 系统最佳实践](/blog/16/pve-used.md)
+		- [PVE 中 CT 与 VM 的区别：从概念到细节](/blog/16/pve-ct-vs-vm.md)
 		- [PVE LXC（CentOS Stream 9）安装 Tailscale（Userspace Networking 模式）实践](/blog/16/pve-lxc-install-tailscale.md)
 		- [Proxmox VE 8 换源【转】](/blog/16/pve8-change-sourceslist.md)
 		- [PVE系统在概要中显示CPU温度的方法](/blog/16/pve-cpu-temperature.md)
