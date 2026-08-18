@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-08-16 02:30:18
+    // update date:2026-08-19 02:30:24
     sidebar: {
   "/blog/1/": [
     {
@@ -1095,6 +1095,14 @@ export default defineConfig({
       "collapsed": false,
       "items": [
         {
+          "text": "堡垒机 Mac 客户端磁盘映射失效排查与修复",
+          "link": "/blog/15/mac-accessclient-drive-redirection-fix"
+        },
+        {
+          "text": "Mac 下 AccessClient（堡垒机）适配踩坑与解决全记录",
+          "link": "/blog/15/mac-accessclient-troubleshooting"
+        },
+        {
           "text": "HTTP QUERY 方法来了：RFC 10008 解读与实战",
           "link": "/blog/15/http-query-method-rfc-10008"
         },
@@ -1224,6 +1232,10 @@ export default defineConfig({
         {
           "text": "PVE 系统最佳实践",
           "link": "/blog/16/pve-used"
+        },
+        {
+          "text": "PVE 中 CT 与 VM 的区别：从概念到细节",
+          "link": "/blog/16/pve-ct-vs-vm"
         },
         {
           "text": "PVE LXC（CentOS Stream 9）安装 Tailscale（Userspace Networking 模式）实践",
