@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-08-19 02:30:24
+    // update date:2026-08-23 02:30:18
     sidebar: {
   "/blog/1/": [
     {
@@ -1149,6 +1149,10 @@ export default defineConfig({
       "text": "工具分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "Clash Verge 添加直连规则：让 VPN 流量不被代理劫持",
+          "link": "/blog/15/clash-verge-direct-vpn-rule"
+        },
         {
           "text": "Nginx Proxy Manager：Docker环境下反向代理的绝佳选择",
           "link": "/blog/15/Nginx-Proxy-Manager"
