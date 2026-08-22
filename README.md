@@ -274,6 +274,7 @@ npm run docs:build
 		- [Mac同时使用无线wifi和有线上网，解决内网外网一起访问的问题](/blog/15/mac-network-set.md)
 	- 杂谈
 	- 工具分享
+		- [Clash Verge 添加直连规则：让 VPN 流量不被代理劫持](/blog/15/clash-verge-direct-vpn-rule.md)
 		- [Nginx Proxy Manager：Docker环境下反向代理的绝佳选择](/blog/15/Nginx-Proxy-Manager.md)
 		- [VitePress 网站配置 Algolia 搜索](/blog/15/vitepress-search-by-algolia.md)
 		- [记录一些使用 lodash.js 处理 Dashboard 数据的案例](/blog/15/deal-with-data-by-lodash.md)
