@@ -204,6 +204,7 @@ npm run docs:build
 		- [大模型技术演进：从 Scaling Law 到推理优化的七场关键战役](/blog/2/llm-tech-evolution.md)
 		- [大模型命名规则完全指南：一眼看懂模型名](/blog/2/llm-naming-guide.md)
 	- Skills
+		- [给文本模型装上眼睛：用 Skill 委托视觉识别图片](/blog/2/llm-vision-via-skill.md)
 		- [智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范](/blog/2/agent-skill-creation-standard.md)
 	- Agent
 		- [AI Agent 评测，到底在测什么？](/blog/2/ai-agent-evaluation-guide.md)
