@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-08-23 02:30:18
+    // update date:2026-08-26 02:30:19
     sidebar: {
   "/blog/1/": [
     {
@@ -846,6 +846,10 @@ export default defineConfig({
       "text": "Skills",
       "collapsed": false,
       "items": [
+        {
+          "text": "给文本模型装上眼睛：用 Skill 委托视觉识别图片",
+          "link": "/blog/2/llm-vision-via-skill"
+        },
         {
           "text": "智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范",
           "link": "/blog/2/agent-skill-creation-standard"
