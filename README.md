@@ -69,6 +69,7 @@ npm run docs:build
 		- [Django网站单页面流量统计通用方式分享](/blog/1/django-views.md)
 		- [用 ECharts 做网站数据统计报表，告别第三方流量统计平台](/blog/1/ECharts-for-web.md)
 	- 灾备方案
+		- [用 OpenList 把数据备份到 115 网盘](/blog/1/openlist-115-backup.md)
 		- [博客灾备方案（2）：博客文章同步到VitePress静态站](/blog/1/blog-sync-to-vitepress.md)
 		- [博客灾备方案（1）：七牛云图床增量同步到GitHub](/blog/1/qiniu-sync-to-github.md)
 	- 拓展
