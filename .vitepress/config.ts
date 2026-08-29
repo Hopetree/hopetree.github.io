@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-08-26 02:30:19
+    // update date:2026-08-30 02:30:18
     sidebar: {
   "/blog/1/": [
     {
@@ -255,6 +255,10 @@ export default defineConfig({
       "text": "灾备方案",
       "collapsed": false,
       "items": [
+        {
+          "text": "用 OpenList 把数据备份到 115 网盘",
+          "link": "/blog/1/openlist-115-backup"
+        },
         {
           "text": "博客灾备方案（2）：博客文章同步到VitePress静态站",
           "link": "/blog/1/blog-sync-to-vitepress"
