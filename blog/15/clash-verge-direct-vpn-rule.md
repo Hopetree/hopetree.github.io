@@ -23,39 +23,30 @@ Clash Verge 开启系统代理或 TUN 模式后，会把本机的流量全部收
 
 ## 3. 打开配置文件
 
+可以直接在原配置添加规则：
+
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2026/202608211728172.png)
+
+Clash Verge Rev 提供了「全局扩展配置」（Global Extend Config），用 merge 方式追加规则，订阅更新不会丢。
+
 第一步是找到 Clash Verge 的配置编辑入口（对应第一张截图）：
 
 1. 打开 Clash Verge 主界面，切到左侧的「订阅」页面。
-2. 找到当前正在使用的配置文件。
-3. 点击配置项右侧的编辑图标（铅笔），进入 YAML 编辑器。
+2. 找到全局扩展配置
+3. 右键点击编辑文件
 
-打开后看到的就是这份配置的完整内容，包含 `proxies`、`proxy-groups`、`rules` 等段落，我们要改的是 `rules`。
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2026/202608260923681.png)
 
-![Clash Verge 打开配置入口](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2026/202608211727676.png)
-
-这里有个细节值得注意：如果你直接改订阅文件，下次订阅更新时修改会被覆盖。Clash Verge Rev 提供了「全局扩展配置」（Global Extend Config），用 merge 方式追加规则，订阅更新不会丢。本文例子两种方式都适用，推荐优先用全局扩展配置。
 
 ## 4. 添加直连规则
 
-在 `rules` 列表的最前面（也就是兜底规则 `MATCH` 之前）加上目标网段的直连规则，例如：
+按照模板要求，添加规则，保存后 Clash Verge 会自动重载配置，规则立即生效。
 
-```yaml
-rules:
-  # 优先直连：VPN 内网网段
-  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2026/202608260925370.png)
 
-  # ... 原有规则 ...
+此时去看全局配置，就可以看到追加进去的配置规则
 
-  # 兜底规则保持原来的代理策略
-  - MATCH,你的代理组名
-```
-
-保存后 Clash Verge 会自动重载配置，规则立即生效。
-
-![Clash Verge 配置直连规则](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2026/202608211728172.png)
+![](https://cdn.jsdelivr.net/gh/Hopetree/blog-img@main/2026/202608260925164.png)
 
 几个要点：
 
