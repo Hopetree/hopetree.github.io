@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-09-02 02:30:19
+    // update date:2026-09-06 02:30:22
     sidebar: {
   "/blog/1/": [
     {
@@ -248,6 +248,16 @@ export default defineConfig({
         {
           "text": "用 ECharts 做网站数据统计报表，告别第三方流量统计平台",
           "link": "/blog/1/ECharts-for-web"
+        }
+      ]
+    },
+    {
+      "text": "性能优化",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "2C2G 服务器 Django 博客内存优化实录",
+          "link": "/blog/1/django-blog-memory-optimization"
         }
       ]
     },
@@ -815,6 +825,20 @@ export default defineConfig({
       ]
     },
     {
+      "text": "AI Agent 实战手记",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "AI Agent 实战手记 01：先立规矩再干活",
+          "link": "/blog/2/ai-agent-playbook-01-workspace-planning"
+        },
+        {
+          "text": "AI Agent 实战手记 02：别等上下文占满，主动交接",
+          "link": "/blog/2/ai-agent-playbook-02-session-handoff"
+        }
+      ]
+    },
+    {
       "text": "AI编程实践",
       "collapsed": false,
       "items": [
@@ -864,6 +888,10 @@ export default defineConfig({
       "text": "Agent",
       "collapsed": false,
       "items": [
+        {
+          "text": "主流 AI Agent 技能与配置加载机制横评",
+          "link": "/blog/2/agent-config-mechanisms-guide"
+        },
         {
           "text": "AI Agent 评测，到底在测什么？",
           "link": "/blog/2/ai-agent-evaluation-guide"
