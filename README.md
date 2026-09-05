@@ -68,6 +68,8 @@ npm run docs:build
 	- 可视化
 		- [Django网站单页面流量统计通用方式分享](/blog/1/django-views.md)
 		- [用 ECharts 做网站数据统计报表，告别第三方流量统计平台](/blog/1/ECharts-for-web.md)
+	- 性能优化
+		- [2C2G 服务器 Django 博客内存优化实录](/blog/1/django-blog-memory-optimization.md)
 	- 灾备方案
 		- [用 OpenList 把数据备份到 115 网盘](/blog/1/openlist-115-backup.md)
 		- [博客灾备方案（2）：博客文章同步到VitePress静态站](/blog/1/blog-sync-to-vitepress.md)
@@ -197,6 +199,9 @@ npm run docs:build
 		- [[ChatGPT解决方案]🤖️ChatGPT协助我完成博客代码块添加复制代码和显示代码语言功能](/blog/2/ChatGPT-blog-req.md)
 		- [[ChatGPT解决方案]Nginx配置实现请求失败图片的统一转发](/blog/2/ChatGPT-nginx-error.md)
 		- [[ChatGPT解决方案]生成 nginx 自签名证书](/blog/2/ChatGPT-nginx-sert.md)
+	- AI Agent 实战手记
+		- [AI Agent 实战手记 01：先立规矩再干活](/blog/2/ai-agent-playbook-01-workspace-planning.md)
+		- [AI Agent 实战手记 02：别等上下文占满，主动交接](/blog/2/ai-agent-playbook-02-session-handoff.md)
 	- AI编程实践
 		- [Obsidian 插件开发实录：代码文件预览](/blog/2/obsidian-plugin-code-preview.md)
 	- LLM
@@ -208,6 +213,7 @@ npm run docs:build
 		- [给文本模型装上眼睛：用 Skill 委托视觉识别图片](/blog/2/llm-vision-via-skill.md)
 		- [智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范](/blog/2/agent-skill-creation-standard.md)
 	- Agent
+		- [主流 AI Agent 技能与配置加载机制横评](/blog/2/agent-config-mechanisms-guide.md)
 		- [AI Agent 评测，到底在测什么？](/blog/2/ai-agent-evaluation-guide.md)
 	- Trae
 		- [再一次被 AI 的编程能力折服！！！](/blog/2/amazing-ai.md)
