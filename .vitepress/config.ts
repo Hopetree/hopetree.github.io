@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-09-06 02:30:22
+    // update date:2026-09-09 02:30:20
     sidebar: {
   "/blog/1/": [
     {
@@ -825,6 +825,16 @@ export default defineConfig({
       ]
     },
     {
+      "text": "AI 工具链",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "new-api 协议转换后 Codex 报错两连：会话头缺失与 developer role",
+          "link": "/blog/2/newapi-codex-header-and-role-errors"
+        }
+      ]
+    },
+    {
       "text": "AI Agent 实战手记",
       "collapsed": false,
       "items": [
@@ -1329,6 +1339,16 @@ export default defineConfig({
     }
   ],
   "/blog/19/": [
+    {
+      "text": "数据迁移与同步",
+      "collapsed": false,
+      "items": [
+        {
+          "text": "new-api 数据同步实践：全量拷贝与增量同步",
+          "link": "/blog/19/newapi-data-sync-full-and-incremental"
+        }
+      ]
+    },
     {
       "text": "Kafka",
       "collapsed": false,
