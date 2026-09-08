@@ -199,6 +199,8 @@ npm run docs:build
 		- [[ChatGPT解决方案]🤖️ChatGPT协助我完成博客代码块添加复制代码和显示代码语言功能](/blog/2/ChatGPT-blog-req.md)
 		- [[ChatGPT解决方案]Nginx配置实现请求失败图片的统一转发](/blog/2/ChatGPT-nginx-error.md)
 		- [[ChatGPT解决方案]生成 nginx 自签名证书](/blog/2/ChatGPT-nginx-sert.md)
+	- AI 工具链
+		- [new-api 协议转换后 Codex 报错两连：会话头缺失与 developer role](/blog/2/newapi-codex-header-and-role-errors.md)
 	- AI Agent 实战手记
 		- [AI Agent 实战手记 01：先立规矩再干活](/blog/2/ai-agent-playbook-01-workspace-planning.md)
 		- [AI Agent 实战手记 02：别等上下文占满，主动交接](/blog/2/ai-agent-playbook-02-session-handoff.md)
@@ -315,6 +317,8 @@ npm run docs:build
 		- [Redis哨兵模式部署](/blog/17/redis-install-sentinel.md)
 		- [Redis单机部署](/blog/17/redis-install.md)
 - **中间件**
+	- 数据迁移与同步
+		- [new-api 数据同步实践：全量拷贝与增量同步](/blog/19/newapi-data-sync-full-and-incremental.md)
 	- Kafka
 		- [初学 Kafka：Python 接入 Kafka 的基本操作与实战](/blog/19/beginner-kafka-python-connection.md)
 	- Tomcat
