@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-09-09 02:30:20
+    // update date:2026-09-30 09:46:51
     sidebar: {
   "/blog/1/": [
     {
@@ -825,9 +825,25 @@ export default defineConfig({
       ]
     },
     {
-      "text": "AI 工具链",
+      "text": "New API",
       "collapsed": false,
       "items": [
+        {
+          "text": "new-api 重试配置最佳实践：RetryTimes 与状态码范围",
+          "link": "/blog/2/newapi-retry-times-status-codes"
+        },
+        {
+          "text": "new-api 网关改写实战：param_override 与 header_override 的两个坑",
+          "link": "/blog/2/newapi-channel-override-param-header"
+        },
+        {
+          "text": "new-api 分流与重试降级实战：三个免费渠道如何做到逐级兜底",
+          "link": "/blog/2/newapi-routing-retry-failover"
+        },
+        {
+          "text": "new-api 数据同步实践：全量拷贝与增量同步",
+          "link": "/blog/2/newapi-data-sync-full-and-incremental"
+        },
         {
           "text": "new-api 协议转换后 Codex 报错两连：会话头缺失与 developer role",
           "link": "/blog/2/newapi-codex-header-and-role-errors"
@@ -845,6 +861,14 @@ export default defineConfig({
         {
           "text": "AI Agent 实战手记 02：别等上下文占满，主动交接",
           "link": "/blog/2/ai-agent-playbook-02-session-handoff"
+        },
+        {
+          "text": "AI Agent 实战手记 03：让技能越用越好用",
+          "link": "/blog/2/ai-agent-playbook-03-skill-self-improvement"
+        },
+        {
+          "text": "AI Agent 实战手记 04：给 Agent 选对 Loop 工作方式",
+          "link": "/blog/2/ai-agent-playbook-04-agent-work-modes"
         }
       ]
     },
@@ -898,6 +922,10 @@ export default defineConfig({
       "text": "Agent",
       "collapsed": false,
       "items": [
+        {
+          "text": "给 AI 派活：四份文档与一套验收标准",
+          "link": "/blog/2/dispatch-work-to-ai-agent-docs-and-ac"
+        },
         {
           "text": "主流 AI Agent 技能与配置加载机制横评",
           "link": "/blog/2/agent-config-mechanisms-guide"
@@ -1073,6 +1101,10 @@ export default defineConfig({
       "collapsed": false,
       "items": [
         {
+          "text": "把浏览器扩展的数据同步到 GitHub：用代码仓库当云端存储",
+          "link": "/blog/11/chrome-extension-sync-github"
+        },
+        {
           "text": "分享一些 GitHub Actions 的实用技巧",
           "link": "/blog/11/github-actions"
         }
@@ -1141,6 +1173,10 @@ export default defineConfig({
       "collapsed": false,
       "items": [
         {
+          "text": "NPM 续期证书不自动 reload？renew_hook 让它续期即生效",
+          "link": "/blog/15/npm-cert-auto-reload"
+        },
+        {
           "text": "堡垒机 Mac 客户端磁盘映射失效排查与修复",
           "link": "/blog/15/mac-accessclient-drive-redirection-fix"
         },
@@ -1195,6 +1231,10 @@ export default defineConfig({
       "text": "工具分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "用 kkFileView 搭一个文件在线预览服务",
+          "link": "/blog/15/kkfileview-file-preview-service"
+        },
         {
           "text": "Clash Verge 添加直连规则：让 VPN 流量不被代理劫持",
           "link": "/blog/15/clash-verge-direct-vpn-rule"
@@ -1342,12 +1382,7 @@ export default defineConfig({
     {
       "text": "数据迁移与同步",
       "collapsed": false,
-      "items": [
-        {
-          "text": "new-api 数据同步实践：全量拷贝与增量同步",
-          "link": "/blog/19/newapi-data-sync-full-and-incremental"
-        }
-      ]
+      "items": []
     },
     {
       "text": "Kafka",
