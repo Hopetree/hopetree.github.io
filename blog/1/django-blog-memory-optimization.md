@@ -53,7 +53,7 @@ command=celery -A izone worker -l info --concurrency=1
 
 这一步零代码改动，只改 supervisord.conf 重建镜像。生效后 swap 从 666MB 降到 146MB，不再有任何 Python 进程被换出。
 
-## 4. 第二步：合并 worker 与 beat，加内存上限
+## 4. 第二步：合并 worker/beat
 
 beat 和 worker 都是完整 Django 进程，各占 190MB 左右，但 beat 只负责定时派发任务。单机部署完全可以用嵌入式 beat 合并：
 
@@ -80,7 +80,7 @@ services:
 
 这里有个坑：docker-compose v1 在 `version: "3"` 的文件里不认 `mem_limit`（v3 把它挪到了 deploy.resources 下，而 v1 的 up 并不应用 deploy 配置）。把 schema 改成 `version: "2.4"`，新旧两套 compose CLI 都兼容。
 
-## 5. 第三步：搜索重构，卸掉最重的依赖
+## 5. 第三步：搜索重构卸依赖
 
 梳理依赖时发现了更大的问题：搜索用的是 django-haystack + Whoosh + jieba。Whoosh 是纯 Python 的全文索引引擎，2016 年就停更了；jieba 词典每个进程加载一遍；更麻烦的是 Whoosh 索引要靠 `rebuild_index` 手动维护——同一个关键词，旧的 Whoosh 索引只能搜出 6 篇文章，直接查库实际有 28 篇，索引早就和数据脱节了。
 
