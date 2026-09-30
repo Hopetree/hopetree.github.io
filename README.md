@@ -199,11 +199,17 @@ npm run docs:build
 		- [[ChatGPT解决方案]🤖️ChatGPT协助我完成博客代码块添加复制代码和显示代码语言功能](/blog/2/ChatGPT-blog-req.md)
 		- [[ChatGPT解决方案]Nginx配置实现请求失败图片的统一转发](/blog/2/ChatGPT-nginx-error.md)
 		- [[ChatGPT解决方案]生成 nginx 自签名证书](/blog/2/ChatGPT-nginx-sert.md)
-	- AI 工具链
+	- New API
+		- [new-api 重试配置最佳实践：RetryTimes 与状态码范围](/blog/2/newapi-retry-times-status-codes.md)
+		- [new-api 网关改写实战：param_override 与 header_override 的两个坑](/blog/2/newapi-channel-override-param-header.md)
+		- [new-api 分流与重试降级实战：三个免费渠道如何做到逐级兜底](/blog/2/newapi-routing-retry-failover.md)
+		- [new-api 数据同步实践：全量拷贝与增量同步](/blog/2/newapi-data-sync-full-and-incremental.md)
 		- [new-api 协议转换后 Codex 报错两连：会话头缺失与 developer role](/blog/2/newapi-codex-header-and-role-errors.md)
 	- AI Agent 实战手记
 		- [AI Agent 实战手记 01：先立规矩再干活](/blog/2/ai-agent-playbook-01-workspace-planning.md)
 		- [AI Agent 实战手记 02：别等上下文占满，主动交接](/blog/2/ai-agent-playbook-02-session-handoff.md)
+		- [AI Agent 实战手记 03：让技能越用越好用](/blog/2/ai-agent-playbook-03-skill-self-improvement.md)
+		- [AI Agent 实战手记 04：给 Agent 选对 Loop 工作方式](/blog/2/ai-agent-playbook-04-agent-work-modes.md)
 	- AI编程实践
 		- [Obsidian 插件开发实录：代码文件预览](/blog/2/obsidian-plugin-code-preview.md)
 	- LLM
@@ -215,6 +221,7 @@ npm run docs:build
 		- [给文本模型装上眼睛：用 Skill 委托视觉识别图片](/blog/2/llm-vision-via-skill.md)
 		- [智能体 Skill 创建标准完全指南 — 基于 Agent Skills 规范](/blog/2/agent-skill-creation-standard.md)
 	- Agent
+		- [给 AI 派活：四份文档与一套验收标准](/blog/2/dispatch-work-to-ai-agent-docs-and-ac.md)
 		- [主流 AI Agent 技能与配置加载机制横评](/blog/2/agent-config-mechanisms-guide.md)
 		- [AI Agent 评测，到底在测什么？](/blog/2/ai-agent-evaluation-guide.md)
 	- Trae
@@ -255,6 +262,7 @@ npm run docs:build
 		- [Git 提交信息规范与最佳实践](/blog/11/git-commit.md)
 		- [Git 常用及特殊命令笔记](/blog/11/git-note.md)
 	- Github相关
+		- [把浏览器扩展的数据同步到 GitHub：用代码仓库当云端存储](/blog/11/chrome-extension-sync-github.md)
 		- [分享一些 GitHub Actions 的实用技巧](/blog/11/github-actions.md)
 	- Gitea
 		- [使用 Docker 搭建个人私有化 Git 服务：Gitea + SSH 配置实践](/blog/11/install-gitea.md)
@@ -271,6 +279,7 @@ npm run docs:build
 		- [烂笔头周刊（第2期）：职业发展的最好方法是换公司？！](/blog/15/notes-weekly-2.md)
 		- [烂笔头周刊（第1期）：好记性不如烂笔头](/blog/15/notes-weekly-1.md)
 	- 经验分享
+		- [NPM 续期证书不自动 reload？renew_hook 让它续期即生效](/blog/15/npm-cert-auto-reload.md)
 		- [堡垒机 Mac 客户端磁盘映射失效排查与修复](/blog/15/mac-accessclient-drive-redirection-fix.md)
 		- [Mac 下 AccessClient（堡垒机）适配踩坑与解决全记录](/blog/15/mac-accessclient-troubleshooting.md)
 		- [HTTP QUERY 方法来了：RFC 10008 解读与实战](/blog/15/http-query-method-rfc-10008.md)
@@ -284,6 +293,7 @@ npm run docs:build
 		- [Mac同时使用无线wifi和有线上网，解决内网外网一起访问的问题](/blog/15/mac-network-set.md)
 	- 杂谈
 	- 工具分享
+		- [用 kkFileView 搭一个文件在线预览服务](/blog/15/kkfileview-file-preview-service.md)
 		- [Clash Verge 添加直连规则：让 VPN 流量不被代理劫持](/blog/15/clash-verge-direct-vpn-rule.md)
 		- [Nginx Proxy Manager：Docker环境下反向代理的绝佳选择](/blog/15/Nginx-Proxy-Manager.md)
 		- [VitePress 网站配置 Algolia 搜索](/blog/15/vitepress-search-by-algolia.md)
@@ -318,7 +328,6 @@ npm run docs:build
 		- [Redis单机部署](/blog/17/redis-install.md)
 - **中间件**
 	- 数据迁移与同步
-		- [new-api 数据同步实践：全量拷贝与增量同步](/blog/19/newapi-data-sync-full-and-incremental.md)
 	- Kafka
 		- [初学 Kafka：Python 接入 Kafka 的基本操作与实战](/blog/19/beginner-kafka-python-connection.md)
 	- Tomcat
