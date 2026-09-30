@@ -2,7 +2,7 @@
 
 2025 到 2026 年，AI 编程 Agent 从"聊天工具"进化成了"团队同事"，随之而来的是每个工具都长出了一套自己的资源加载机制：技能（Skills）、指令文件（AGENTS.md / CLAUDE.md）、配置与插件。这些机制决定了你的知识资产放在哪里、怎么被加载、谁能共享。本文横向梳理 Claude Code、Codex、ZCode、WorkBuddy、dsh、OpenClaw、OpenCode 七款主流工具，并补充 Gemini CLI、Copilot、Cursor 等，最后用一张总表收拢全部路径。
 
-## 1. 底层共识：三类资源 + 两个标准
+## 1. 底层共识：三类资源两标准
 
 先把各家机制的共同骨架拆出来，后面看具体工具会轻松很多。
 
@@ -63,7 +63,7 @@ Anthropic 的 Claude Code 是这套机制的"发源地"，`SKILL.md`、插件、
 
 只带一个技能的插件可以直接把 `SKILL.md` 放在插件根目录。企业/团队还支持 `agents/<name>.md` 定义专属子代理，技能命名空间为 `plugin:skill`。
 
-## 3. OpenAI Codex：AGENTS.md 的旗手
+## 3. Codex：AGENTS.md 的旗手
 
 Codex CLI 是 AGENTS.md 标准的提出方，实现也最完整。
 
@@ -107,7 +107,7 @@ ZCode 是 Z.ai 推出的 GLM 编码 IDE，机制与 Claude Code 高度同构，�
 
 其他目录：子代理在 `~/.zcode/agents/`，命令在 `~/.zcode/commands/`。技能分发没有独立市场，官方建议打包成插件（`skills/<name>/SKILL.md` 扁平布局）通过插件市场分发。
 
-## 5. WorkBuddy：办公场景的 Agent 平台
+## 5. WorkBuddy：办公 Agent 平台
 
 WorkBuddy 是腾讯 CodeBuddy 系的智能办公平台，把"专家（Expert）+ 技能 + 连接器"打包成可分发单元，开放平台文档非常规范。
 
@@ -137,7 +137,7 @@ SKILL.md 用 YAML frontmatter，字段比通用标准更细：
 
 平台还有"连接器"（Connector）体系连接外部服务。注意 WorkBuddy 开放平台的技能市场是中心化的，技能通过 zip 包提交解析。
 
-## 6. dsh：万物皆可插件的 DeepSeek Harness
+## 6. dsh：万物皆可插件
 
 DeepSeek Harness（dsh）2026 年 8 月开源，设计哲学一句话：**一切皆插件**。模型、工具、技能、会话、沙箱、存储、循环、调度甚至 UI 都可以替换和重组。
 
@@ -159,7 +159,7 @@ DeepSeek Harness（dsh）2026 年 8 月开源，设计哲学一句话：**一切
 
 最终配置可用 `npx @deepseek-ai/dsh web --dump-config` 打印。插件安装是 `dsh plugin add github:<owner>/<repo>`，生态里已有大量桥接插件，例如把 Claude Code 的 memory/skills/config 桥接进来（dsh-plugin-claude-bridge），或移植 Codex、OpenCode 的技能。
 
-## 7. OpenClaw：加载优先级最讲究的通用 Agent
+## 7. OpenClaw：加载优先级最讲究
 
 OpenClaw（原 Clawdbot/Moltbot，OpenClaw Foundation 维护）是把 Claude Code 概念产品化的通用 Agent，技能加载优先级是目前梳理的所有工具里最细致的。
 
@@ -184,7 +184,7 @@ OpenClaw（原 Clawdbot/Moltbot，OpenClaw Foundation 维护）是把 Claude Cod
 
 配置是 `~/.openclaw/openclaw.json`（JSON5），支持 `agents.defaults.skills` / `agents.entries.<name>.skills` 做按 Agent 的技能白名单。插件通过 `openclaw.plugin.json` 声明，可自带技能，与 extraDirs 同级低优先级加载。技能还能声明 `metadata.openclaw.requires`（依赖二进制、环境变量、配置项）做加载门控，ClawHub 是其公共技能注册表。
 
-## 8. OpenCode：配置分层最清晰的 CLI
+## 8. OpenCode：配置分层最清晰
 
 OpenCode（opencode.ai）是配置加载链最透明的工具，文档里明确写了完整优先级：
 
@@ -208,7 +208,7 @@ frontmatter 里声明 `mode: subagent`、`permission`（逐工具权限）、`de
 
 MCP 服务器统一在 `opencode.json` 的 `mcp` 字段配置。
 
-## 9. 补充阵营：Gemini CLI、Copilot、Cursor 与 Windsurf
+## 9. 补充阵营：Gemini 等 CLI
 
 这几款不在必查清单里，但机制有代表性，快速过一遍。
 
