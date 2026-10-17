@@ -291,6 +291,10 @@ npm run docs:build
 		- [慢跑助力健康减肥：我的10斤减脂之路](/blog/15/Jogging-and-weight-loss.md)
 		- [Windows 系统将 .exe 程序设置为系统服务的方案](/blog/15/windows-system-service.md)
 		- [Mac同时使用无线wifi和有线上网，解决内网外网一起访问的问题](/blog/15/mac-network-set.md)
+	- HN 周榜解读
+		- [Hacker News 周榜解读 · 2026.10.09–10.15](/blog/15/hn-weekly-20261015.md)
+	- GitHub 周榜解读
+		- [GitHub 周榜解读 · 2026.10.06–10.11](/blog/15/github-weekly-rank-20261011.md)
 	- 杂谈
 	- 工具分享
 		- [用 kkFileView 搭一个文件在线预览服务](/blog/15/kkfileview-file-preview-service.md)
