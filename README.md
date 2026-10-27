@@ -297,6 +297,7 @@ npm run docs:build
 		- [Hacker News 周榜解读 · 2026.10.16–10.22](/blog/15/hn-weekly-20261022.md)
 		- [Hacker News 周榜解读 · 2026.10.09–10.15](/blog/15/hn-weekly-20261015.md)
 	- GitHub 周榜解读
+		- [GitHub 周榜解读 · 2026.10.20–10.25](/blog/15/github-weekly-rank-20261025.md)
 		- [GitHub 周榜解读 · 2026.10.13–10.18](/blog/15/github-weekly-rank-20261018.md)
 		- [GitHub 周榜解读 · 2026.10.06–10.11](/blog/15/github-weekly-rank-20261011.md)
 	- 杂谈
