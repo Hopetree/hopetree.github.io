@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-11-01 02:32:13
+    // update date:2026-11-04 02:30:10
     sidebar: {
   "/blog/1/": [
     {
@@ -1258,6 +1258,10 @@ export default defineConfig({
       "text": "GitHub 周榜解读",
       "collapsed": false,
       "items": [
+        {
+          "text": "GitHub 周榜解读 · 2026.10.27–11.01",
+          "link": "/blog/15/github-weekly-rank-20261101"
+        },
         {
           "text": "GitHub 周榜解读 · 2026.10.20–10.25",
           "link": "/blog/15/github-weekly-rank-20261025"
