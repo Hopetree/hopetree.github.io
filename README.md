@@ -292,9 +292,11 @@ npm run docs:build
 		- [Windows 系统将 .exe 程序设置为系统服务的方案](/blog/15/windows-system-service.md)
 		- [Mac同时使用无线wifi和有线上网，解决内网外网一起访问的问题](/blog/15/mac-network-set.md)
 	- AI 大模型周榜
+		- [AI 大模型周榜 · 2026.10.28–11.03](/blog/15/ai-weekly-20261103.md)
 		- [AI 大模型周榜 · 2026.10.21–10.27](/blog/15/ai-weekly-20261027.md)
 		- [AI 大模型周榜 · 2026.10.14–10.20](/blog/15/ai-weekly-20261020.md)
 	- HN 周榜解读
+		- [Hacker News 周榜解读 · 2026.10.30–11.05](/blog/15/hn-weekly-20261105.md)
 		- [Hacker News 周榜解读 · 2026.10.23–10.29](/blog/15/hn-weekly-20261029.md)
 		- [Hacker News 周榜解读 · 2026.10.16–10.22](/blog/15/hn-weekly-20261022.md)
 		- [Hacker News 周榜解读 · 2026.10.09–10.15](/blog/15/hn-weekly-20261015.md)
