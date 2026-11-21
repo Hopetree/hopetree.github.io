@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-11-18 02:30:12
+    // update date:2026-11-22 02:30:14
     sidebar: {
   "/blog/1/": [
     {
@@ -1227,6 +1227,10 @@ export default defineConfig({
       "collapsed": false,
       "items": [
         {
+          "text": "AI 大模型周榜 · 2026.11.11–11.17",
+          "link": "/blog/15/ai-weekly-20261117"
+        },
+        {
           "text": "AI 大模型周榜 · 2026.11.04–11.10",
           "link": "/blog/15/ai-weekly-20261110"
         },
@@ -1248,6 +1252,10 @@ export default defineConfig({
       "text": "HN 周榜解读",
       "collapsed": false,
       "items": [
+        {
+          "text": "Hacker News 周榜解读 · 2026.11.13–11.19",
+          "link": "/blog/15/hn-weekly-20261119"
+        },
         {
           "text": "Hacker News 周榜解读 · 2026.11.06–11.12",
           "link": "/blog/15/hn-weekly-20261112"
