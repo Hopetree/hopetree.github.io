@@ -305,6 +305,7 @@ npm run docs:build
 		- [Hacker News 周榜解读 · 2026.10.16–10.22](/blog/15/hn-weekly-20261022.md)
 		- [Hacker News 周榜解读 · 2026.10.09–10.15](/blog/15/hn-weekly-20261015.md)
 	- GitHub 周榜解读
+		- [GitHub 周榜解读 · 2026.11.18–11.23](/blog/15/github-weekly-rank-20261123.md)
 		- [GitHub 周榜解读 · 2026.11.10–11.15](/blog/15/github-weekly-rank-20261115.md)
 		- [GitHub 周榜解读 · 2026.11.03–11.08](/blog/15/github-weekly-rank-20261108.md)
 		- [GitHub 周榜解读 · 2026.10.27–11.01](/blog/15/github-weekly-rank-20261101.md)
@@ -313,6 +314,7 @@ npm run docs:build
 		- [GitHub 周榜解读 · 2026.10.06–10.11](/blog/15/github-weekly-rank-20261011.md)
 	- 杂谈
 	- 工具分享
+		- [Beszel：轻量自托管服务器监控面板](/blog/15/beszel-selfhosted-monitoring.md)
 		- [用 kkFileView 搭一个文件在线预览服务](/blog/15/kkfileview-file-preview-service.md)
 		- [Clash Verge 添加直连规则：让 VPN 流量不被代理劫持](/blog/15/clash-verge-direct-vpn-rule.md)
 		- [Nginx Proxy Manager：Docker环境下反向代理的绝佳选择](/blog/15/Nginx-Proxy-Manager.md)
