@@ -71,7 +71,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: '个人博客', link: 'https://tendcode.com' }
     ],
-    // update date:2026-11-22 02:30:14
+    // update date:2026-11-25 02:30:15
     sidebar: {
   "/blog/1/": [
     {
@@ -1283,6 +1283,10 @@ export default defineConfig({
       "collapsed": false,
       "items": [
         {
+          "text": "GitHub 周榜解读 · 2026.11.18–11.23",
+          "link": "/blog/15/github-weekly-rank-20261123"
+        },
+        {
           "text": "GitHub 周榜解读 · 2026.11.10–11.15",
           "link": "/blog/15/github-weekly-rank-20261115"
         },
@@ -1317,6 +1321,10 @@ export default defineConfig({
       "text": "工具分享",
       "collapsed": false,
       "items": [
+        {
+          "text": "Beszel：轻量自托管服务器监控面板",
+          "link": "/blog/15/beszel-selfhosted-monitoring"
+        },
         {
           "text": "用 kkFileView 搭一个文件在线预览服务",
           "link": "/blog/15/kkfileview-file-preview-service"
